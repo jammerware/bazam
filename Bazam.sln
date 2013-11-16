@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam", "Bazam\Bazam.csproj", "{A3C95BAE-380A-4738-808A-AAC780591DA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazamTests", "BazamTests\BazamTests.csproj", "{9E952291-B90A-4259-AA20-80474736E24C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazamWPF", "BazamWPF\BazamWPF.csproj", "{F848A329-7410-4537-9596-54D36AC9AA57}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Bazam.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3C95BAE-380A-4738-808A-AAC780591DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C95BAE-380A-4738-808A-AAC780591DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C95BAE-380A-4738-808A-AAC780591DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C95BAE-380A-4738-808A-AAC780591DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E952291-B90A-4259-AA20-80474736E24C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E952291-B90A-4259-AA20-80474736E24C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E952291-B90A-4259-AA20-80474736E24C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E952291-B90A-4259-AA20-80474736E24C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F848A329-7410-4537-9596-54D36AC9AA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F848A329-7410-4537-9596-54D36AC9AA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F848A329-7410-4537-9596-54D36AC9AA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F848A329-7410-4537-9596-54D36AC9AA57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
