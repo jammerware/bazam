@@ -11,30 +11,26 @@ namespace BazamWPF.Behaviors
 
         protected override void OnAttached()
         {
-            AssociatedObject.SizeChanged += (omg, soAwesome) => {
-                if (_DoShit && AssociatedObject.DesiredSize.Height > 0) {
+            AssociatedObject.SizeChanged += (object omg, SizeChangedEventArgs soAwesome) => {
+                if (_DoShit) {
                     _DoShit = false;
                     Storyboard sb = new Storyboard();
 
-                    if (AssociatedObject.DesiredSize.Height > 0) {
-                        DoubleAnimation anim = new DoubleAnimation(soAwesome.PreviousSize.Height, AssociatedObject.DesiredSize.Height, new Duration(TimeSpan.FromMilliseconds(300)));
-                        anim.EasingFunction = new QuadraticEase();
-                        anim.SetValue(Storyboard.TargetProperty, AssociatedObject);
-                        anim.SetValue(Storyboard.TargetPropertyProperty, new PropertyPath("Height"));
+                    DoubleAnimation animHeight = new DoubleAnimation(soAwesome.PreviousSize.Height, soAwesome.NewSize.Height, new Duration(TimeSpan.FromMilliseconds(300)));
+                    animHeight.EasingFunction = new QuadraticEase();
+                    animHeight.SetValue(Storyboard.TargetProperty, AssociatedObject);
+                    animHeight.SetValue(Storyboard.TargetPropertyProperty, new PropertyPath("Height"));
 
-                        Storyboard.SetTarget(anim, AssociatedObject);
-                        sb.Children.Add(anim);
-                    }
+                    Storyboard.SetTarget(animHeight, AssociatedObject);
+                    sb.Children.Add(animHeight);
 
-                    if (AssociatedObject.DesiredSize.Width > 0) {
-                        DoubleAnimation anim = new DoubleAnimation(soAwesome.PreviousSize.Width, AssociatedObject.DesiredSize.Width, new Duration(TimeSpan.FromMilliseconds(300)));
-                        anim.EasingFunction = new QuadraticEase();
-                        anim.SetValue(Storyboard.TargetProperty, AssociatedObject);
-                        anim.SetValue(Storyboard.TargetPropertyProperty, new PropertyPath("Width"));
+                    DoubleAnimation animWidth = new DoubleAnimation(soAwesome.PreviousSize.Width, soAwesome.NewSize.Width, new Duration(TimeSpan.FromMilliseconds(300)));
+                    animWidth.EasingFunction = new QuadraticEase();
+                    animWidth.SetValue(Storyboard.TargetProperty, AssociatedObject);
+                    animWidth.SetValue(Storyboard.TargetPropertyProperty, new PropertyPath("Width"));
 
-                        Storyboard.SetTarget(anim, AssociatedObject);
-                        sb.Children.Add(anim);
-                    }
+                    Storyboard.SetTarget(animWidth, AssociatedObject);
+                    sb.Children.Add(animWidth);
 
                     sb.Completed += (fuck, it) => {
                         _DoShit = true;
