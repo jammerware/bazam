@@ -51,6 +51,7 @@
     <Compile Include="Modules\AnimationBuddy.cs" />
     <Compile Include="Modules\Kontroller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIHelpers\DataContextSpy.cs" />
     <Compile Include="ValueConverters\BooleanVisibilityConverter.cs" />
     <Compile Include="ValueConverters\CapitalizationConverter.cs" />
     <Compile Include="ValueConverters\ObjectVisibilityConverter.cs" />
