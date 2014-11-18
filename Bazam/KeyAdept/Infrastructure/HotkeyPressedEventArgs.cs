@@ -6,6 +6,11 @@ namespace Bazam.KeyAdept.Infrastructure
     {
         Hotkey _Hotkey;
 
+        public Hotkey Hotkey
+        {
+            get { return _Hotkey; }
+        }
+
         public HotkeyPressedEventArgs(Hotkey hotkey)
         {
             _Hotkey = hotkey;

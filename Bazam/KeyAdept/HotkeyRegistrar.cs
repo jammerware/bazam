@@ -17,11 +17,6 @@ namespace Bazam.KeyAdept
         {
             _Hotkeys = new Dictionary<int, Hotkey>();
             _Window = new ListenerWindow();
-            _Window.HotkeyPressed += (HotkeyPressedEventArgs args) => {
-                if (HotkeyPressed != null) {
-                    HotkeyPressed(args);
-                }
-            };
         }
 
         [DllImport("User32.dll")]
@@ -48,6 +43,12 @@ namespace Bazam.KeyAdept
             }
 
             RegisterHotKey(_Window.Handle, idValue, modifiers, (uint)hotkey.Key);
+            hotkey.ListenerWindow = _Window;
+            hotkey.Pressed += (HotkeyPressedEventArgs args) => {
+                if (HotkeyPressed != null) {
+                    HotkeyPressed(args);
+                }
+            };
             _Hotkeys.Add(idValue, hotkey);
 
             return idValue;
