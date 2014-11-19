@@ -3,7 +3,7 @@ using System.Windows;
 
 namespace BazamWPF.UIHelpers
 {
-    public static sealed class WindowHelper
+    public static class WindowHelper
     {
         public static bool IsWindowOpen<T>(string name = "") where T : Window
         {
