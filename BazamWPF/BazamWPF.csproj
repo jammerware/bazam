@@ -52,6 +52,7 @@
     <Compile Include="Modules\Kontroller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIHelpers\DataContextSpy.cs" />
+    <Compile Include="UIHelpers\RelayCommand.cs" />
     <Compile Include="UIHelpers\WindowHelper.cs" />
     <Compile Include="ValueConverters\BooleanVisibilityConverter.cs" />
     <Compile Include="ValueConverters\CapitalizationConverter.cs" />
