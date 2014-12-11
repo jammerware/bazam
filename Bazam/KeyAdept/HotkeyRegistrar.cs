@@ -11,6 +11,7 @@ namespace Bazam.KeyAdept
         private Dictionary<int, Hotkey> _Hotkeys;
         private ListenerWindow _Window;
 
+        public event UnavailableHotkeyRegisteredEventHandler UnavailableHotkeyRegistered;
         public event HotkeyPressedEventHandler HotkeyPressed;
 
         public HotkeyRegistrar()
@@ -24,9 +25,19 @@ namespace Bazam.KeyAdept
         [DllImport("User32.dll")]
         private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
 
-        // returns the ID of the registered hotkey
-        public int RegisterHotkey(Hotkey hotkey, int? id)
-       { 
+        public bool IsHotkeyAvailable(Hotkey hotkey)
+        {
+            bool retVal = true;
+            int hotkeyID = RegisterHotkey(hotkey, null, true);
+
+            if (hotkeyID < 0) retVal = false;
+            else UnregisterHotkey(hotkeyID);
+
+            return retVal;
+        }
+
+        private int RegisterHotkey(Hotkey hotkey, int? id, bool suppressEvent)
+        {
             int idValue = _DefaultID;
 
             if (id == null) {
@@ -38,13 +49,11 @@ namespace Bazam.KeyAdept
             }
 
             uint modifiers = 0;
-            foreach(Modifier mod in hotkey.Modifiers) {
+            foreach (Modifier mod in hotkey.Modifiers) {
                 modifiers |= (uint)mod;
             }
 
-            try {
-                RegisterHotKey(_Window.Handle, idValue, modifiers, (uint)hotkey.Key);
-
+            if (RegisterHotKey(_Window.Handle, idValue, modifiers, (uint)hotkey.Key)) {
                 hotkey.ListenerWindow = _Window;
                 hotkey.Pressed += (HotkeyPressedEventArgs args) => {
                     if (HotkeyPressed != null) {
@@ -53,16 +62,24 @@ namespace Bazam.KeyAdept
                 };
                 _Hotkeys.Add(idValue, hotkey);
             }
-            catch (Exception ex) {
-                throw new KeyAdeptException(ex);
+            else {
+                if (!suppressEvent && UnavailableHotkeyRegistered != null) {
+                    UnavailableHotkeyRegistered(new HotkeyEventArgs(hotkey));
+                }
+                idValue = -1;
             }
-
             return idValue;
+        }
+
+        // returns the ID of the registered hotkey
+        public int RegisterHotkey(Hotkey hotkey, int? id)
+        {
+            return RegisterHotkey(hotkey, id, false);
         }
 
         public void RegisterHotkey(Hotkey hotkey)
         {
-            RegisterHotkey(hotkey, null);
+            RegisterHotkey(hotkey, null, false);
         }
 
         public void UnregisterAllHotkeys()

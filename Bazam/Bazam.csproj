@@ -64,12 +64,14 @@
     <Compile Include="DestupidifiedCollections\DestupidifiedList.cs" />
     <Compile Include="KeyAdept\HotkeyRegistrar.cs" />
     <Compile Include="KeyAdept\Infrastructure\Hotkey.cs" />
+    <Compile Include="KeyAdept\Infrastructure\HotkeyEventArgs.cs" />
     <Compile Include="KeyAdept\Infrastructure\HotkeyPressedEventArgs.cs" />
     <Compile Include="KeyAdept\Infrastructure\HotkeyPressedEventHandler.cs" />
     <Compile Include="KeyAdept\Infrastructure\Key.cs" />
     <Compile Include="KeyAdept\Infrastructure\KeyAdeptException.cs" />
     <Compile Include="KeyAdept\Infrastructure\ListenerWindow.cs" />
     <Compile Include="KeyAdept\Infrastructure\Modifier.cs" />
+    <Compile Include="KeyAdept\Infrastructure\UnavailableHotkeyRegisteredEventHandler.cs" />
     <Compile Include="Modules\Amazonian.cs" />
     <Compile Include="Modules\BackgroundBuddy.cs" />
     <Compile Include="Modules\Cryptonite.cs" />
