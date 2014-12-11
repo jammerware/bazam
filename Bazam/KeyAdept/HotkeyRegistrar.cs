@@ -26,7 +26,7 @@ namespace Bazam.KeyAdept
 
         // returns the ID of the registered hotkey
         public int RegisterHotkey(Hotkey hotkey, int? id)
-        {
+       { 
             int idValue = _DefaultID;
 
             if (id == null) {
