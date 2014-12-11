@@ -42,14 +42,20 @@ namespace Bazam.KeyAdept
                 modifiers |= (uint)mod;
             }
 
-            RegisterHotKey(_Window.Handle, idValue, modifiers, (uint)hotkey.Key);
-            hotkey.ListenerWindow = _Window;
-            hotkey.Pressed += (HotkeyPressedEventArgs args) => {
-                if (HotkeyPressed != null) {
-                    HotkeyPressed(args);
-                }
-            };
-            _Hotkeys.Add(idValue, hotkey);
+            try {
+                RegisterHotKey(_Window.Handle, idValue, modifiers, (uint)hotkey.Key);
+
+                hotkey.ListenerWindow = _Window;
+                hotkey.Pressed += (HotkeyPressedEventArgs args) => {
+                    if (HotkeyPressed != null) {
+                        HotkeyPressed(args);
+                    }
+                };
+                _Hotkeys.Add(idValue, hotkey);
+            }
+            catch (Exception ex) {
+                throw new KeyAdeptException(ex);
+            }
 
             return idValue;
         }
