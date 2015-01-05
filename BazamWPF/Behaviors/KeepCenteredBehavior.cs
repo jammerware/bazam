@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Forms;
 using System.Windows.Interactivity;
+using System.Windows.Interop;
 using System.Windows.Media.Animation;
 
 namespace BazamWPF.Behaviors
@@ -12,8 +14,9 @@ namespace BazamWPF.Behaviors
 
         protected override void OnAttached()
         {
-            double screenHeight = SystemParameters.PrimaryScreenHeight;
-            double screenWidth = SystemParameters.PrimaryScreenWidth;
+            var screen = Screen.FromHandle(new WindowInteropHelper(AssociatedObject).Handle);
+            double screenHeight = screen.WorkingArea.Height;
+            double screenWidth = screen.WorkingArea.Width;
             _ScreenMidpoint = new Point(screenWidth / 2, screenHeight / 2);
 
             AssociatedObject.SizeChanged += (omg, soAwesome) => {
@@ -36,9 +39,6 @@ namespace BazamWPF.Behaviors
                         sb.Stop();
                     };
                     sb.Begin();
-
-                    //AssociatedObject.Left = newLeft;
-                    //AssociatedObject.Top = newTop;
                 }
             };
         }
