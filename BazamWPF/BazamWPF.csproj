@@ -61,6 +61,7 @@
     <Compile Include="UIHelpers\WindowHelper.cs" />
     <Compile Include="ValueConverters\BooleanVisibilityConverter.cs" />
     <Compile Include="ValueConverters\CapitalizationConverter.cs" />
+    <Compile Include="ValueConverters\IntegerVisibilityConverter.cs" />
     <Compile Include="ValueConverters\ObjectVisibilityConverter.cs" />
     <Compile Include="ValueConverters\StringVisibilityConverter.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
