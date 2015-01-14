@@ -10,7 +10,7 @@ namespace BazamWPF.ValueConverters
         public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture)
         {
             bool invert = System.Convert.ToBoolean(parameter);
-            int typedVal = System.Convert.ToInt32(parameter);
+            int typedVal = System.Convert.ToInt32(value);
             return (typedVal > 0 && !invert) ? Visibility.Visible : Visibility.Collapsed;
         }
 
