@@ -39,8 +39,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -59,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIs\Amazonian.cs" />
+    <Compile Include="APIs\SharpZipLib\BazamZip.cs" />
     <Compile Include="APIs\TwitterGitter.cs" />
     <Compile Include="DataNinja\DataFormatting.cs" />
     <Compile Include="DataNinja\DataNinja.cs" />
@@ -84,7 +86,7 @@
     <Compile Include="Modules\EnuMaster.cs" />
     <Compile Include="Modules\Listless.cs" />
     <Compile Include="Modules\MonitorLizard.cs" />
-    <Compile Include="Modules\SharpZipLibHelper.cs" />
+    <Compile Include="APIs\SharpZipLib\SharpZipLibHelper.cs" />
     <Compile Include="Modules\StringBeast.cs" />
     <Compile Include="Modules\UberConvert.cs" />
     <Compile Include="Modules\XMLPal.cs" />
