@@ -18,7 +18,7 @@ namespace Bazam.APIs.SharpZipLib
                             byte[] buffer = new byte[4096];
 
                             using (Stream zipStream = zip.GetInputStream(entry)) {
-                                string fullZipPath = Path.Combine(to, entryFileName);
+                                string fullZipPath = to + entryFileName;
                                 string directoryName = Path.GetDirectoryName(fullZipPath);
                                 if (directoryName != string.Empty) {
                                     Directory.CreateDirectory(directoryName);
