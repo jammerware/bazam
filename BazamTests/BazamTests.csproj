@@ -68,12 +68,19 @@
     <Compile Include="StringBeastTest.cs" />
     <Compile Include="UberConvertTest.cs" />
     <Compile Include="ListlessTest.cs" />
+    <Compile Include="SharpZipLibHelperTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bazam\Bazam.csproj">
       <Project>{A3C95BAE-380A-4738-808A-AAC780591DA0}</Project>
       <Name>Bazam</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Assets\dd3.gbd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
