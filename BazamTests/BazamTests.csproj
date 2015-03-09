@@ -41,6 +41,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -69,8 +71,13 @@
     <Compile Include="UberConvertTest.cs" />
     <Compile Include="ListlessTest.cs" />
     <Compile Include="SharpZipLibHelperTests.cs" />
+    <Compile Include="BazamWPFTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BazamWPF\BazamWPF.csproj">
+      <Project>{f848a329-7410-4537-9596-54d36ac9aa57}</Project>
+      <Name>BazamWPF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Bazam\Bazam.csproj">
       <Project>{A3C95BAE-380A-4738-808A-AAC780591DA0}</Project>
       <Name>Bazam</Name>

@@ -10,7 +10,10 @@ namespace BazamWPF.ValueConverters
         public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture)
         {
             bool typedParam = System.Convert.ToBoolean(parameter);
-            return ((bool)value && !typedParam) ? Visibility.Visible : Visibility.Collapsed;
+            bool typedInput = System.Convert.ToBoolean(value);
+
+            if (typedParam) typedInput = !typedInput;
+            return typedInput ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(Object value, Type targetType, Object parameter, System.Globalization.CultureInfo culture)

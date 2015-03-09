@@ -11,6 +11,7 @@ namespace BazamWPF.ValueConverters
         {
             bool invert = System.Convert.ToBoolean(parameter);
             int typedVal = System.Convert.ToInt32(value);
+
             return (typedVal > 0 && !invert) ? Visibility.Visible : Visibility.Collapsed;
         }
 
