@@ -1,6 +1,6 @@
-﻿using Bazam.Modules;
+﻿using System;
+using Bazam.Modules.Enumerations;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace BazamTests
 {

@@ -83,7 +83,8 @@
     <Compile Include="KeyAdept\Infrastructure\UnavailableHotkeyRegisteredEventHandler.cs" />
     <Compile Include="Modules\BackgroundBuddy.cs" />
     <Compile Include="Modules\Cryptonite.cs" />
-    <Compile Include="Modules\EnuMaster.cs" />
+    <Compile Include="Modules\Enumerations\EnuMaster.cs" />
+    <Compile Include="Modules\Enumerations\EnuMasterException.cs" />
     <Compile Include="Modules\Listless.cs" />
     <Compile Include="Modules\MonitorLizard.cs" />
     <Compile Include="APIs\SharpZipLib\SharpZipLibHelper.cs" />

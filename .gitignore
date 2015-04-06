@@ -1,0 +1,24 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BazamTests/bin/Debug/de/System.Windows.Interactivity.resources.dll
+/BazamTests/bin/Debug/en
+/BazamTests/bin/Debug/es
+/BazamTests/bin/Debug/fr
+/BazamTests/bin/Debug/it
+/BazamTests/bin/Debug/ko
+/BazamTests/bin/Debug/zh-Hant
+*.pdb
+*.dll
+/Bazam/bin/Debug
+/Bazam/obj/Debug
+/BazamTests/bin/Debug
+/BazamTests/obj/Debug
+/BazamWPF/bin/Debug
+/BazamWPF/obj/Debug
+/packages/ICSharpCode.SharpZipLib.dll.0.85.4.369
+/packages/Newtonsoft.Json.6.0.8
+/packages
+*.suo
+*.user
