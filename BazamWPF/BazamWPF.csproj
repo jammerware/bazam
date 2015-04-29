@@ -51,6 +51,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behaviors\ClickButtonOnEnterKeyBehavior.cs" />
     <Compile Include="Behaviors\FadeInBehavior.cs" />
     <Compile Include="Behaviors\KeepCenteredBehavior.cs" />
     <Compile Include="Behaviors\SmoothSizeChangedBehavior.cs" />
