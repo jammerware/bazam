@@ -28,7 +28,6 @@ namespace BazamWPF.Behaviors
             new PropertyMetadata(null)
         );
 
-        
         protected override void OnAttached()
         {
             base.OnAttached();
