@@ -93,7 +93,7 @@
     <Compile Include="Modules\UberConvert.cs" />
     <Compile Include="Modules\XMLPal.cs" />
     <Compile Include="NoobWebClient\NoobWebClient.cs" />
-    <Compile Include="NoobWebClient\RequestType.cs" />
+    <Compile Include="NoobWebClient\RequestMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Slugging\Slugger.cs" />
   </ItemGroup>

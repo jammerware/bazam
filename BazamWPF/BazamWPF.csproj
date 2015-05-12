@@ -55,6 +55,7 @@
     <Compile Include="Behaviors\FadeInBehavior.cs" />
     <Compile Include="Behaviors\KeepCenteredBehavior.cs" />
     <Compile Include="Behaviors\SmoothSizeChangedBehavior.cs" />
+    <Compile Include="Behaviors\SnapNearEdgesBehavior.cs" />
     <Compile Include="Modules\AnimationBuddy.cs" />
     <Compile Include="Modules\Kontroller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

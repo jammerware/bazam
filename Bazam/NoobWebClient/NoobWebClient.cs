@@ -6,7 +6,7 @@ namespace Bazam.NoobWebClient
 {
     public class NoobWebClient
     {
-        public Task<string> GetResponse(string address, RequestType requestType, params string[] values)
+        public Task<string> GetResponse(string address, RequestMethod requestType, params string[] values)
         {
             Dictionary<string, string> dictValues = new Dictionary<string, string>();
 
@@ -25,7 +25,7 @@ namespace Bazam.NoobWebClient
             return GetResponse(address, requestType, dictValues);
         }
 
-        public async Task<string> GetResponse(string address, RequestType requestType, Dictionary<string, string> bodyValues = null)
+        public async Task<string> GetResponse(string address, RequestMethod requestType, Dictionary<string, string> bodyValues = null)
         {
             FormUrlEncodedContent content = null;
             if (bodyValues != null) {
@@ -34,7 +34,7 @@ namespace Bazam.NoobWebClient
 
             using (HttpClient client = new HttpClient()) {
                 HttpResponseMessage response = null;
-                if (requestType == RequestType.Post) {
+                if (requestType == RequestMethod.Post) {
                     response = await client.PostAsync(address, content);
                 }
                 else {
