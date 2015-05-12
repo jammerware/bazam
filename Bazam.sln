@@ -5,11 +5,9 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam", "Bazam\Bazam.csproj", "{A3C95BAE-380A-4738-808A-AAC780591DA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazamTests", "BazamTests\BazamTests.csproj", "{9E952291-B90A-4259-AA20-80474736E24C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.Tests", "Bazam.Tests\Bazam.Tests.csproj", "{CF1A3B09-2601-4A94-A781-FD80EEC34079}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazamWPF", "BazamWPF\BazamWPF.csproj", "{F848A329-7410-4537-9596-54D36AC9AA57}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazamWPFPlayground", "BazamWPFPlayground\BazamWPFPlayground.csproj", "{CCA6B725-927D-42FB-9F00-64B9384B2369}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.WPF", "Bazam.WPF\Bazam.WPF.csproj", "{23D145E6-3EB8-4F20-813A-CEC5DB480E86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +19,14 @@ Global
 		{A3C95BAE-380A-4738-808A-AAC780591DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3C95BAE-380A-4738-808A-AAC780591DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3C95BAE-380A-4738-808A-AAC780591DA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9E952291-B90A-4259-AA20-80474736E24C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E952291-B90A-4259-AA20-80474736E24C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E952291-B90A-4259-AA20-80474736E24C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E952291-B90A-4259-AA20-80474736E24C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F848A329-7410-4537-9596-54D36AC9AA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F848A329-7410-4537-9596-54D36AC9AA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F848A329-7410-4537-9596-54D36AC9AA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F848A329-7410-4537-9596-54D36AC9AA57}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CCA6B725-927D-42FB-9F00-64B9384B2369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCA6B725-927D-42FB-9F00-64B9384B2369}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCA6B725-927D-42FB-9F00-64B9384B2369}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCA6B725-927D-42FB-9F00-64B9384B2369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
