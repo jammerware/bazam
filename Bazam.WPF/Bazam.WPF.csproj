@@ -69,12 +69,6 @@
     <Compile Include="ViewModels\RelatedPropertyAttribute.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Bazam\Bazam.csproj">
-      <Project>{a3c95bae-380a-4738-808a-aac780591da0}</Project>
-      <Name>Bazam</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
