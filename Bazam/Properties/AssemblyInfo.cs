@@ -7,7 +7,7 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Bazam")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A helpful (if not exactly laser-focused) toolbox library for .NET.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jammerware, Inc.")]
 [assembly: AssemblyProduct("Bazam")]
@@ -33,6 +33,6 @@ using System.Resources;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.6.1.0")]
-[assembly: AssemblyFileVersion("2.6.1.0")]
+[assembly: AssemblyVersion("2.6.2.0")]
+[assembly: AssemblyFileVersion("2.6.2.0")]
 [assembly: NeutralResourcesLanguageAttribute("en-US")]

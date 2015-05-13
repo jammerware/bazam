@@ -8,9 +8,11 @@ namespace Bazam.Tests
     public class SharpZipLibHelperTests
     {
         [TestMethod]
-        public void DoesItFuckingWork()
+        public void DoesUnzipWork()
         {
-            SharpZipLibHelper.Unzip("C:\\Users\\Jammer\\AppData\\Roaming\\Jammerware.MtGBar.Test\\packages\\core.zip", "C:\\Users\\Jammer\\AppData\\Roaming\\Jammerware.MtGBar.Test\\packages", "jammerware.isthebest", true);
+            SharpZipLibHelper.Unzip(
+                "Assets/dd3.gbd", "UnzipOutput", "jammerware.isthebest", true
+            );
         }
     }
 }

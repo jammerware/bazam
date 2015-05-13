@@ -17,8 +17,8 @@ namespace Bazam.DataNinja
         /// <summary>
         /// Allows you to instantiate a DataNinja that uses Windows Authentication (as opposed to SQL Server Authentication.
         /// </summary>
-        /// <param name="serverName">The name of the server to which this DataNinja will connect.</param>
-        /// <param name="databaseName">The name of the database to which this DataNinja will connect.</param>
+        /// <param name="serverName">The name of the server to which this DataNinjaClient will connect.</param>
+        /// <param name="databaseName">The name of the database to which this DataNinjaClient will connect.</param>
         public DataNinjaClient(string serverName, string databaseName) : this(serverName, databaseName, string.Empty, string.Empty)
         {
             UseWindowsAuthentication = true;
@@ -32,10 +32,21 @@ namespace Bazam.DataNinja
             UserName = userName;
             UseWindowsAuthentication = false;
         }
+
+        /// <summary>
+        /// Create a DataNinjaClient using a preconstructed connection string. Note that if you supply a connection string that isn't configured for
+        /// asynchronous processing, calls to NonQueryAsync() and similar will fail.
+        /// </summary>
+        /// <param name="connectionString"></param>
+        public DataNinjaClient(string connectionString)
+        {
+            this.ConnectionString = connectionString;
+        }
         #endregion
 
         #region Properties
         // credentials and connection info
+        private string ConnectionString { get; set; }
         private string DatabaseName { get; set; }
         private string Password { get; set; }
         private string ServerName { get; set; }
@@ -202,12 +213,14 @@ namespace Bazam.DataNinja
         private string GetConnectionString(bool async)
         {
             try {
+                if (!string.IsNullOrEmpty(ConnectionString))
+                    return ConnectionString;
                 if (ServerName == string.Empty)
                     throw new DataNinjaException("A DataNinja can't be used without a server name.");
                 if (DatabaseName == string.Empty)
                     throw new DataNinjaException("A DataNinja can't be used without a database name.");
                 if (UserName == string.Empty && !UseWindowsAuthentication)
-                    throw new DataNinjaException("A DataNinja using SQL Server AUthentication can't be used without a user name.");
+                    throw new DataNinjaException("A DataNinja using SQL Server Authentication can't be used without a user name.");
                 if (Password == string.Empty && !UseWindowsAuthentication)
                     throw new DataNinjaException("A DataNinja using SQL Server Authentication can't be used without a password.");
 
@@ -226,9 +239,6 @@ namespace Bazam.DataNinja
                     builder.Append(";Integrated Security=SSPI");
 
                 return builder.ToString();
-            }
-            catch (DataNinjaException) {
-                throw;
             }
             catch (Exception ex) {
                 throw new DataNinjaException("DataNinja.GetConnectionString", ex);
