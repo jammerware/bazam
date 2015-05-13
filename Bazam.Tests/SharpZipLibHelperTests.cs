@@ -1,5 +1,5 @@
 ﻿using System;
-using Bazam.APIs.SharpZipLib;
+using Bazam.SharpZipLibHelpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bazam.Tests

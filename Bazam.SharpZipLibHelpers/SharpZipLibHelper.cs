@@ -2,7 +2,7 @@
 using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
 
-namespace Bazam.APIs.SharpZipLib
+namespace Bazam.SharpZipLibHelpers
 {
     public static class SharpZipLibHelper
     {

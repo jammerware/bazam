@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIs\Amazonian.cs" />
-    <Compile Include="APIs\SharpZipLib\BazamZip.cs" />
     <Compile Include="APIs\TwitterGitter.cs" />
     <Compile Include="DataNinja\DataFormatting.cs" />
     <Compile Include="DataNinja\DataNinjaClient.cs" />
@@ -83,7 +82,6 @@
     <Compile Include="Modules\Enumerations\EnuMasterException.cs" />
     <Compile Include="Modules\Listless.cs" />
     <Compile Include="Modules\MonitorLizard.cs" />
-    <Compile Include="APIs\SharpZipLib\SharpZipLibHelper.cs" />
     <Compile Include="Modules\StringBeast.cs" />
     <Compile Include="Modules\UberConvert.cs" />
     <Compile Include="Modules\XMLPal.cs" />

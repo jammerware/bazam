@@ -72,6 +72,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Bazam.SharpZipLibHelpers\Bazam.SharpZipLibHelpers.csproj">
+      <Project>{1d7fddcc-296a-4a30-9d72-d958be101993}</Project>
+      <Name>Bazam.SharpZipLibHelpers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Bazam.WPF\Bazam.WPF.csproj">
       <Project>{23d145e6-3eb8-4f20-813a-cec5db480e86}</Project>
       <Name>Bazam.WPF</Name>

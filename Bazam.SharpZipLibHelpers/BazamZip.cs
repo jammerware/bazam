@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Bazam.APIs.SharpZipLib
+namespace Bazam.SharpZipLibHelpers
 {
     public class BazamZip
     {
