@@ -92,11 +92,11 @@ namespace Bazam.Modules
             return Regex.Replace(input.Replace("\\n", Environment.NewLine).Trim(), "\\s(\\s)+", Environment.NewLine + Environment.NewLine);
         }
 
-        public static XElement ToXElement(Slugger input, string elementName, string attributeName)
+        public static XElement ToXElement(ISluggable input, string elementName, string attributeName)
         {
             if (input != null) {
                 XElement retVal = new XElement(elementName);
-                retVal.SetAttributeValue(attributeName, input.GetSlug());
+                retVal.SetAttributeValue(attributeName, Slugger.Slugify(input.GetSlugBase()));
                 return retVal;
             }
             return null;
