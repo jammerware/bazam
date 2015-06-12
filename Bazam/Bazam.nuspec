@@ -10,7 +10,7 @@
     <iconUrl>https://drive.google.com/file/d/0BwPTjHn2z0umZnJaM215Yy1CLVE/view?usp=sharing</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>We're on Nuget, y'all!</releaseNotes>
+    <releaseNotes>Refactored XmlPal to use generics for developer-friendliness. The non-generic converter methods now return nullable primitives.</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>.NET Toolbox</tags>
   </metadata>

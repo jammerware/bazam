@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using Bazam.Slugging;
 
@@ -8,88 +7,85 @@ namespace Bazam.Modules
 {
     public static class XMLPal
     {
-        private static IFormatProvider provider = new CultureInfo("en-US");
-
-        public static bool GetBool(XAttribute input)
+        public static bool? GetBool(XElement el)
         {
-            return (input == null ? false : Convert.ToBoolean(input.Value, provider));
+            return Get<bool?>(el);
         }
 
-        public static bool GetBool(XElement input)
+        public static bool? GetBool(XAttribute attr)
         {
-            return (input == null ? false : Convert.ToBoolean(input.Value, provider));
+            return Get<bool?>(attr);
         }
 
-        public static DateTime GetDate(XAttribute input)
+        public static DateTime? GetDate(XElement el)
         {
-            return (input == null ? DateTime.MinValue : Convert.ToDateTime(input.Value, provider));
+            return Get<DateTime?>(el);
         }
 
-        public static DateTime GetDate(XElement input)
+        public static DateTime? GetDate(XAttribute attr)
         {
-            return (input == null ? DateTime.MinValue : Convert.ToDateTime(input.Value, provider));
+            return Get<DateTime?>(attr);
         }
 
-        public static DateTime GetDateFromTwitterFormat(XElement input)
+        public static double? GetDouble(XElement el)
         {
-            if (input == null)
-                return DateTime.MinValue;
-
-            string[] parts = input.Value.Split(' ');
-            string output = parts[1] + " " + parts[2] + " " + parts[5] + " " + parts[3];
-            return Convert.ToDateTime(output, provider);
+            return Get<double?>(el);
         }
 
-        public static double GetDouble(XElement el)
+        public static double? GetDouble(XAttribute attr)
         {
-            return (el == null || el.Value == string.Empty ? 0 : Convert.ToDouble(el.Value, provider));
+            return Get<int?>(attr);
         }
 
-        public static double GetDouble(XAttribute attr)
+        public static int? GetInt(XAttribute attr)
         {
-            return (attr == null || attr.Value == string.Empty ? 0 : Convert.ToDouble(attr.Value, provider));
+            return Get<int?>(attr);
         }
 
-        public static int GetInt(XAttribute attr)
+        public static int? GetInt(XElement el)
         {
-            return (attr == null || attr.Value == string.Empty ? 0 : Convert.ToInt32(attr.Value, provider));
+            return Get<int?>(el);
         }
 
-        public static int GetInt(XElement el)
+        public static long? GetLong(XAttribute attr)
         {
-            return (el == null || el.Value == string.Empty ? 0 : Convert.ToInt32(el.Value, provider));
+            return Get<long?>(attr);
         }
 
-        public static long GetLong(XAttribute attr)
+        public static long? GetLong(XElement el)
         {
-            return (attr == null || attr.Value == string.Empty ? 0 : long.Parse(attr.Value, provider));
+            return Get<long?>(el);
         }
 
         public static string GetString(XAttribute attr)
         {
-            return (attr == null ? string.Empty : attr.Value);
+            return Get<string>(attr);
         }
 
         public static string GetString(XElement el)
         {
-            return (el == null ? string.Empty : el.Value);
+            return Get<string>(el);
         }
 
-        public static string GetSanitizedString(XAttribute attr)
+        public static T Get<T>(XAttribute attr)
         {
-            if (attr == null) { return string.Empty; }
-            else { return GetSanitizedString(attr.Value); }
+            string data = GetString(attr);
+            return Get<T>(data);
         }
 
-        public static string GetSanitizedString(XElement el)
+        public static T Get<T>(XElement el)
         {
-            if (el == null) { return string.Empty; }
-            else { return GetSanitizedString(el.Value); }
+            string data = GetString(el);
+            return Get<T>(data);
         }
 
-        private static string GetSanitizedString(string input)
+        private static T Get<T>(string data)
         {
-            return Regex.Replace(input.Replace("\\n", Environment.NewLine).Trim(), "\\s(\\s)+", Environment.NewLine + Environment.NewLine);
+            if (data != null) {
+                return (T)Convert.ChangeType(data, typeof(T), new CultureInfo("en-US"));
+            }
+
+            return default(T);
         }
 
         public static XElement ToXElement(ISluggable input, string elementName, string attributeName)
