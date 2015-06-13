@@ -72,6 +72,7 @@
     <Compile Include="ListlessTest.cs" />
     <Compile Include="SharpZipLibHelperTests.cs" />
     <Compile Include="BazamWPFTests.cs" />
+    <Compile Include="XmlPalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BazamWPF\BazamWPF.csproj">
@@ -83,7 +84,11 @@
       <Name>Bazam</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\core.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Assets\dd3.gbd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

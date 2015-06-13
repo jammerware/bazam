@@ -91,7 +91,7 @@
     <Compile Include="APIs\SharpZipLib\SharpZipLibHelper.cs" />
     <Compile Include="Modules\StringBeast.cs" />
     <Compile Include="Modules\UberConvert.cs" />
-    <Compile Include="Modules\XMLPal.cs" />
+    <Compile Include="Modules\XmlPal.cs" />
     <Compile Include="NoobWebClient\NoobWebClient.cs" />
     <Compile Include="NoobWebClient\RequestType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
