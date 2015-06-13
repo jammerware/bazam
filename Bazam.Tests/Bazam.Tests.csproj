@@ -43,12 +43,12 @@
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
-  <ItemGroup>
+      <ItemGroup>
         <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-  </ItemGroup>
+      </ItemGroup>
     </When>
     <Otherwise>
-  <ItemGroup>
+      <ItemGroup>
         <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
@@ -70,10 +70,6 @@
     <None Include="Assets\dd3.gbd">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <Compile Include="ListlessTest.cs" />
-    <Compile Include="SharpZipLibHelperTests.cs" />
-    <Compile Include="BazamWPFTests.cs" />
-    <Compile Include="XmlPalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bazam.SharpZipLibHelpers\Bazam.SharpZipLibHelpers.csproj">
@@ -96,7 +92,7 @@
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
-  <ItemGroup>
+      <ItemGroup>
         <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
           <Private>False</Private>
         </Reference>
@@ -109,7 +105,7 @@
         <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
           <Private>False</Private>
         </Reference>
-  </ItemGroup>
+      </ItemGroup>
     </When>
   </Choose>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
