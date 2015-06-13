@@ -22,3 +22,9 @@
 /packages
 *.suo
 *.user
+/Bazam.WPF/obj/Debug
+/Bazam.Tests/bin/Debug
+/Bazam.Tests/obj/Debug
+*.vbproj
+/Bazam.SharpZipLibHelpers/obj/Debug
+/Bazam.SharpZipLibHelpers/My Project
