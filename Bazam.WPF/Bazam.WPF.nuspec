@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/jammerware/bazam</projectUrl>
+    <iconUrl>https://drive.google.com/file/d/0BwPTjHn2z0umZnJaM215Yy1CLVE/view?usp=sharing</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>We're on Nuget, y'all!</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>WPF Toolbox</tags>
+  </metadata>
+</package>

@@ -39,10 +39,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -61,10 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APIs\Amazonian.cs" />
-    <Compile Include="APIs\SharpZipLib\BazamZip.cs" />
     <Compile Include="APIs\TwitterGitter.cs" />
     <Compile Include="DataNinja\DataFormatting.cs" />
-    <Compile Include="DataNinja\DataNinja.cs" />
+    <Compile Include="DataNinja\DataNinjaClient.cs" />
     <Compile Include="DataNinja\DataNinjaAsyncState.cs" />
     <Compile Include="DataNinja\DataNinjaQuery.cs" />
     <Compile Include="DataNinja\DataNinjaTransactionEventHandler.cs" />
@@ -82,19 +77,18 @@
     <Compile Include="KeyAdept\Infrastructure\ListenerWindow.cs" />
     <Compile Include="KeyAdept\Infrastructure\Modifier.cs" />
     <Compile Include="KeyAdept\Infrastructure\UnavailableHotkeyRegisteredEventHandler.cs" />
-    <Compile Include="Modules\BackgroundBuddy.cs" />
     <Compile Include="Modules\Cryptonite.cs" />
     <Compile Include="Modules\Enumerations\EnuMaster.cs" />
     <Compile Include="Modules\Enumerations\EnuMasterException.cs" />
     <Compile Include="Modules\Listless.cs" />
     <Compile Include="Modules\MonitorLizard.cs" />
-    <Compile Include="APIs\SharpZipLib\SharpZipLibHelper.cs" />
     <Compile Include="Modules\StringBeast.cs" />
     <Compile Include="Modules\UberConvert.cs" />
     <Compile Include="Modules\XmlPal.cs" />
     <Compile Include="NoobWebClient\NoobWebClient.cs" />
-    <Compile Include="NoobWebClient\RequestType.cs" />
+    <Compile Include="NoobWebClient\RequestMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slugging\ISluggable.cs" />
     <Compile Include="Slugging\Slugger.cs" />
   </ItemGroup>
   <ItemGroup>
