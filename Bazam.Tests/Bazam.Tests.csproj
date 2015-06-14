@@ -40,6 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -65,6 +67,7 @@
     <Compile Include="SluggerTest.cs" />
     <Compile Include="StringBeastTest.cs" />
     <Compile Include="UberConvertTest.cs" />
+    <Compile Include="XmlPalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\dd3.gbd">

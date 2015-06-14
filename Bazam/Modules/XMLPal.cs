@@ -5,77 +5,94 @@ using Bazam.Slugging;
 
 namespace Bazam.Modules
 {
-    public static class XMLPal
+    public static class XmlPal
     {
-        public static bool? GetBool(XElement el)
+        private static IFormatProvider provider = new CultureInfo("en-US");
+
+        public static bool? GetBool(XAttribute input)
         {
-            return Get<bool?>(el);
+            return (input == null ? null : new Nullable<bool>(Convert.ToBoolean(input.Value, provider)));
         }
 
-        public static bool? GetBool(XAttribute attr)
+        public static bool? GetBool(XElement input)
         {
-            return Get<bool?>(attr);
+            return (input == null ? null : new Nullable<bool>(Convert.ToBoolean(input.Value, provider)));
         }
 
-        public static DateTime? GetDate(XElement el)
+        public static DateTime? GetDate(XAttribute input)
         {
-            return Get<DateTime?>(el);
+            return (input == null ? null : new Nullable<DateTime>(Convert.ToDateTime(input.Value, provider)));
         }
 
-        public static DateTime? GetDate(XAttribute attr)
+        public static DateTime? GetDate(XElement input)
         {
-            return Get<DateTime?>(attr);
+            return (input == null ? null : new Nullable<DateTime>(Convert.ToDateTime(input.Value, provider)));
         }
 
         public static double? GetDouble(XElement el)
         {
-            return Get<double?>(el);
+            return (el == null || el.Value == string.Empty ? null : new Nullable<double>(Convert.ToDouble(el.Value, provider)));
         }
 
         public static double? GetDouble(XAttribute attr)
         {
-            return Get<int?>(attr);
+            return (attr == null || attr.Value == string.Empty ? null : new Nullable<double>(Convert.ToDouble(attr.Value, provider)));
         }
 
         public static int? GetInt(XAttribute attr)
         {
-            return Get<int?>(attr);
+            return (attr == null || attr.Value == string.Empty ? null : new Nullable<int>(Convert.ToInt32(attr.Value, provider)));
         }
 
         public static int? GetInt(XElement el)
         {
-            return Get<int?>(el);
+            return (el == null || el.Value == string.Empty ? null : new Nullable<int>(Convert.ToInt32(el.Value, provider)));
         }
 
         public static long? GetLong(XAttribute attr)
         {
-            return Get<long?>(attr);
-        }
-
-        public static long? GetLong(XElement el)
-        {
-            return Get<long?>(el);
+            return (attr == null || attr.Value == string.Empty ? null : new Nullable<long>(long.Parse(attr.Value, provider)));
         }
 
         public static string GetString(XAttribute attr)
         {
-            return Get<string>(attr);
+            return (attr == null ? null : attr.Value);
         }
 
         public static string GetString(XElement el)
         {
-            return Get<string>(el);
+            return (el == null ? null : el.Value);
         }
 
         public static T Get<T>(XAttribute attr)
         {
-            string data = GetString(attr);
+            string data = null;
+
+            if (attr != null) {
+                if (typeof(T) == typeof(string)) {
+                    data = attr.Value;
+                }
+                else {
+                    data = GetString(attr);
+                }
+            }
+
             return Get<T>(data);
         }
 
         public static T Get<T>(XElement el)
         {
-            string data = GetString(el);
+            string data = null;
+
+            if (el != null) {
+                if (typeof(T) == typeof(string)) {
+                    data = el.Value;
+                }
+                else {
+                    data = GetString(el);
+                }
+            }
+
             return Get<T>(data);
         }
 
