@@ -4,7 +4,7 @@ using System.Windows.Automation.Provider;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace Bazam.WPF.Modules
+namespace Bazam.Wpf.Modules
 {
     public static class Kontroller
     {

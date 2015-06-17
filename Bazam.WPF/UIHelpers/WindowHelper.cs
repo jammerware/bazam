@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Windows;
 
-namespace Bazam.WPF.UIHelpers
+namespace Bazam.Wpf.UIHelpers
 {
     public static class WindowHelper
     {

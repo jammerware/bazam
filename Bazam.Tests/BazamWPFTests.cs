@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows;
-using Bazam.WPF.ValueConverters;
+using Bazam.Wpf.ValueConverters;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bazam.Tests
 {
     [TestClass]
-    public class BazamWPFTests
+    public class BazamWpfTests
     {
         [TestMethod]
         public void BooleanVisibilityConverterWorks()

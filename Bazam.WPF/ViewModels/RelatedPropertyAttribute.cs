@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bazam.WPF.ViewModels
+namespace Bazam.Wpf.ViewModels
 {
     [AttributeUsage(AttributeTargets.Field)]
     public class RelatedPropertyAttribute : Attribute

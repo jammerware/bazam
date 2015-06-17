@@ -11,7 +11,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Interactivity;
 
-namespace Bazam.WPF.Behaviors
+namespace Bazam.Wpf.Behaviors
 {
     public class ClickButtonOnEnterKeyBehavior : Behavior<TextBox>
     {

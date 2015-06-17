@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam", "Bazam\Bazam.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.Tests", "Bazam.Tests\Bazam.Tests.csproj", "{CF1A3B09-2601-4A94-A781-FD80EEC34079}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.WPF", "Bazam.WPF\Bazam.WPF.csproj", "{23D145E6-3EB8-4F20-813A-CEC5DB480E86}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.SharpZipLibHelpers", "Bazam.SharpZipLibHelpers\Bazam.SharpZipLibHelpers.csproj", "{1D7FDDCC-296A-4A30-9D72-D958BE101993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.Mvc", "Bazam.Mvc\Bazam.Mvc.csproj", "{969C388A-14F6-44B8-9693-33C126EF6C2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.Wpf", "Bazam.Wpf\Bazam.Wpf.csproj", "{23D145E6-3EB8-4F20-813A-CEC5DB480E86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +27,18 @@ Global
 		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D7FDDCC-296A-4A30-9D72-D958BE101993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D7FDDCC-296A-4A30-9D72-D958BE101993}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D7FDDCC-296A-4A30-9D72-D958BE101993}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7FDDCC-296A-4A30-9D72-D958BE101993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{969C388A-14F6-44B8-9693-33C126EF6C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{969C388A-14F6-44B8-9693-33C126EF6C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{969C388A-14F6-44B8-9693-33C126EF6C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{969C388A-14F6-44B8-9693-33C126EF6C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D145E6-3EB8-4F20-813A-CEC5DB480E86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

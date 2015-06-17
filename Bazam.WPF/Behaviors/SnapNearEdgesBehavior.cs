@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Windows.Interactivity;
 using System.Windows.Interop;
 
-namespace Bazam.WPF.Behaviors
+namespace Bazam.Wpf.Behaviors
 {
     public class SnapNearEdgesBehavior : Behavior<Window>
     {
@@ -18,7 +18,7 @@ namespace Bazam.WPF.Behaviors
             "SnapMargin", 
             typeof(int), 
             typeof(SnapNearEdgesBehavior), 
-            new PropertyMetadata(20)
+            new PropertyMetadata(34)
         );
 
         

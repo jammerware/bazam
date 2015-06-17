@@ -5,7 +5,7 @@ using System.Windows.Interactivity;
 using System.Windows.Interop;
 using System.Windows.Media.Animation;
 
-namespace Bazam.WPF.Behaviors
+namespace Bazam.Wpf.Behaviors
 {
     public class KeepCenteredBehavior : Behavior<Window>
     {

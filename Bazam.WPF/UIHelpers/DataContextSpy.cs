@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Bazam.WPF.UIHelpers
+namespace Bazam.Wpf.UIHelpers
 {
     /// <summary>
     /// DataContextSpy by Josh Smith

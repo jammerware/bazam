@@ -56,7 +56,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BazamWPFTests.cs" />
+    <Compile Include="BazamWpfTests.cs" />
     <Compile Include="Core\Desmond.cs" />
     <Compile Include="CryptoniteTest.cs" />
     <Compile Include="DataNinjaTest.cs" />
@@ -79,9 +79,9 @@
       <Project>{1d7fddcc-296a-4a30-9d72-d958be101993}</Project>
       <Name>Bazam.SharpZipLibHelpers</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Bazam.WPF\Bazam.WPF.csproj">
+    <ProjectReference Include="..\Bazam.Wpf\Bazam.Wpf.csproj">
       <Project>{23d145e6-3eb8-4f20-813a-cec5db480e86}</Project>
-      <Name>Bazam.WPF</Name>
+      <Name>Bazam.Wpf</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bazam\Bazam.csproj">
       <Project>{a3c95bae-380a-4738-808a-aac780591da0}</Project>

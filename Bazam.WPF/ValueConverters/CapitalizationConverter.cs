@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace Bazam.WPF.ValueConverters
+namespace Bazam.Wpf.ValueConverters
 {
     public class CapitalizationConverter : IValueConverter
     {
