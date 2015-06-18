@@ -25,7 +25,7 @@ namespace Bazam.Mvc
             string tempVarStatement = string.Empty;
 
             for (int i = 0; i < variablePairs.Length; i++) {
-                if (i % 2 == 0) tempVarStatement += "var " + variablePairs[i].ToString();
+                if (i % 2 == 0) tempVarStatement = "var " + variablePairs[i].ToString();
                 else {
                     tempVarStatement += " = " + JsonConvert.SerializeObject(variablePairs[i]) + ";";
                     varsBuilder.Append(tempVarStatement);
