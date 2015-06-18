@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Web;
+using System.Web.Hosting;
 using System.Web.Mvc;
 using Bazam.Slugging;
 using CommonMark;
@@ -15,7 +16,7 @@ namespace Bazam.Mvc
             return new UrlHelper(helper.ViewContext.RequestContext);
         }
 
-        public static IHtmlString DeclareJSVariables(this HtmlHelper helper, params string[] variablePairs)
+        public static IHtmlString DeclareJSVariables(this HtmlHelper helper, params object[] variablePairs)
         {
             if (variablePairs.Length % 2 != 0) throw new InvalidOperationException("An invalid number of variable/pair arguments was passed to DeclareJSVariables, an html helper.");
 
@@ -24,9 +25,9 @@ namespace Bazam.Mvc
             string tempVarStatement = string.Empty;
 
             for (int i = 0; i < variablePairs.Length; i++) {
-                if (i % 2 == 0) tempVarStatement += "var " + variablePairs[i];
+                if (i % 2 == 0) tempVarStatement += "var " + variablePairs[i].ToString();
                 else {
-                    tempVarStatement += " = " + variablePairs[i] + ";";
+                    tempVarStatement += " = " + JsonConvert.SerializeObject(variablePairs[i]) + ";";
                     varsBuilder.Append(tempVarStatement);
                 }
             }
@@ -53,14 +54,13 @@ namespace Bazam.Mvc
         /// I'm not sure if this'll help anyone but me, and maybe I'm going about this the wrong way, but I often find it necessary (?) to have a javascript
         /// file for a particular view.
         /// </summary>
-        /// <param name="scriptRoot">The path to your view scripts - I put mine in "/Scripts/ViewScripts", but your mileage may vary.</param>
+        /// <param name="scriptRoot">The path to your view scripts - I put mine in "~/Scripts/ViewScripts", but your mileage may vary. Use ~ to have the path mapped for you.</param>
         /// <returns></returns>
-        public static IHtmlString ViewScript(this HtmlHelper helper, string scriptRoot = "/Scripts")
+        public static IHtmlString ViewScript(this HtmlHelper helper, string scriptRoot = "~/Scripts")
         {
-            string actionName = helper.ViewContext.RouteData.Values["action"].ToString();
-            string controllerName = helper.ViewContext.RouteData.Values["controller"].ToString();
+            string fileName = "/" + helper.ViewContext.RouteData.Values["controller"].ToString().ToLower() + "-" + helper.ViewContext.RouteData.Values["action"].ToString().ToLower() +".js";
+            string scriptUrl = GetUrlHelper(helper).Content(scriptRoot + fileName);
 
-            string scriptUrl = GetUrlHelper(helper).Content(scriptRoot + "/ViewScripts/" + controllerName.ToLower() + "-" + actionName.ToLower() + ".js");
             return MvcHtmlString.Create(string.Format("<script type=\"text/javascript\" src=\"" + scriptUrl + "\"></script>"));
         }
     }

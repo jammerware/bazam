@@ -1,9 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace Bazam.Modules.Enumerations
+namespace Bazam.Modules
 {
     public static class EnuMaster
     {
+        public static IEnumerable<T> GetValues<T>() where T: struct
+        {
+            if (!typeof(T).IsEnum) {
+                throw new EnuMasterException("When using EnuMaster.GetValues<T>(), the type argument must be an enumeration.");
+            }
+
+            return Enum.GetValues(typeof(T)).Cast<T>();
+        }
+
         public static T Parse<T>(string input) where T : struct
         {
             return Parse<T>(input, true);
@@ -17,7 +28,7 @@ namespace Bazam.Modules.Enumerations
         public static T Parse<T>(string input, bool ignoreCase, bool throwExceptionOnFail) where T : struct
         {
             if (!typeof(T).IsEnum) {
-                throw new InvalidOperationException("When using EnuMaster.Parse, the generic type supplied must be an enumeration.");
+                throw new InvalidOperationException("When using EnuMaster.Parse, the type argument must be an enumeration.");
             }
 
             T retVal = default(T);

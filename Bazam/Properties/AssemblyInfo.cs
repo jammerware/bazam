@@ -11,7 +11,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jammerware, Inc.")]
 [assembly: AssemblyProduct("Bazam")]
-[assembly: AssemblyCopyright("Copyright © Jammerware, Inc. 2015")]
+[assembly: AssemblyCopyright("Copyright © Jammerware, LLC 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,6 +33,6 @@ using System.Resources;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.6.6.0")]
-[assembly: AssemblyFileVersion("2.6.6.0")]
+[assembly: AssemblyVersion("2.6.7.0")]
+[assembly: AssemblyFileVersion("2.6.7.0")]
 [assembly: NeutralResourcesLanguageAttribute("")]

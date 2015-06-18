@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bazam.Modules.Enumerations
+namespace Bazam.Modules
 {
     public class EnuMasterException : Exception
     {

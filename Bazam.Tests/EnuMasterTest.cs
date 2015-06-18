@@ -1,5 +1,7 @@
 ﻿using System;
-using Bazam.Modules.Enumerations;
+using System.Linq;
+using System.Collections.Generic;
+using Bazam.Modules;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Bazam.Tests
@@ -57,6 +59,18 @@ namespace Bazam.Tests
         {
         }
         #endregion
+
+        [TestMethod]
+        [TestCategory("Offline")]
+        public void GetValuesTest()
+        {
+            IEnumerable<TestEnum> values = EnuMaster.GetValues<TestEnum>();
+
+            Assert.AreEqual(3, values.Count());
+            Assert.IsTrue(values.Contains(TestEnum.YES));
+            Assert.IsTrue(values.Contains(TestEnum.NO));
+            Assert.IsTrue(values.Contains(TestEnum.MAYBE));
+        }
 
         [TestMethod()]
         [TestCategory("Offline")]

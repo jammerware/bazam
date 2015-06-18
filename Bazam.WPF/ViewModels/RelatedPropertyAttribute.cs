@@ -2,7 +2,7 @@
 
 namespace Bazam.Wpf.ViewModels
 {
-    [AttributeUsage(AttributeTargets.Field)]
+    [AttributeUsage(AttributeTargets.Property)]
     public class RelatedPropertyAttribute : Attribute
     {
         public string RelatedPropertyName { get; set; }
