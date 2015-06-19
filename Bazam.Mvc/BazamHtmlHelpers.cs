@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using System.Web;
 using System.Web.Hosting;
@@ -6,6 +7,7 @@ using System.Web.Mvc;
 using Bazam.Slugging;
 using CommonMark;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Bazam.Mvc
 {
@@ -24,10 +26,14 @@ namespace Bazam.Mvc
             StringBuilder varsBuilder = new StringBuilder();
             string tempVarStatement = string.Empty;
 
+            // do default serialization of objects to json (TODO: expose these as params at some point?)
+            JsonSerializerSettings settings = new JsonSerializerSettings();
+            settings.Converters.Add(new StringEnumConverter());
+
             for (int i = 0; i < variablePairs.Length; i++) {
                 if (i % 2 == 0) tempVarStatement = "var " + variablePairs[i].ToString();
                 else {
-                    tempVarStatement += " = " + JsonConvert.SerializeObject(variablePairs[i]) + ";";
+                    tempVarStatement += " = " + JsonConvert.SerializeObject(variablePairs[i], Formatting.None, settings) + ";";
                     varsBuilder.Append(tempVarStatement);
                 }
             }
@@ -42,7 +48,19 @@ namespace Bazam.Mvc
 
         public static string ObjectToJson(this HtmlHelper helper, object input)
         {
-            return JsonConvert.SerializeObject(input);
+            return ObjectToJson(helper, input, Formatting.None);
+        }
+        
+        public static string ObjectToJson(this HtmlHelper helper, object input, Formatting jsonFormatting, params JsonConverter[] converters)
+        {
+            JsonSerializerSettings settings = new JsonSerializerSettings();
+            if (converters != null) {
+                foreach (JsonConverter converter in converters) {
+                    settings.Converters.Add(converter);
+                }
+            }
+
+            return JsonConvert.SerializeObject(input, jsonFormatting, settings);
         }
 
         public static string Slugify(this HtmlHelper helper, string input)
