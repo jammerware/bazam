@@ -56,12 +56,12 @@ namespace Bazam.Modules
 
         public static string GetString(XAttribute attr)
         {
-            return (attr == null ? null : attr.Value);
+            return (attr == null ? null : attr.Value.Trim());
         }
 
         public static string GetString(XElement el)
         {
-            return (el == null ? null : el.Value);
+            return (el == null ? null : el.Value.Trim());
         }
 
         public static T Get<T>(XAttribute attr)
