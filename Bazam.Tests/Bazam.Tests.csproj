@@ -67,6 +67,7 @@
     <Compile Include="SluggerTest.cs" />
     <Compile Include="StringBeastTest.cs" />
     <Compile Include="UberConvertTest.cs" />
+    <Compile Include="EnumerableExtensionsTest.cs" />
     <Compile Include="XmlPalTest.cs" />
   </ItemGroup>
   <ItemGroup>

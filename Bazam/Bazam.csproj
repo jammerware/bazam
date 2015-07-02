@@ -67,6 +67,7 @@
     <Compile Include="DataNinja\Exceptions\DataNinjaTransactionException.cs" />
     <Compile Include="DestupidifiedCollections\DestupidifiedDictionary.cs" />
     <Compile Include="DestupidifiedCollections\DestupidifiedList.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="KeyAdept\HotkeyRegistrar.cs" />
     <Compile Include="KeyAdept\Infrastructure\Hotkey.cs" />
     <Compile Include="KeyAdept\Infrastructure\HotkeyEventArgs.cs" />
