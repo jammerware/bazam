@@ -1,0 +1,16 @@
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\Bazam.Wpf.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\Bazam.Wpf.pdb
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\System.Windows.Interactivity.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Devspace\Bazam\Bazam.Wpf\obj\Debug\Bazam.Wpf.csprojResolveAssemblyReference.cache
+C:\Devspace\Bazam\Bazam.Wpf\obj\Debug\Bazam.Wpf.dll
+C:\Devspace\Bazam\Bazam.Wpf\obj\Debug\Bazam.Wpf.pdb

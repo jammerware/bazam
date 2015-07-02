@@ -5,11 +5,14 @@ using System.Windows.Data;
 
 namespace Bazam.Wpf.ValueConverters
 {
-    public class StringVisibilityConverter : IValueConverter
+    public class IntegerVisibilityConverter : IValueConverter
     {
         public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture)
         {
-            return (value == null || string.IsNullOrEmpty(value.ToString()) ? Visibility.Collapsed : Visibility.Visible);
+            bool invert = System.Convert.ToBoolean(parameter);
+            int typedVal = System.Convert.ToInt32(value);
+
+            return (typedVal > 0 && !invert) ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(Object value, Type targetType, Object parameter, System.Globalization.CultureInfo culture)

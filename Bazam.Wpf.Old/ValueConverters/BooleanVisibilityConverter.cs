@@ -5,11 +5,15 @@ using System.Windows.Data;
 
 namespace Bazam.Wpf.ValueConverters
 {
-    public class StringVisibilityConverter : IValueConverter
+    public class BooleanVisibilityConverter : IValueConverter
     {
         public Object Convert(Object value, Type targetType, Object parameter, CultureInfo culture)
         {
-            return (value == null || string.IsNullOrEmpty(value.ToString()) ? Visibility.Collapsed : Visibility.Visible);
+            bool typedParam = System.Convert.ToBoolean(parameter);
+            bool typedInput = System.Convert.ToBoolean(value);
+
+            if (typedParam) typedInput = !typedInput;
+            return typedInput ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(Object value, Type targetType, Object parameter, System.Globalization.CultureInfo culture)

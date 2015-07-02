@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "A library that allows the developer to listen for global hotkeys in Windows.",
+  "authors": [ "Jammerware, LLC" ],
+  "tags": [ "Hotkeys" ],
+  "projectUrl": "https://github.com/jammerware/bazam",
+  "licenseUrl": "",
+
+  "dependencies": {
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Windows.Forms": "4.0.0.0"
+      }
+    }
+  }
+}

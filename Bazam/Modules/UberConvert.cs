@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
@@ -36,51 +35,6 @@ namespace Bazam.Modules
             if(throwOnError)
                 throw new ArgumentException("An invalid argument was passed to StringToByte.", "input");
             return output;
-        }
-
-        public static Color StringToColor(string input)
-        {
-            return StringToColor(input, true);
-        }
-
-        public static Color StringToColor(string input, bool throwOnError)
-        {
-            input = input.ToLower();
-
-            // check known named colors
-            string[] knownColors = Enum.GetNames(typeof(KnownColor));
-            foreach (string knownColor in knownColors) {
-                if (knownColor.ToLower() == input)
-                    return Color.FromName(input);
-            }
-
-            // not a known color. hopefully it's a hex representation...
-            input = input.Replace("#", string.Empty);
-            string r, g, b;
-
-            if (input.Length == 6 || input.Length == 3) {
-                if (input.Length == 6) {
-                    r = input.Substring(0, 2);
-                    g = input.Substring(2, 2);
-                    b = input.Substring(4, 2);
-                }
-                else {
-                    string inputRed = input.Substring(0, 1);
-                    string inputGreen = input.Substring(1, 1);
-                    string inputBlue = input.Substring(2, 1);
-
-                    r = inputRed + inputRed;
-                    g = inputGreen + inputGreen;
-                    b = inputBlue + inputBlue;
-                }
-
-                return Color.FromArgb(Convert.ToInt32(r, 16), Convert.ToInt32(g, 16), Convert.ToInt32(b, 16));
-            }
-
-            if(throwOnError)
-                throw new ArgumentException("An invalid argument was passed to StringToColor.", "input");
-
-            return default(Color);
         }
 
         public static DateTime StringToDateTime(string input)
@@ -161,24 +115,6 @@ namespace Bazam.Modules
             if (throwOnError)
                 throw new ArgumentException("An invalid argument was passed to StringToShort.", "input");
             return default(short);
-        }
-        #endregion
-
-        #region Color To...
-        public static string ColorToHex(Color input)
-        {
-            string hR = string.Format("{0:X}", input.R);
-            string hG = string.Format("{0:X}", input.G);
-            string hB = string.Format("{0:X}", input.B);
-
-            if (hR.Length < 2)
-                hR = "0" + hR;
-            if (hG.Length < 2)
-                hG = "0" + hG;
-            if (hB.Length < 2)
-                hB = "0" + hB;
-
-            return "#" + hR + hG + hB;
         }
         #endregion
 

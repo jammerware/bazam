@@ -1,20 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.Serialization;
+using System.Reflection;
 using System.Text;
 
 namespace Bazam.DestupidifiedCollections
 {
-    [Serializable()]
     public class DestupidifiedDictionary<TKey, TValue> : Dictionary<TKey, TValue>
     {
-        #region Constructors
-        public DestupidifiedDictionary() : base() { }
-
-        // constructor to support serialization
-        protected DestupidifiedDictionary(SerializationInfo info, StreamingContext context) : base(info, context) { }
-        #endregion
-
         #region Overridden Properties
         public new TValue this[TKey key] 
         {
@@ -45,7 +37,7 @@ namespace Bazam.DestupidifiedCollections
 
         public override bool Equals(object obj)
         {
-            if (typeof(DestupidifiedDictionary<TKey, TValue>).IsAssignableFrom(obj.GetType())) {
+            if (typeof(DestupidifiedDictionary<TKey, TValue>).GetTypeInfo().IsAssignableFrom(obj.GetType().GetTypeInfo())) {
                 return IsEqualTo(this, obj as DestupidifiedDictionary<TKey, TValue>);
             }
             return false;

@@ -1,0 +1,27 @@
+﻿{
+  "version": "3.0.0-*",
+  "description": "A helpful (if not exactly laser-focused) toolbox library for .NET.",
+  "authors": [ "Jammerware, LLC." ],
+  "tags": [ "Toolbox", "Utility" ],
+  "projectUrl": "https://github.com/jammerware/bazam",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "System.Reflection.TypeExtensions": "4.0.0-beta-23019",
+    "System.IO.Compression": "4.0.0-beta-23019"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Collections": "4.0.10-beta-22816",
+        "System.Linq": "4.0.0-beta-22816",
+        "System.Threading": "4.0.10-beta-22816",
+        "Microsoft.CSharp": "4.0.0-beta-22816",
+        "System.Runtime.Extensions": "4.0.10-beta-23019",
+        "System.Text.RegularExpressions": "4.0.10-beta-23019"
+      }
+    }
+  }
+}

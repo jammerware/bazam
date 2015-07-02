@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace Bazam.Modules
 {
@@ -8,7 +9,7 @@ namespace Bazam.Modules
     {
         public static IEnumerable<T> GetValues<T>() where T: struct
         {
-            if (!typeof(T).IsEnum) {
+            if (!typeof(T).GetTypeInfo().IsEnum) {
                 throw new EnuMasterException("When using EnuMaster.GetValues<T>(), the type argument must be an enumeration.");
             }
 
@@ -27,7 +28,7 @@ namespace Bazam.Modules
 
         public static T Parse<T>(string input, bool ignoreCase, bool throwExceptionOnFail) where T : struct
         {
-            if (!typeof(T).IsEnum) {
+            if (!typeof(T).GetTypeInfo().IsEnum) {
                 throw new InvalidOperationException("When using EnuMaster.Parse, the type argument must be an enumeration.");
             }
 

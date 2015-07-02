@@ -84,10 +84,6 @@
       <Project>{23d145e6-3eb8-4f20-813a-cec5db480e86}</Project>
       <Name>Bazam.Wpf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Bazam\Bazam.csproj">
-      <Project>{a3c95bae-380a-4738-808a-aac780591da0}</Project>
-      <Name>Bazam</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\core.xml">
