@@ -1,9 +1,9 @@
 {
     "version": "1.0.0-*",
-    "description": "",
-    "authors": [ "" ],
-    "tags": [ "" ],
-    "projectUrl": "",
+    "description": "A little library designed to making working with XML a little easier.",
+    "authors": [ "Jammerware LLC" ],
+    "tags": [ "Xml" ],
+    "projectUrl": "https://github.com/jammerware",
     "licenseUrl": "",
 
     "dependencies": {

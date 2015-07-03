@@ -347,7 +347,8 @@
   "projectFileDependencyGroups": {
     "": [
       "Bazam >= 3.0.0-*",
-      "System.Data.SqlClient >= 4.0.0-beta-23019"
+      "System.Data.SqlClient >= 4.0.0-beta-23019",
+      "System.Data.Common >= 4.0.0-beta-23019"
     ],
     "DNX,Version=v4.5.1": [
       "fx/System.Transactions >= 4.0.0.0"

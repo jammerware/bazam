@@ -76,16 +76,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Bazam.SharpZipLibHelpers\Bazam.SharpZipLibHelpers.csproj">
-      <Project>{1d7fddcc-296a-4a30-9d72-d958be101993}</Project>
-      <Name>Bazam.SharpZipLibHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Bazam.Wpf\Bazam.Wpf.csproj">
-      <Project>{23d145e6-3eb8-4f20-813a-cec5db480e86}</Project>
-      <Name>Bazam.Wpf</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Assets\core.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
