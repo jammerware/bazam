@@ -2,11 +2,60 @@
   "locked": false,
   "version": -9996,
   "targets": {
-    "DNX,Version=v4.5.1": {}
+    "DNX,Version=v4.5.1": {
+      "Expression.Blend.Sdk3/1.0.1340.1": {
+        "compile": {
+          "lib/net35/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {}
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Expression.Blend.Sdk3/1.0.1340.1": {
+      "sha512": "bTSwtX+yLwa6t6AIUaIzG0TYK8C+Cj7sXY7GbBKlk24c3zglHZakogEV+VbLUrkn4DOAQr6onc+gYGzIuepQvQ==",
+      "files": [
+        "Expression.Blend.Sdk3.1.0.1340.1.nupkg",
+        "Expression.Blend.Sdk3.1.0.1340.1.nupkg.sha512",
+        "Expression.Blend.Sdk3.nuspec",
+        "lib/net35/System.Windows.Interactivity.dll",
+        "lib/net35/System.Windows.Interactivity.xml"
+      ]
+    },
+    "System.Reflection.Extensions/4.0.0-beta-23019": {
+      "sha512": "fU02uzgKfO6lAUxR2eRHo6+JQ3/HqRi4zr38uOnieKtqV2dl8Cs2354gwYrjIxgxhkO1zLo70021P1cbpL7UIA==",
+      "files": [
+        "System.Reflection.Extensions.4.0.0-beta-23019.nupkg",
+        "System.Reflection.Extensions.4.0.0-beta-23019.nupkg.sha512",
+        "System.Reflection.Extensions.nuspec",
+        "lib/DNXCore50/System.Reflection.Extensions.dll",
+        "lib/net45/_._",
+        "lib/netcore50/System.Reflection.Extensions.dll",
+        "lib/win8/_._",
+        "ref/dotnet/System.Reflection.Extensions.dll",
+        "ref/net45/_._",
+        "ref/netcore50/System.Reflection.Extensions.dll",
+        "ref/win8/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Reflection.Extensions.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "": [],
-    "DNX,Version=v4.5.1": []
+    "": [
+      "System.Reflection.Extensions >= 4.0.0-beta-23019",
+      "Expression.Blend.Sdk3 >= 1.0.1340.1"
+    ],
+    "DNX,Version=v4.5.1": [
+      "fx/PresentationFramework >= 4.0.0.0",
+      "fx/PresentationCore >= 4.0.0.0",
+      "fx/WindowsBase >= 4.0.0.0",
+      "fx/UIAutomationProvider >= 4.0.0.0",
+      "fx/System.Xaml >= 4.0.0.0",
+      "fx/System.Windows.Forms >= 4.0.0.0",
+      "fx/System.Drawing >= 4.0.0.0"
+    ]
   }
 }

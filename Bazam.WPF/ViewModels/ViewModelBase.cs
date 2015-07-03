@@ -26,7 +26,7 @@ namespace Bazam.Wpf.ViewModels
             if (propInfo == null && fieldInfo == null)
                 throw new ArgumentException(string.Format(@"Expression ""{0}"" doesn't refer to a field or a property.", property.ToString()));
 
-            if (propInfo == null) {
+            if (propInfo == null) {                
                 propInfo = propInfo.ReflectedType.GetProperty(fieldInfo.Name.Substring(1));
                 if (propInfo == null)
                     throw new ArgumentException(string.Format(@"Expression ""{0}"" refers to a field, but a property with the name equal to the field's name excluding the leading '_' could not be found.", property.ToString()));

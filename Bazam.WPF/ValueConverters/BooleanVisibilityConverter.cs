@@ -16,7 +16,7 @@ namespace Bazam.Wpf.ValueConverters
             return typedInput ? Visibility.Visible : Visibility.Collapsed;
         }
 
-        public object ConvertBack(Object value, Type targetType, Object parameter, System.Globalization.CultureInfo culture)
+        public object ConvertBack(Object value, Type targetType, Object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
         }

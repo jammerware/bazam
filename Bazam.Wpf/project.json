@@ -1,15 +1,27 @@
-﻿{
-  "version": "1.0.0-*",
-  "description": "",
-  "authors": [ "" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
+{
+    "version": "1.0.0-*",
+    "description": "",
+    "authors": [ "" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
 
-  "dependencies": {
-  },
+    "dependencies": {
+        "System.Reflection.Extensions": "4.0.0-beta-23019",
+        "Expression.Blend.Sdk3": "1.0.1340.1"
+    },
 
-  "frameworks" : {
-    "dnx451": { }
-  }
+    "frameworks": {
+        "dnx451": {
+            "frameworkAssemblies": {
+                "PresentationFramework": "4.0.0.0",
+                "PresentationCore": "4.0.0.0",
+                "WindowsBase": "4.0.0.0",
+                "UIAutomationProvider": "4.0.0.0",
+                "System.Xaml": "4.0.0.0",
+                "System.Windows.Forms": "4.0.0.0",
+                "System.Drawing": "4.0.0.0"
+            }
+        }
+    }
 }
