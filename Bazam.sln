@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazam.Tests", "Bazam.Tests\Bazam.Tests.csproj", "{CF1A3B09-2601-4A94-A781-FD80EEC34079}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Sql", "Bazam.Sql\Bazam.Sql.xproj", "{EF7C5353-0C6C-400E-AF3C-6F2A283C9AC5}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.KeyAdept", "Bazam.KeyAdept\Bazam.KeyAdept.xproj", "{033A4F21-EEB9-447C-8CC5-8CF67E7620CF}"
@@ -31,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF1A3B09-2601-4A94-A781-FD80EEC34079}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EF7C5353-0C6C-400E-AF3C-6F2A283C9AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF7C5353-0C6C-400E-AF3C-6F2A283C9AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF7C5353-0C6C-400E-AF3C-6F2A283C9AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU

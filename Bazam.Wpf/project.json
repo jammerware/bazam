@@ -1,9 +1,9 @@
 {
-    "version": "1.0.0-*",
-    "description": "",
-    "authors": [ "" ],
-    "tags": [ "" ],
-    "projectUrl": "",
+    "version": "2.5.0-*",
+    "description": "A toolbox library for building applications in WPF.",
+    "authors": [ "Jammerware LLC" ],
+    "tags": [ "wpf" ],
+    "projectUrl": "https://github.com/jammerware/bazam",
     "licenseUrl": "",
 
     "dependencies": {
