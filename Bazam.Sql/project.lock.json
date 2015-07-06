@@ -3,24 +3,6 @@
   "version": -9996,
   "targets": {
     "DNX,Version=v4.5.1": {
-      "Bazam/3.0.0": {
-        "dependencies": {
-          "System.Reflection.TypeExtensions": "4.0.0-beta-23019",
-          "System.IO.Compression": "4.0.0-beta-23019"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Bazam.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Bazam.dll": {}
-        }
-      },
       "System.IO.Compression/4.0.0-beta-23019": {
         "frameworkAssemblies": [
           "System.IO.Compression"
@@ -40,18 +22,6 @@
     }
   },
   "libraries": {
-    "Bazam/3.0.0": {
-      "sha512": "L1oRFdUp6q7pFGGm38J8H764/VK1wuIfKSatxFzcO1RH6LIRbZcMRCscI9h6WhiPYNPKGxXbh32XuV8D7VGsug==",
-      "files": [
-        "Bazam.3.0.0.nupkg",
-        "Bazam.3.0.0.nupkg.sha512",
-        "Bazam.nuspec",
-        "lib/dnx451/Bazam.dll",
-        "lib/dnx451/Bazam.xml",
-        "lib/dnxcore50/Bazam.dll",
-        "lib/dnxcore50/Bazam.xml"
-      ]
-    },
     "System.IO.Compression/4.0.0-beta-23019": {
       "sha512": "WpKuk7P9BIdyWYoslAahQJtyaMgCMZZx7MF+VeuUZaiLtvKR9c5Sx3rXviDpVzAQH7/6yuuu+FNP/k+546Qd5g==",
       "files": [

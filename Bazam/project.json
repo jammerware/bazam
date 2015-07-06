@@ -1,8 +1,8 @@
 ﻿{
-  "version": "3.0.0-*",
+  "version": "3.0.1-*",
   "description": "A helpful (if not exactly laser-focused) toolbox library for .NET.",
   "authors": [ "Jammerware, LLC." ],
-  "tags": [ "Toolbox", "Utility" ],
+  "tags": [ "Toolbox" ],
   "projectUrl": "https://github.com/jammerware/bazam",
   "licenseUrl": "",
 
