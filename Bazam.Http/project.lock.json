@@ -388,12 +388,15 @@
           "lib/aspnetcore50/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.Extensions/4.0.0-beta-23019": {
+      "System.Runtime.Extensions/4.0.10-beta-23019": {
         "dependencies": {
-          "System.Runtime": "4.0.0-beta-23019"
+          "System.Runtime": "4.0.20-beta-23019"
         },
         "compile": {
           "ref/dotnet/System.Runtime.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Runtime.Handles/4.0.0-beta-23019": {
@@ -669,15 +672,15 @@
           "lib/DNXCore50/System.Threading.Overlapped.dll": {}
         }
       },
-      "System.Threading.Tasks/4.0.10-beta-22816": {
+      "System.Threading.Tasks/4.0.10-beta-23019": {
         "dependencies": {
-          "System.Runtime": "4.0.20-beta-22816"
+          "System.Runtime": "4.0.0-beta-23019"
         },
         "compile": {
-          "lib/contract/System.Threading.Tasks.dll": {}
+          "ref/dotnet/System.Threading.Tasks.dll": {}
         },
         "runtime": {
-          "lib/aspnetcore50/System.Threading.Tasks.dll": {}
+          "lib/DNXCore50/System.Threading.Tasks.dll": {}
         }
       },
       "System.Threading.ThreadPool/4.0.10-beta-23019": {
@@ -1222,19 +1225,18 @@
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Runtime.dll"
       ]
     },
-    "System.Runtime.Extensions/4.0.0-beta-23019": {
-      "sha512": "qeLtC8ymwLL2pUkLud74EPTn92D9ta/WZUM8oXO5pb3kfIZ3KE40HWieV0rqD5es0nHwv9im7S2nwMchwqmTFA==",
+    "System.Runtime.Extensions/4.0.10-beta-23019": {
+      "sha512": "G1DElWXwzoQgAWMZX63gwgSMckcLnxA70xTwZTx/VmQQG2+kqDuUoFVywdBeC9yaba0xK2h7Q01+H4/FGDClSg==",
       "files": [
-        "License.rtf",
-        "System.Runtime.Extensions.4.0.0-beta-23019.nupkg",
-        "System.Runtime.Extensions.4.0.0-beta-23019.nupkg.sha512",
+        "System.Runtime.Extensions.4.0.10-beta-23019.nupkg",
+        "System.Runtime.Extensions.4.0.10-beta-23019.nupkg.sha512",
         "System.Runtime.Extensions.nuspec",
-        "lib/net45/_._",
-        "lib/win8/_._",
+        "lib/DNXCore50/System.Runtime.Extensions.dll",
+        "lib/net46/_._",
+        "lib/netcore50/System.Runtime.Extensions.dll",
         "ref/dotnet/System.Runtime.Extensions.dll",
-        "ref/net45/_._",
-        "ref/netcore50/System.Runtime.Extensions.dll",
-        "ref/win8/_._"
+        "ref/net46/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Runtime.Extensions.dll"
       ]
     },
     "System.Runtime.Handles/4.0.0-beta-23019": {
@@ -1471,17 +1473,18 @@
         "ref/net46/System.Threading.Overlapped.dll"
       ]
     },
-    "System.Threading.Tasks/4.0.10-beta-22816": {
-      "sha512": "e7TcoQuIPQ4bvkkCY2ulU8NFvj8XqYxsGpD3fAq1KajAlpx5j327Q13lKxlGPb7ouHQydKHCy5G1ZGuydb0DAA==",
+    "System.Threading.Tasks/4.0.10-beta-23019": {
+      "sha512": "drgS00Han7hhU1Wpw8aVCrVrZxaSlHddAsHZTomgZqDioG3IFblN09RMeNtaL4m5DLHt+cuzyvNFKUMdjxiklg==",
       "files": [
-        "License.rtf",
-        "System.Threading.Tasks.4.0.10-beta-22816.nupkg",
-        "System.Threading.Tasks.4.0.10-beta-22816.nupkg.sha512",
+        "System.Threading.Tasks.4.0.10-beta-23019.nupkg",
+        "System.Threading.Tasks.4.0.10-beta-23019.nupkg.sha512",
         "System.Threading.Tasks.nuspec",
-        "lib/aspnetcore50/System.Threading.Tasks.dll",
-        "lib/contract/System.Threading.Tasks.dll",
-        "lib/net45/System.Threading.Tasks.dll",
-        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Threading.Tasks.dll"
+        "lib/DNXCore50/System.Threading.Tasks.dll",
+        "lib/net46/_._",
+        "lib/netcore50/System.Threading.Tasks.dll",
+        "ref/dotnet/System.Threading.Tasks.dll",
+        "ref/net46/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Threading.Tasks.dll"
       ]
     },
     "System.Threading.ThreadPool/4.0.10-beta-23019": {
@@ -1507,6 +1510,7 @@
       "System.Linq >= 4.0.0-beta-22816",
       "System.Threading >= 4.0.10-beta-22816",
       "Microsoft.CSharp >= 4.0.0-beta-22816",
+      "System.IO.FileSystem >= 4.0.0-beta-23019",
       "System.Net.Http >= 4.0.0-beta-23019",
       "System.Runtime >= 4.0.20-beta-22816"
     ]

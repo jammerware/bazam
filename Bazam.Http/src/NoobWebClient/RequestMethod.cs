@@ -1,4 +1,4 @@
-﻿namespace Bazam.Web
+﻿namespace Bazam.Http
 {
     public enum RequestMethod
     {

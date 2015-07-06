@@ -8,7 +8,7 @@
 
     "dependencies": {
         "System.Xml.XDocument": "4.0.10-beta-22816",
-        "Bazam": "2.6.8.0"
+        "Bazam": "3.0.0-*"
     },
 
     "frameworks": {

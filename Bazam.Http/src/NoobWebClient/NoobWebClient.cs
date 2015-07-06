@@ -2,11 +2,30 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Bazam.Web
+namespace Bazam.Http
 {
     public class NoobWebClient
     {
-        public Task<string> GetResponse(string address, RequestMethod requestType, params string[] values)
+        public Task DownloadFile(string url, string fileName)
+        {
+            HttpClient client = new HttpClient();
+            client.GetAsync(url).ContinueWith(
+                async (requestTask) => {
+                    HttpResponseMessage response = requestTask.Result;
+                    response.EnsureSuccessStatusCode();
+                    await response.Content.ReadAsFileAsync(fileName);
+                }
+            );
+
+            return null;
+        }
+
+        public Task<string> DownloadString(string url)
+        {
+            return DownloadString(url, RequestMethod.Get);
+        }
+
+        public Task<string> DownloadString(string address, RequestMethod requestType, params string[] values)
         {
             Dictionary<string, string> dictValues = new Dictionary<string, string>();
 
@@ -22,10 +41,10 @@ namespace Bazam.Web
                 }
             }
 
-            return GetResponse(address, requestType, dictValues);
+            return DownloadString(address, requestType, dictValues);
         }
 
-        public async Task<string> GetResponse(string address, RequestMethod requestType, Dictionary<string, string> bodyValues = null)
+        public async Task<string> DownloadString(string address, RequestMethod requestType, Dictionary<string, string> bodyValues = null)
         {
             FormUrlEncodedContent content = null;
             if (bodyValues != null) {
