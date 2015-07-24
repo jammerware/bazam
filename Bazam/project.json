@@ -1,5 +1,5 @@
 ﻿{
-  "version": "3.0.1-*",
+  "version": "3.0.2-*",
   "description": "A helpful (if not exactly laser-focused) toolbox library for .NET.",
   "authors": [ "Jammerware, LLC." ],
   "tags": [ "Toolbox" ],
