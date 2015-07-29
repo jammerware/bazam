@@ -6,26 +6,24 @@ namespace Bazam.Http
 {
     public class NoobWebClient
     {
-        public Task DownloadFile(string url, string fileName)
+        public async Task DownloadFile(string url, string fileName)
         {
             HttpClient client = new HttpClient();
-            client.GetAsync(url).ContinueWith(
+            await client.GetAsync(url).ContinueWith(
                 async (requestTask) => {
                     HttpResponseMessage response = requestTask.Result;
                     response.EnsureSuccessStatusCode();
                     await response.Content.ReadAsFileAsync(fileName);
                 }
             );
-
-            return null;
         }
 
-        public Task<string> DownloadString(string url)
+        public async Task<string> DownloadString(string url)
         {
-            return DownloadString(url, RequestMethod.Get);
+            return await DownloadString(url, RequestMethod.Get);
         }
 
-        public Task<string> DownloadString(string address, RequestMethod requestType, params string[] values)
+        public async Task<string> DownloadString(string address, RequestMethod requestType, params string[] values)
         {
             Dictionary<string, string> dictValues = new Dictionary<string, string>();
 
@@ -41,7 +39,7 @@ namespace Bazam.Http
                 }
             }
 
-            return DownloadString(address, requestType, dictValues);
+            return await DownloadString(address, requestType, dictValues);
         }
 
         public async Task<string> DownloadString(string address, RequestMethod requestType, Dictionary<string, string> bodyValues = null)
