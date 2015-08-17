@@ -7,7 +7,7 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Bazam": "3.0.0-*",
+    "Bazam": "3.0.2-*",
     "CommonMark.NET": "0.9.1",
     "Microsoft.AspNet.Mvc.Core": "6.0.0-beta4",
     "Microsoft.Net.Http.Server": "1.0.0-beta4"

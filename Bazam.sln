@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Sql", "Bazam.Sql\Bazam.Sql.xproj", "{EF7C5353-0C6C-400E-AF3C-6F2A283C9AC5}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Wpf", "Bazam.Wpf\Bazam.Wpf.xproj", "{35DAD66A-F2BA-49C0-BAFD-F099860AAFC3}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Http", "Bazam.Http\Bazam.Http.xproj", "{AB9053AF-2590-4F17-9A8C-B368E4C7E5C0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Twitter", "Bazam.Twitter\Bazam.Twitter.xproj", "{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{AB9053AF-2590-4F17-9A8C-B368E4C7E5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB9053AF-2590-4F17-9A8C-B368E4C7E5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB9053AF-2590-4F17-9A8C-B368E4C7E5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
