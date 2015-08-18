@@ -6,11 +6,18 @@ using System.Reflection;
 
 namespace Bazam.Wpf.ViewModels
 {
-    public abstract class ViewModelBase<T> : INotifyPropertyChanged
+    public abstract class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void ChangeProperty(Expression<Func<T, object>> property, object value)
+        public void RaisePropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null) {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        protected void ChangeProperty<InheritedType>(Expression<Func<InheritedType, object>> property, object value)
         {
             MemberExpression member = property.Body as MemberExpression;
 
@@ -26,7 +33,7 @@ namespace Bazam.Wpf.ViewModels
             if (propInfo == null && fieldInfo == null)
                 throw new ArgumentException(string.Format(@"Expression ""{0}"" doesn't refer to a field or a property.", property.ToString()));
 
-            if (propInfo == null) {                
+            if (propInfo == null) {
                 propInfo = propInfo.ReflectedType.GetProperty(fieldInfo.Name.Substring(1));
                 if (propInfo == null)
                     throw new ArgumentException(string.Format(@"Expression ""{0}"" refers to a field, but a property with the name equal to the field's name excluding the leading '_' could not be found.", property.ToString()));
@@ -51,12 +58,13 @@ namespace Bazam.Wpf.ViewModels
                 }
             }
         }
+    }
 
-        public void RaisePropertyChanged(string propertyName)
+    public abstract class ViewModelBase<T> : ViewModelBase
+    {
+        protected void ChangeProperty(Expression<Func<T, object>> property, object value)
         {
-            if (PropertyChanged != null) {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
+            ChangeProperty<T>(property, value);
         }
     }
 }
