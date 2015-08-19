@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Http;
 using Newtonsoft.Json.Linq;
 
 namespace Bazam.Twitter
@@ -70,7 +67,7 @@ namespace Bazam.Twitter
                 client.BaseAddress = new Uri("https://api.twitter.com/oauth2/token");
                 client.DefaultRequestHeaders.Add("Authorization", "Basic " + encoded);
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
-                client.DefaultRequestHeaders.AcceptCharset.Add(new StringWithQualityHeaderValue("charset=UTF-8"));
+                client.DefaultRequestHeaders.AcceptCharset.Add(new StringWithQualityHeaderValue("UTF-8"));
 
                 // compose body data
                 Dictionary<string, string> bodyData = new Dictionary<string, string>();
@@ -86,8 +83,9 @@ namespace Bazam.Twitter
                     JToken json = JValue.Parse(response);
                     _BearerToken = json["access_token"].ToString();
                 }
-
-                throw new HttpRequestException("Something went wrong when attempting to obtain a Twitter bearer token: " + responseMessage.ReasonPhrase);
+                else {
+                    throw new HttpRequestException("Something went wrong when attempting to obtain a Twitter bearer token: " + responseMessage.ReasonPhrase);
+                }
             }
         }
 
