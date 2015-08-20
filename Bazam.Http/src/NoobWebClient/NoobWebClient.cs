@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -9,13 +10,14 @@ namespace Bazam.Http
         public async Task DownloadFile(string url, string fileName)
         {
             HttpClient client = new HttpClient();
-            await client.GetAsync(url).ContinueWith(
-                async (requestTask) => {
-                    HttpResponseMessage response = requestTask.Result;
-                    response.EnsureSuccessStatusCode();
-                    await response.Content.ReadAsFileAsync(fileName);
-                }
-            );
+            HttpResponseMessage responseMsg = await client.GetAsync(url);
+
+            if (responseMsg.IsSuccessStatusCode) {
+                await responseMsg.Content.ReadAsFileAsync(fileName);
+            }
+            else {
+                throw new Exception("Something went wrong during an attempted file download: " + responseMsg.ReasonPhrase);
+            }
         }
 
         public async Task<string> DownloadString(string url)
