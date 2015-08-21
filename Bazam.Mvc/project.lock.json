@@ -3,24 +3,6 @@
   "version": -9996,
   "targets": {
     "DNX,Version=v4.5.1": {
-      "Bazam/3.0.2": {
-        "dependencies": {
-          "System.Reflection.TypeExtensions": "4.0.0-beta-23019",
-          "System.IO.Compression": "4.0.0-beta-23019"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Bazam.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Bazam.dll": {}
-        }
-      },
       "CommonMark.NET/0.9.1": {
         "compile": {
           "lib/net45/CommonMark.dll": {}
@@ -695,25 +677,6 @@
       "System.Runtime/4.0.0": {}
     },
     "DNXCore,Version=v5.0": {
-      "Bazam/3.0.2": {
-        "dependencies": {
-          "System.Reflection.TypeExtensions": "4.0.0-beta-23019",
-          "System.IO.Compression": "4.0.0-beta-23019",
-          "System.Collections": "4.0.10-beta-22816",
-          "System.Linq": "4.0.0-beta-22816",
-          "System.Threading": "4.0.10-beta-22816",
-          "Microsoft.CSharp": "4.0.0-beta-22816",
-          "System.Runtime": "4.0.20-beta-23019",
-          "System.Runtime.Extensions": "4.0.10-beta-23019",
-          "System.Text.RegularExpressions": "4.0.10-beta-23019"
-        },
-        "compile": {
-          "lib/dnxcore50/Bazam.dll": {}
-        },
-        "runtime": {
-          "lib/dnxcore50/Bazam.dll": {}
-        }
-      },
       "CommonMark.NET/0.9.1": {
         "compile": {
           "lib/aspnetcore50/CommonMark.dll": {}
@@ -2049,18 +2012,6 @@
     }
   },
   "libraries": {
-    "Bazam/3.0.2": {
-      "sha512": "hX3UrUyiiMxxEQ8mlwUINevypzmZaEZ+p4S22G1b4I8bqEz2Rpj3KUN1q+UL2M/ltF9YzCepNUgwxaujx6cSLA==",
-      "files": [
-        "Bazam.3.0.2.nupkg",
-        "Bazam.3.0.2.nupkg.sha512",
-        "Bazam.nuspec",
-        "lib/dnx451/Bazam.dll",
-        "lib/dnx451/Bazam.xml",
-        "lib/dnxcore50/Bazam.dll",
-        "lib/dnxcore50/Bazam.xml"
-      ]
-    },
     "CommonMark.NET/0.9.1": {
       "sha512": "NYs7ud2odEH0rPWg5uE6B2JXCw5JKhkEouJeCf2d+kQFacyo2H+GNbKiT4Dyb53eLtZ/auI40oKcBFjjYR6wNw==",
       "files": [
