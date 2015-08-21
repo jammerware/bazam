@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,15 +6,15 @@ namespace Bazam.Extensions
 {
     public static class EnumerableExtensions
     {
-        public static string Concatenate(this IEnumerable helper)
+        public static string Concatenate<T>(this IEnumerable<T> helper)
         {
             return Concatenate(helper, ",");
         }
 
-        public static string Concatenate(this IEnumerable helper, string delimiter)
+        public static string Concatenate<T>(this IEnumerable<T> helper, string delimiter)
         {
             string retVal = string.Empty;
-            foreach (object item in helper) {
+            foreach (T item in helper) {
                 retVal += item.ToString() + delimiter;
             }
 
