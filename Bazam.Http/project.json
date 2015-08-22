@@ -15,13 +15,13 @@
     },
     "dnxcore50": {
       "dependencies": {
-        "System.Collections": "4.0.10-beta-22816",
-        "System.Linq": "4.0.0-beta-22816",
-        "System.Threading": "4.0.10-beta-22816",
-        "Microsoft.CSharp": "4.0.0-beta-22816",
-        "System.IO.FileSystem": "4.0.0-beta-23019",
-        "System.Net.Http": "4.0.0-beta-23019",
-        "System.Runtime": "4.0.20-beta-22816"
+        "System.Collections": "4.0.10",
+        "System.Linq": "4.0.0",
+        "System.Threading": "4.0.10",
+        "Microsoft.CSharp": "4.0.0",
+        "System.IO.FileSystem": "4.0.0",
+        "System.Net.Http": "4.0.0",
+        "System.Runtime": "4.0.20"
       }
     }
   }
