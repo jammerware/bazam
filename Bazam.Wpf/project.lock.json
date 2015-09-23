@@ -3,26 +3,36 @@
   "version": -9996,
   "targets": {
     "DNX,Version=v4.5.1": {
-      "Expression.Blend.Sdk3/1.0.1340.1": {
+      "Expression.Blend.Sdk/1.0.2": {
         "compile": {
-          "lib/net35/System.Windows.Interactivity.dll": {}
+          "lib/net45/System.Windows.Interactivity.dll": {}
         },
         "runtime": {
-          "lib/net35/System.Windows.Interactivity.dll": {}
+          "lib/net45/System.Windows.Interactivity.dll": {}
         }
       },
       "System.Reflection.Extensions/4.0.0-beta-23019": {}
     }
   },
   "libraries": {
-    "Expression.Blend.Sdk3/1.0.1340.1": {
-      "sha512": "bTSwtX+yLwa6t6AIUaIzG0TYK8C+Cj7sXY7GbBKlk24c3zglHZakogEV+VbLUrkn4DOAQr6onc+gYGzIuepQvQ==",
+    "Expression.Blend.Sdk/1.0.2": {
+      "sha512": "2rOHxr7HsJ4gVc75JymaFDS80VvhT/1rpm50LHUKRmsykE1cdM4n2rmcntcTSG08/S1ZedLuSWQpb3yBY3xfUQ==",
       "files": [
-        "Expression.Blend.Sdk3.1.0.1340.1.nupkg",
-        "Expression.Blend.Sdk3.1.0.1340.1.nupkg.sha512",
-        "Expression.Blend.Sdk3.nuspec",
-        "lib/net35/System.Windows.Interactivity.dll",
-        "lib/net35/System.Windows.Interactivity.xml"
+        "Expression.Blend.Sdk.1.0.2.nupkg",
+        "Expression.Blend.Sdk.1.0.2.nupkg.sha512",
+        "Expression.Blend.Sdk.nuspec",
+        "lib/net40-client/System.Windows.Interactivity.dll",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/netcore45/Windows.UI.Interactivity.dll",
+        "lib/netcore45/Windows.UI.Interactivity.pri",
+        "lib/netcore45/Windows.UI.Interactivity.xml",
+        "lib/netcore451/Windows.UI.Interactivity.dll",
+        "lib/netcore451/Windows.UI.Interactivity.pri",
+        "lib/netcore451/Windows.UI.Interactivity.xml",
+        "lib/sl4-wp71/System.Windows.Interactivity.dll",
+        "lib/sl40/System.Windows.Interactivity.dll",
+        "lib/sl50/System.Windows.Interactivity.dll",
+        "lib/wp8/System.Windows.Interactivity.dll"
       ]
     },
     "System.Reflection.Extensions/4.0.0-beta-23019": {
@@ -46,7 +56,7 @@
   "projectFileDependencyGroups": {
     "": [
       "System.Reflection.Extensions >= 4.0.0-beta-23019",
-      "Expression.Blend.Sdk3 >= 1.0.1340.1"
+      "Expression.Blend.Sdk >= 1.0.2"
     ],
     "DNX,Version=v4.5.1": [
       "fx/PresentationFramework >= 4.0.0.0",
