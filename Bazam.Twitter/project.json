@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3-*",
+  "version": "1.0.5-*",
   "description": "A library designed to make basic Twitter search API access simple in .NET vNext.",
   "authors": [ "Jammerware, LLC" ],
   "tags": [ "Twitter" ],
@@ -7,19 +7,19 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "System.Linq": "4.0.0-beta-23019",
-    "System.Threading": "4.0.10-beta-23019",
-    "Microsoft.CSharp": "4.0.0-beta-23019",
     "Newtonsoft.Json": "7.0.1",
-    "System.Net.Http": "4.0.0",
-    "Microsoft.AspNet.Http.Abstractions": "1.0.0-beta5"
+    "System.Net.Http": "4.0.0"
   },
 
   "frameworks": {
     "dnx451": { },
     "dnxcore50": {
-      "System.Collections": "4.0.10-beta-23019",
-      "System.Runtime": "4.0.20-beta-23019"
+      "Microsoft.AspNet.Http.Abstractions": "1.0.0-beta5",
+      "Microsoft.CSharp": "4.0.0",
+      "System.Collections": "4.0.10",
+      "System.Linq": "4.0.0",
+      "System.Runtime": "4.0.20",
+      "System.Threading": "4.0.10"
     },
     "net451": { },
     "net452": { },
