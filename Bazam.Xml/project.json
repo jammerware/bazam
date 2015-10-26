@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1-*",
+  "version": "1.0.2-*",
   "description": "A little library designed to making working with XML a little easier.",
   "authors": [ "Jammerware LLC" ],
   "tags": [ "Xml" ],
@@ -7,22 +7,28 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "System.Xml.XDocument": "4.0.10-beta-22816",
-    "Bazam": "3.0.5-*"
+    "Bazam": "3.0.6-*"
   },
 
   "frameworks": {
-    "dnx451": { },
+    "dnx451": {
+      "dependencies": {
+        "System.Xml.XDocument": "4.0.10-beta-22816"
+      }
+    },
     "dnxcore50": {
       "dependencies": {
         "System.Collections": "4.0.10",
         "System.Linq": "4.0.0",
         "System.Threading": "4.0.10",
+        "System.Xml.XDocument": "4.0.10-beta-22816",
         "Microsoft.CSharp": "4.0.0"
       }
     },
-    "net451": { },
-    "net452": { },
-    "net46": { }
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Xml.Linq": "4.0.0.0"
+      }
+    }
   }
 }
