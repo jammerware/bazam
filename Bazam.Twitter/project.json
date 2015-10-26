@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2-*",
+  "version": "1.0.3-*",
   "description": "A library designed to make basic Twitter search API access simple in .NET vNext.",
   "authors": [ "Jammerware, LLC" ],
   "tags": [ "Twitter" ],
@@ -20,6 +20,9 @@
     "dnxcore50": {
       "System.Collections": "4.0.10-beta-23019",
       "System.Runtime": "4.0.20-beta-23019"
-    }
+    },
+    "net451": { },
+    "net452": { },
+    "net46": { }
   }
 }

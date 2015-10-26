@@ -3,6 +3,23 @@
   "version": -9996,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "Bazam.Http/1.1.2": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Bazam.Http.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Bazam.Http.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.9": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -29,6 +46,24 @@
       }
     },
     "DNXCore,Version=v5.0": {
+      "Bazam.Http/1.1.2": {
+        "dependencies": {
+          "Microsoft.Net.Http": "2.2.22",
+          "System.Collections": "4.0.10-beta-22816",
+          "System.Linq": "4.0.0-beta-22816",
+          "System.Threading": "4.0.10-beta-22816",
+          "Microsoft.CSharp": "4.0.0-beta-22816",
+          "System.IO.FileSystem": "4.0.0-beta-23019",
+          "System.Net.Http": "4.0.0-beta-23019",
+          "System.Runtime": "4.0.20-beta-22816"
+        },
+        "compile": {
+          "lib/dnxcore50/Bazam.Http.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Bazam.Http.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.9": {
         "dependencies": {
           "Microsoft.Bcl.Build": "1.0.14"
@@ -519,9 +554,102 @@
           "lib/DNXCore50/System.Threading.Tasks.dll": {}
         }
       }
+    },
+    ".NETFramework,Version=v4.5.1": {
+      "Bazam.Http/1.1.2": {},
+      "Microsoft.Bcl/1.1.9": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
+      "Microsoft.Net.Http/2.2.22": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http",
+          "System.Net.Http.WebRequest"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "Bazam.Http/1.1.2": {},
+      "Microsoft.Bcl/1.1.9": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
+      "Microsoft.Net.Http/2.2.22": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http",
+          "System.Net.Http.WebRequest"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "Bazam.Http/1.1.2": {},
+      "Microsoft.Bcl/1.1.9": {
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {},
+      "Microsoft.Net.Http/2.2.22": {
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http",
+          "System.Net.Http.WebRequest"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Extensions.dll": {},
+          "lib/net45/System.Net.Http.Primitives.dll": {}
+        }
+      }
     }
   },
   "libraries": {
+    "Bazam.Http/1.1.2": {
+      "sha512": "oSgOpqrLJm2Hb1upmWIEMnwHNQv92BV1qXxkC3aIR48ee2wRZMbG1LsPMv24eeT461Gxvnb2ANJd+QDyq4yXxg==",
+      "files": [
+        "Bazam.Http.1.1.2.nupkg",
+        "Bazam.Http.1.1.2.nupkg.sha512",
+        "Bazam.Http.nuspec",
+        "lib/dnx451/Bazam.Http.dll",
+        "lib/dnx451/Bazam.Http.xml",
+        "lib/dnxcore50/Bazam.Http.dll",
+        "lib/dnxcore50/Bazam.Http.xml"
+      ]
+    },
     "Microsoft.Bcl/1.1.9": {
       "sha512": "USQ55innJy8K+tAXvVa1O8dUTp2s7pmJ5cJj6Tl02HtGc2xBDj0P2QH5620HbGXIWKWYhydoeQF8Rm/JRDBGhw==",
       "files": [
@@ -1858,6 +1986,9 @@
       "System.IO.FileSystem >= 4.0.0",
       "System.Net.Http >= 4.0.0",
       "System.Runtime >= 4.0.20"
-    ]
+    ],
+    ".NETFramework,Version=v4.5.1": [],
+    ".NETFramework,Version=v4.5.2": [],
+    ".NETFramework,Version=v4.6": []
   }
 }

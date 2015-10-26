@@ -11,6 +11,36 @@
           "lib/20/ICSharpCode.SharpZipLib.dll": {}
         }
       }
+    },
+    ".NETFramework,Version=v4.5.1": {
+      "SharpZipLib/0.86.0": {
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "SharpZipLib/0.86.0": {
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "SharpZipLib/0.86.0": {
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -31,6 +61,9 @@
     "": [
       "SharpZipLib >= 0.86.0"
     ],
-    "DNX,Version=v4.5.1": []
+    "DNX,Version=v4.5.1": [],
+    ".NETFramework,Version=v4.5.1": [],
+    ".NETFramework,Version=v4.5.2": [],
+    ".NETFramework,Version=v4.6": []
   }
 }

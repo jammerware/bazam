@@ -1,8 +1,8 @@
 ﻿{
-  "version": "1.1.0-*",
+  "version": "1.1.1-*",
   "description": "A toolbox library for making web apps with .NET MVC.",
   "authors": [ "Jammerware LLC" ],
-  "tags": [ ".NET", "MVC", "Toolbox" ],
+  "tags": [ ".NET", "MVC" ],
   "projectUrl": "https://github.com/jammerware/bazam/tree/master/Bazam.Mvc",
   "licenseUrl": "",
 
@@ -17,10 +17,10 @@
     "dnx451": { },
     "dnxcore50": {
       "dependencies": {
-        "System.Collections": "4.0.10-beta-22816",
-        "System.Linq": "4.0.0-beta-22816",
-        "System.Threading": "4.0.10-beta-22816",
-        "Microsoft.CSharp": "4.0.0-beta-22816"
+        "System.Collections": "4.0.10",
+        "System.Linq": "4.0.0",
+        "System.Threading": "4.0.10",
+        "Microsoft.CSharp": "4.0.0"
       }
     }
   }

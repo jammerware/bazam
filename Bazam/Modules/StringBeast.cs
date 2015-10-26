@@ -64,14 +64,15 @@ namespace Bazam.Modules
 
         public static string Decompress(string input)
         {
-            byte[] bytes = Convert.FromBase64String(input);
+            var bytes = Encoding.UTF8.GetBytes(input);
+            
             using (var msi = new MemoryStream(bytes))
             using (var mso = new MemoryStream()) {
                 using (var gs = new GZipStream(msi, CompressionMode.Decompress)) {
                     CopyTo(gs, mso);
                 }
 
-                return Encoding.UTF8.GetString(mso.ToArray());
+                return Convert.ToBase64String(mso.ToArray());
             }
         }
         #endregion

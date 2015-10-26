@@ -2,12 +2,24 @@
   "locked": false,
   "version": -9996,
   "targets": {
-    "DNX,Version=v4.5.1": {}
+    "DNX,Version=v4.5.1": {},
+    ".NETFramework,Version=v4.5.1": {},
+    ".NETFramework,Version=v4.5.2": {},
+    ".NETFramework,Version=v4.6": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
     "": [],
     "DNX,Version=v4.5.1": [
+      "fx/System.Windows.Forms >= 4.0.0.0"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "fx/System.Windows.Forms >= 4.0.0.0"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "fx/System.Windows.Forms >= 4.0.0.0"
+    ],
+    ".NETFramework,Version=v4.6": [
       "fx/System.Windows.Forms >= 4.0.0.0"
     ]
   }

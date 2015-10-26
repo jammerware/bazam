@@ -1,5 +1,5 @@
 ﻿{
-  "version": "3.0.4-*",
+  "version": "3.0.5-*",
   "description": "A helpful (if not exactly laser-focused) toolbox library for .NET.",
   "authors": [ "Jammerware, LLC." ],
   "tags": [ "Toolbox" ],
@@ -23,6 +23,9 @@
         "System.Runtime.Extensions": "4.0.10",
         "System.Text.RegularExpressions": "4.0.10"
       }
-    }
+    },
+    "net451": { },
+    "net452": { },
+    "net46": { }
   }
 }

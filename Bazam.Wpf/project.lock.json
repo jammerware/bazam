@@ -12,6 +12,39 @@
         }
       },
       "System.Reflection.Extensions/4.0.0-beta-23019": {}
+    },
+    ".NETFramework,Version=v4.5.1": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {}
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {}
+    },
+    ".NETFramework,Version=v4.6": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {}
     }
   },
   "libraries": {
@@ -59,6 +92,33 @@
       "Expression.Blend.Sdk >= 1.0.2"
     ],
     "DNX,Version=v4.5.1": [
+      "fx/PresentationFramework >= 4.0.0.0",
+      "fx/PresentationCore >= 4.0.0.0",
+      "fx/WindowsBase >= 4.0.0.0",
+      "fx/UIAutomationProvider >= 4.0.0.0",
+      "fx/System.Xaml >= 4.0.0.0",
+      "fx/System.Windows.Forms >= 4.0.0.0",
+      "fx/System.Drawing >= 4.0.0.0"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "fx/PresentationFramework >= 4.0.0.0",
+      "fx/PresentationCore >= 4.0.0.0",
+      "fx/WindowsBase >= 4.0.0.0",
+      "fx/UIAutomationProvider >= 4.0.0.0",
+      "fx/System.Xaml >= 4.0.0.0",
+      "fx/System.Windows.Forms >= 4.0.0.0",
+      "fx/System.Drawing >= 4.0.0.0"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "fx/PresentationFramework >= 4.0.0.0",
+      "fx/PresentationCore >= 4.0.0.0",
+      "fx/WindowsBase >= 4.0.0.0",
+      "fx/UIAutomationProvider >= 4.0.0.0",
+      "fx/System.Xaml >= 4.0.0.0",
+      "fx/System.Windows.Forms >= 4.0.0.0",
+      "fx/System.Drawing >= 4.0.0.0"
+    ],
+    ".NETFramework,Version=v4.6": [
       "fx/PresentationFramework >= 4.0.0.0",
       "fx/PresentationCore >= 4.0.0.0",
       "fx/WindowsBase >= 4.0.0.0",

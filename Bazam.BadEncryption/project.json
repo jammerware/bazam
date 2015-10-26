@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-*",
+  "version": "1.0.1-*",
   "description": "A great library for encrypting things weakly. Good for when you don't want something to be human-readable. Bad when you want it to be secure in any real way. Caveat nerd!\n\nNo .NET Core support yet because RijndaelManaged isn't ported yet.",
   "authors": [ "Jammerware LLC" ],
   "tags": [ "Encryption" ],
@@ -9,6 +9,9 @@
   "dependencies": { },
 
   "frameworks": {
-    "dnx451": { }
+    "dnx451": { },
+    "net451": { },
+    "net452": { },
+    "net46": { }
   }
 }

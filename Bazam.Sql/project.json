@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-*",
+  "version": "1.0.1-*",
   "description": "A library that simplifies ADO.NET database queries to SQL.",
   "authors": [ "Jammerware LLC" ],
   "tags": [ "sql", "ado.net" ],
@@ -7,11 +7,29 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Bazam": "3.0.2-*"
+    "Bazam": "3.0.5-*"
   },
 
   "frameworks": {
     "dnx451": {
+      "frameworkAssemblies": {
+        "System.Transactions": "4.0.0.0",
+        "System.Data": "4.0.0.0"
+      }
+    },
+    "net451": {
+      "frameworkAssemblies": {
+        "System.Transactions": "4.0.0.0",
+        "System.Data": "4.0.0.0"
+      }
+    },
+    "net452": {
+      "frameworkAssemblies": {
+        "System.Transactions": "4.0.0.0",
+        "System.Data": "4.0.0.0"
+      }
+    },
+    "net46": {
       "frameworkAssemblies": {
         "System.Transactions": "4.0.0.0",
         "System.Data": "4.0.0.0"

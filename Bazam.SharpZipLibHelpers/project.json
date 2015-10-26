@@ -1,16 +1,19 @@
 {
-    "version": "1.1.0-*",
-    "description": "A Bazam wrapper around SharpZipLib (http://icsharpcode.github.io/SharpZipLib/) designed to make it even easier to zip and unzip with a set of common defaults.",
-    "authors": [ "Jammerware LLC" ],
-    "tags": [ "SharpZipLib" ],
-    "projectUrl": "",
-    "licenseUrl": "",
+  "version": "1.1.1-*",
+  "description": "A Bazam wrapper around SharpZipLib (http://icsharpcode.github.io/SharpZipLib/) designed to make it even easier to zip and unzip with a set of common defaults.",
+  "authors": [ "Jammerware LLC" ],
+  "tags": [ "SharpZipLib" ],
+  "projectUrl": "",
+  "licenseUrl": "",
 
-    "dependencies": {
-        "SharpZipLib": "0.86.0"
-    },
+  "dependencies": {
+    "SharpZipLib": "0.86.0"
+  },
 
-    "frameworks": {
-        "dnx451": { }
-    }
+  "frameworks": {
+    "dnx451": { },
+    "net451": { },
+    "net452": { },
+    "net46": { }
+  }
 }
