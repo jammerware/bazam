@@ -2,8 +2,24 @@
   "locked": false,
   "version": -9996,
   "targets": {
-    "DNX,Version=v4.5.1": {},
-    "DNXCore,Version=v5.0": {
+    "DNX,Version=v4.5.1": {
+      "Bazam/3.0.6": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Bazam.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Bazam.dll": {}
+        }
+      }
+    },
+    ".NETPlatform,Version=v5.0": {
+      "Bazam/3.0.6": {},
       "Microsoft.CSharp/4.0.0": {
         "dependencies": {
           "System.Runtime": "4.0.20",
@@ -32,13 +48,10 @@
       },
       "System.Collections/4.0.10": {
         "dependencies": {
-          "System.Runtime": "4.0.20"
+          "System.Runtime": "4.0.0"
         },
         "compile": {
           "ref/dotnet/System.Collections.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Collections.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.0.10": {
@@ -47,9 +60,6 @@
         },
         "compile": {
           "ref/dotnet/System.Diagnostics.Debug.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Diagnostics.Debug.dll": {}
         }
       },
       "System.Dynamic.Runtime/4.0.0": {
@@ -69,9 +79,6 @@
         },
         "compile": {
           "ref/dotnet/System.Globalization.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Globalization.dll": {}
         }
       },
       "System.IO/4.0.0": {
@@ -142,11 +149,6 @@
           "lib/dotnet/System.ObjectModel.dll": {}
         }
       },
-      "System.Private.Uri/4.0.0": {
-        "runtime": {
-          "lib/DNXCore50/System.Private.Uri.dll": {}
-        }
-      },
       "System.Reflection/4.0.10": {
         "dependencies": {
           "System.Runtime": "4.0.20",
@@ -155,9 +157,6 @@
         },
         "compile": {
           "ref/dotnet/System.Reflection.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Reflection.dll": {}
         }
       },
       "System.Reflection.Extensions/4.0.0": {
@@ -167,9 +166,6 @@
         },
         "compile": {
           "ref/dotnet/System.Reflection.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Reflection.Extensions.dll": {}
         }
       },
       "System.Reflection.Primitives/4.0.0": {
@@ -178,9 +174,6 @@
         },
         "compile": {
           "ref/dotnet/System.Reflection.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Reflection.Primitives.dll": {}
         }
       },
       "System.Reflection.TypeExtensions/4.0.0": {
@@ -190,9 +183,6 @@
         },
         "compile": {
           "ref/dotnet/System.Reflection.TypeExtensions.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Reflection.TypeExtensions.dll": {}
         }
       },
       "System.Resources.ResourceManager/4.0.0": {
@@ -203,20 +193,11 @@
         },
         "compile": {
           "ref/dotnet/System.Resources.ResourceManager.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Resources.ResourceManager.dll": {}
         }
       },
       "System.Runtime/4.0.20": {
-        "dependencies": {
-          "System.Private.Uri": "4.0.0"
-        },
         "compile": {
           "ref/dotnet/System.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Runtime.dll": {}
         }
       },
       "System.Runtime.Extensions/4.0.10": {
@@ -225,9 +206,6 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Runtime.Extensions.dll": {}
         }
       },
       "System.Runtime.Handles/4.0.0": {
@@ -236,9 +214,6 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.Handles.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Runtime.Handles.dll": {}
         }
       },
       "System.Runtime.InteropServices/4.0.20": {
@@ -250,9 +225,6 @@
         },
         "compile": {
           "ref/dotnet/System.Runtime.InteropServices.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Runtime.InteropServices.dll": {}
         }
       },
       "System.Text.Encoding/4.0.0": {
@@ -286,9 +258,6 @@
         },
         "compile": {
           "ref/dotnet/System.Threading.dll": {}
-        },
-        "runtime": {
-          "lib/DNXCore50/System.Threading.dll": {}
         }
       },
       "System.Threading.Tasks/4.0.0": {
@@ -300,11 +269,74 @@
         }
       }
     },
-    ".NETFramework,Version=v4.5.1": {},
-    ".NETFramework,Version=v4.5.2": {},
-    ".NETFramework,Version=v4.6": {}
+    ".NETFramework,Version=v4.5.1": {
+      "Bazam/3.0.6": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net451/Bazam.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Bazam.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "Bazam/3.0.6": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net452/Bazam.dll": {}
+        },
+        "runtime": {
+          "lib/net452/Bazam.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "Bazam/3.0.6": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net46/Bazam.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Bazam.dll": {}
+        }
+      }
+    }
   },
   "libraries": {
+    "Bazam/3.0.6": {
+      "sha512": "cS7zCwWsv/Z7GdR1RfIRzfh97SSEfB4IaPLy69OspbqQXfo46lMcO2q29aZOFYbwXP1TQ7/ginCmFrhfw2Hczw==",
+      "files": [
+        "Bazam.3.0.6.nupkg",
+        "Bazam.3.0.6.nupkg.sha512",
+        "Bazam.nuspec",
+        "lib/dnx451/Bazam.dll",
+        "lib/dnx451/Bazam.xml",
+        "lib/dnxcore50/Bazam.dll",
+        "lib/dnxcore50/Bazam.xml",
+        "lib/net451/Bazam.dll",
+        "lib/net451/Bazam.xml",
+        "lib/net452/Bazam.dll",
+        "lib/net452/Bazam.xml",
+        "lib/net46/Bazam.dll",
+        "lib/net46/Bazam.xml"
+      ]
+    },
     "Microsoft.CSharp/4.0.0": {
       "serviceable": true,
       "sha512": "oWqeKUxHXdK6dL2CFjgMcaBISbkk+AqEg+yvJHE4DElNzS4QaTsCflgkkqZwVlWby1Dg9zo9n+iCAMFefFdJ/A==",
@@ -684,20 +716,6 @@
         "ref/net46/_._",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
-      ]
-    },
-    "System.Private.Uri/4.0.0": {
-      "serviceable": true,
-      "sha512": "CtuxaCKcRIvPcsqquVl3mPp79EDZPMr2UogfiFCxCs+t2z1VjbpQsKNs1GHZ8VQetqbk1mr0V1yAfMe6y8CHDA==",
-      "files": [
-        "System.Private.Uri.4.0.0.nupkg",
-        "System.Private.Uri.4.0.0.nupkg.sha512",
-        "System.Private.Uri.nuspec",
-        "lib/DNXCore50/System.Private.Uri.dll",
-        "lib/netcore50/System.Private.Uri.dll",
-        "ref/dnxcore50/_._",
-        "ref/netcore50/_._",
-        "runtimes/win8-aot/lib/netcore50/System.Private.Uri.dll"
       ]
     },
     "System.Reflection/4.0.10": {
@@ -1158,7 +1176,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "DNX,Version=v4.5.1": [],
-    "DNXCore,Version=v5.0": [
+    ".NETPlatform,Version=v5.0": [
       "System.Collections >= 4.0.10",
       "System.Linq >= 4.0.0",
       "System.Threading >= 4.0.10",

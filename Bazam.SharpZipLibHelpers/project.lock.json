@@ -3,6 +3,23 @@
   "version": -9996,
   "targets": {
     "DNX,Version=v4.5.1": {
+      "Bazam.SharpZipLibHelpers/1.1.1": {
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Bazam.SharpZipLibHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Bazam.SharpZipLibHelpers.dll": {}
+        }
+      },
       "SharpZipLib/0.86.0": {
         "compile": {
           "lib/20/ICSharpCode.SharpZipLib.dll": {}
@@ -13,6 +30,23 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
+      "Bazam.SharpZipLibHelpers/1.1.1": {
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net451/Bazam.SharpZipLibHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Bazam.SharpZipLibHelpers.dll": {}
+        }
+      },
       "SharpZipLib/0.86.0": {
         "compile": {
           "lib/20/ICSharpCode.SharpZipLib.dll": {}
@@ -23,6 +57,23 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
+      "Bazam.SharpZipLibHelpers/1.1.1": {
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net452/Bazam.SharpZipLibHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/net452/Bazam.SharpZipLibHelpers.dll": {}
+        }
+      },
       "SharpZipLib/0.86.0": {
         "compile": {
           "lib/20/ICSharpCode.SharpZipLib.dll": {}
@@ -33,6 +84,23 @@
       }
     },
     ".NETFramework,Version=v4.6": {
+      "Bazam.SharpZipLibHelpers/1.1.1": {
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net46/Bazam.SharpZipLibHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Bazam.SharpZipLibHelpers.dll": {}
+        }
+      },
       "SharpZipLib/0.86.0": {
         "compile": {
           "lib/20/ICSharpCode.SharpZipLib.dll": {}
@@ -44,6 +112,22 @@
     }
   },
   "libraries": {
+    "Bazam.SharpZipLibHelpers/1.1.1": {
+      "sha512": "e8IC77HbsnnNHMALluVgcN7AUbhgyYvmv9HWXbzVmy9ghRDda4AREtNgw0sgT+s1Bqm2cfqlyRrTe3070qxFWg==",
+      "files": [
+        "Bazam.SharpZipLibHelpers.1.1.1.nupkg",
+        "Bazam.SharpZipLibHelpers.1.1.1.nupkg.sha512",
+        "Bazam.SharpZipLibHelpers.nuspec",
+        "lib/dnx451/Bazam.SharpZipLibHelpers.dll",
+        "lib/dnx451/Bazam.SharpZipLibHelpers.xml",
+        "lib/net451/Bazam.SharpZipLibHelpers.dll",
+        "lib/net451/Bazam.SharpZipLibHelpers.xml",
+        "lib/net452/Bazam.SharpZipLibHelpers.dll",
+        "lib/net452/Bazam.SharpZipLibHelpers.xml",
+        "lib/net46/Bazam.SharpZipLibHelpers.dll",
+        "lib/net46/Bazam.SharpZipLibHelpers.xml"
+      ]
+    },
     "SharpZipLib/0.86.0": {
       "sha512": "5DbS1SlKLMi+WG00Cm0ueYf2oyXJrowETQk8nx96rmdjTuHsA3laPykGV7Sxi0R5Xxfx0Kh/EfacAZ1f6M7y/g==",
       "files": [

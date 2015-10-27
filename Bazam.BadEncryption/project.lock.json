@@ -2,44 +2,12 @@
   "locked": false,
   "version": -9996,
   "targets": {
-    "DNX,Version=v4.5.1": {
-      "Bazam.BadEncryption/1.0.0": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Bazam.BadEncryption.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Bazam.BadEncryption.dll": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.5.1": {
-      "Bazam.BadEncryption/1.0.0": {}
-    },
-    ".NETFramework,Version=v4.5.2": {
-      "Bazam.BadEncryption/1.0.0": {}
-    },
-    ".NETFramework,Version=v4.6": {
-      "Bazam.BadEncryption/1.0.0": {}
-    }
+    "DNX,Version=v4.5.1": {},
+    ".NETFramework,Version=v4.5.1": {},
+    ".NETFramework,Version=v4.5.2": {},
+    ".NETFramework,Version=v4.6": {}
   },
-  "libraries": {
-    "Bazam.BadEncryption/1.0.0": {
-      "sha512": "UOU3QKvjFgcLY6fJ+GQh0gv4KLg5rOq5+zDYAH6j1AwEE7JsdXD8xDy+OF4I0jViXS9u7FEbZS4Ax45GUVAaBw==",
-      "files": [
-        "Bazam.BadEncryption.1.0.0.nupkg",
-        "Bazam.BadEncryption.1.0.0.nupkg.sha512",
-        "Bazam.BadEncryption.nuspec",
-        "lib/dnx451/Bazam.BadEncryption.dll",
-        "lib/dnx451/Bazam.BadEncryption.xml"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "": [],
     "DNX,Version=v4.5.1": [],

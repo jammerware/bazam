@@ -2,664 +2,6 @@
   "locked": false,
   "version": -9996,
   "targets": {
-    "DNX,Version=v4.5.1": {
-      "CommonMark.NET/0.9.1": {
-        "compile": {
-          "lib/net45/CommonMark.dll": {}
-        },
-        "runtime": {
-          "lib/net45/CommonMark.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Authentication/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.DataProtection": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Core": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
-          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Authentication.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Authentication.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Authorization/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.OptionsModel": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Authorization.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Authorization.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Cors.Core/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.ConfigurationModel.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.OptionsModel": "1.0.0-beta4",
-          "Microsoft.AspNet.Http": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Cors.Core.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Cors.Core.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Cryptography.Internal/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Cryptography.Internal.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Cryptography.Internal.dll": {}
-        }
-      },
-      "Microsoft.AspNet.DataProtection/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Cryptography.Internal": "1.0.0-beta4",
-          "Microsoft.AspNet.DataProtection.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.OptionsModel": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "System.Security",
-          "System.Xml",
-          "System.Xml.Linq",
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.DataProtection.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.DataProtection.dll": {}
-        }
-      },
-      "Microsoft.AspNet.DataProtection.Interfaces/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.DataProtection.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.DataProtection.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Diagnostics.Interfaces/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Diagnostics.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Diagnostics.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.AspNet.FeatureModel/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.FeatureModel.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.FeatureModel.dll": {}
-        }
-      },
-      "Microsoft.AspNet.FileProviders/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.FileProviders.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.FileProviders.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.FileProviders.dll": {}
-        }
-      },
-      "Microsoft.AspNet.FileProviders.Interfaces/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.Caching.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.FileProviders.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.FileProviders.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Hosting/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Hosting.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4",
-          "Microsoft.AspNet.FileProviders": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Core": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
-          "Microsoft.Framework.Logging": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
-          "Newtonsoft.Json": "6.0.6"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Hosting.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Hosting.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Hosting.Interfaces/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Http": "1.0.0-beta4",
-          "Microsoft.AspNet.FeatureModel": "1.0.0-beta4",
-          "Microsoft.AspNet.FileProviders.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Hosting.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Hosting.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Http/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Http.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Http.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Http.Core/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.FeatureModel": "1.0.0-beta4",
-          "Microsoft.AspNet.Http": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
-          "Microsoft.AspNet.WebUtilities": "1.0.0-beta4",
-          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4",
-          "Microsoft.Net.Http.Headers": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Http.Core.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Http.Core.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Http.Extensions/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Http": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4",
-          "Microsoft.Net.Http.Headers": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Http.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Http.Extensions.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Http.Interfaces/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Http.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Http.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.AspNet.JsonPatch/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
-          "Newtonsoft.Json": "6.0.6"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.JsonPatch.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.JsonPatch.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Mvc.Core/6.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Authentication": "1.0.0-beta4",
-          "Microsoft.AspNet.Authorization": "1.0.0-beta4",
-          "Microsoft.AspNet.Cors.Core": "1.0.0-beta4",
-          "Microsoft.AspNet.DataProtection": "1.0.0-beta4",
-          "Microsoft.AspNet.Diagnostics.Interfaces": "1.0.0-beta4",
-          "Microsoft.AspNet.FileProviders": "1.0.0-beta4",
-          "Microsoft.AspNet.Hosting": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
-          "Microsoft.AspNet.Mvc.ModelBinding": "6.0.0-beta4",
-          "Microsoft.AspNet.Routing": "1.0.0-beta4",
-          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.WebEncoders": "1.0.0-beta4",
-          "Microsoft.AspNet.JsonPatch": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Mvc.Core.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Mvc.Core.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Mvc.ModelBinding/6.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Http.Core": "1.0.0-beta4",
-          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
-          "Microsoft.Net.Http.Headers": "1.0.0-beta4",
-          "Newtonsoft.Json": "6.0.6"
-        },
-        "frameworkAssemblies": [
-          "System.ComponentModel.DataAnnotations",
-          "System.Runtime.Serialization",
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Mvc.ModelBinding.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Mvc.ModelBinding.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Routing/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
-          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.OptionsModel": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.Routing.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.Routing.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebUtilities/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.AspNet.WebUtilities.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.AspNet.WebUtilities.dll": {}
-        }
-      },
-      "Microsoft.Framework.Caching.Interfaces/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.Caching.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.Caching.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.Framework.ConfigurationModel/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.ConfigurationModel.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.ConfigurationModel.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.ConfigurationModel.dll": {}
-        }
-      },
-      "Microsoft.Framework.ConfigurationModel.Interfaces/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.ConfigurationModel.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.ConfigurationModel.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.Framework.DependencyInjection/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
-        }
-      },
-      "Microsoft.Framework.DependencyInjection.Interfaces/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.DependencyInjection.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.DependencyInjection.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.Framework.Logging/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "System.Collections.Concurrent",
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.Logging.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.Logging.dll": {}
-        }
-      },
-      "Microsoft.Framework.Logging.Interfaces/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.Logging.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.Logging.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.Framework.OptionsModel/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
-          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
-        }
-      },
-      "Microsoft.Framework.Runtime.Interfaces/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.Runtime.Interfaces.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.Runtime.Interfaces.dll": {}
-        }
-      },
-      "Microsoft.Framework.WebEncoders/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
-          "Microsoft.Framework.OptionsModel": "1.0.0-beta4",
-          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.WebEncoders.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.WebEncoders.dll": {}
-        }
-      },
-      "Microsoft.Framework.WebEncoders.Core/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.WebEncoders.Core.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.WebEncoders.Core.dll": {}
-        }
-      },
-      "Microsoft.Net.Http.Headers/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Net.Http.Headers.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Net.Http.Headers.dll": {}
-        }
-      },
-      "Microsoft.Net.Http.Server/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Framework.Logging": "1.0.0-beta4",
-          "Microsoft.Net.WebSockets": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
-        }
-      },
-      "Microsoft.Net.WebSocketAbstractions/1.0.0-beta4": {
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/net45/Microsoft.Net.WebSocketAbstractions.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Net.WebSocketAbstractions.dll": {}
-        }
-      },
-      "Microsoft.Net.WebSockets/1.0.0-beta4": {
-        "dependencies": {
-          "Microsoft.Net.WebSocketAbstractions": "1.0.0-beta4"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/net45/Microsoft.Net.WebSockets.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Net.WebSockets.dll": {}
-        }
-      },
-      "Newtonsoft.Json/6.0.6": {
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
-        }
-      }
-    },
     "DNXCore,Version=v5.0": {
       "CommonMark.NET/0.9.1": {
         "compile": {
@@ -1345,12 +687,12 @@
           "lib/aspnetcore50/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Newtonsoft.Json/6.0.6": {
+      "Newtonsoft.Json/7.0.1": {
         "compile": {
-          "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll": {}
+          "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll": {}
         }
       },
       "System.Collections/4.0.10": {
@@ -2010,6 +1352,664 @@
           "lib/aspnetcore50/System.Xml.XDocument.dll": {}
         }
       }
+    },
+    "DNX,Version=v4.5.1": {
+      "CommonMark.NET/0.9.1": {
+        "compile": {
+          "lib/net45/CommonMark.dll": {}
+        },
+        "runtime": {
+          "lib/net45/CommonMark.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Authentication/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.DataProtection": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Core": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
+          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Authentication.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Authentication.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Authorization/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.OptionsModel": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Authorization.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Authorization.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Cors.Core/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.ConfigurationModel.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.OptionsModel": "1.0.0-beta4",
+          "Microsoft.AspNet.Http": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Cors.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Cors.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Cryptography.Internal/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Cryptography.Internal.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Cryptography.Internal.dll": {}
+        }
+      },
+      "Microsoft.AspNet.DataProtection/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Cryptography.Internal": "1.0.0-beta4",
+          "Microsoft.AspNet.DataProtection.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.OptionsModel": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "System.Security",
+          "System.Xml",
+          "System.Xml.Linq",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.DataProtection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.DataProtection.dll": {}
+        }
+      },
+      "Microsoft.AspNet.DataProtection.Interfaces/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.DataProtection.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.DataProtection.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Diagnostics.Interfaces/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Diagnostics.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Diagnostics.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FeatureModel/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.FeatureModel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.FeatureModel.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.FileProviders.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.FileProviders.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.FileProviders.dll": {}
+        }
+      },
+      "Microsoft.AspNet.FileProviders.Interfaces/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.Caching.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.FileProviders.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.FileProviders.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Hosting/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Hosting.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4",
+          "Microsoft.AspNet.FileProviders": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Core": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
+          "Microsoft.Framework.Logging": "1.0.0-beta4",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Hosting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Hosting.Interfaces/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Http": "1.0.0-beta4",
+          "Microsoft.AspNet.FeatureModel": "1.0.0-beta4",
+          "Microsoft.AspNet.FileProviders.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Hosting.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Hosting.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Http/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Http.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Http.Core/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.FeatureModel": "1.0.0-beta4",
+          "Microsoft.AspNet.Http": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
+          "Microsoft.AspNet.WebUtilities": "1.0.0-beta4",
+          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4",
+          "Microsoft.Net.Http.Headers": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Http.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Http.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Http.Extensions/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Http": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4",
+          "Microsoft.Net.Http.Headers": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Http.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Http.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Http.Interfaces/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Http.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Http.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.AspNet.JsonPatch/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.JsonPatch.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.JsonPatch.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc.Core/6.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Authentication": "1.0.0-beta4",
+          "Microsoft.AspNet.Authorization": "1.0.0-beta4",
+          "Microsoft.AspNet.Cors.Core": "1.0.0-beta4",
+          "Microsoft.AspNet.DataProtection": "1.0.0-beta4",
+          "Microsoft.AspNet.Diagnostics.Interfaces": "1.0.0-beta4",
+          "Microsoft.AspNet.FileProviders": "1.0.0-beta4",
+          "Microsoft.AspNet.Hosting": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
+          "Microsoft.AspNet.Mvc.ModelBinding": "6.0.0-beta4",
+          "Microsoft.AspNet.Routing": "1.0.0-beta4",
+          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.WebEncoders": "1.0.0-beta4",
+          "Microsoft.AspNet.JsonPatch": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc.ModelBinding/6.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Http.Core": "1.0.0-beta4",
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
+          "Microsoft.Framework.DependencyInjection": "1.0.0-beta4",
+          "Microsoft.Net.Http.Headers": "1.0.0-beta4",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Runtime.Serialization",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.ModelBinding.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Mvc.ModelBinding.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Routing/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.AspNet.Http.Extensions": "1.0.0-beta4",
+          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.OptionsModel": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.Routing.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.Routing.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebUtilities/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.AspNet.WebUtilities.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.AspNet.WebUtilities.dll": {}
+        }
+      },
+      "Microsoft.Framework.Caching.Interfaces/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Caching.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Caching.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.Framework.ConfigurationModel/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.ConfigurationModel.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.Runtime.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.ConfigurationModel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.ConfigurationModel.dll": {}
+        }
+      },
+      "Microsoft.Framework.ConfigurationModel.Interfaces/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.ConfigurationModel.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.ConfigurationModel.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
+          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Framework.DependencyInjection.Interfaces/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.DependencyInjection.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.Framework.Logging/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.Logging.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "System.Collections.Concurrent",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Logging.dll": {}
+        }
+      },
+      "Microsoft.Framework.Logging.Interfaces/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Logging.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Logging.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.Framework.OptionsModel/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.ConfigurationModel": "1.0.0-beta4",
+          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.OptionsModel.dll": {}
+        }
+      },
+      "Microsoft.Framework.Runtime.Interfaces/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Runtime.Interfaces.dll": {}
+        }
+      },
+      "Microsoft.Framework.WebEncoders/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.DependencyInjection.Interfaces": "1.0.0-beta4",
+          "Microsoft.Framework.OptionsModel": "1.0.0-beta4",
+          "Microsoft.Framework.WebEncoders.Core": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.WebEncoders.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.WebEncoders.dll": {}
+        }
+      },
+      "Microsoft.Framework.WebEncoders.Core/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.WebEncoders.Core.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.WebEncoders.Core.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Headers/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Net.Http.Headers.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Net.Http.Headers.dll": {}
+        }
+      },
+      "Microsoft.Net.Http.Server/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Framework.Logging": "1.0.0-beta4",
+          "Microsoft.Net.WebSockets": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Net.Http.Server.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSocketAbstractions/1.0.0-beta4": {
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Net.WebSocketAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Net.WebSocketAbstractions.dll": {}
+        }
+      },
+      "Microsoft.Net.WebSockets/1.0.0-beta4": {
+        "dependencies": {
+          "Microsoft.Net.WebSocketAbstractions": "1.0.0-beta4"
+        },
+        "frameworkAssemblies": [
+          "mscorlib",
+          "System",
+          "System.Core",
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Net.WebSockets.dll": {}
+        }
+      },
+      "Newtonsoft.Json/7.0.1": {
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -2622,11 +2622,11 @@
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/Microsoft.Win32.Registry.dll"
       ]
     },
-    "Newtonsoft.Json/6.0.6": {
-      "sha512": "w26uZNyCG5VeoKiEOJ4+9/o8koSofLKwHl7WLreIcp0U6r57L7WiRXmjp8MTKFw6dYNZ9AE0lw69WYbIhUsU9Q==",
+    "Newtonsoft.Json/7.0.1": {
+      "sha512": "q3V4KLetMLnt1gpAVWgtXnHjKs0UG/RalBc29u2ZKxd5t5Ze4JBL5WiiYIklJyK/5CRiIiNwigVQUo0FgbsuWA==",
       "files": [
-        "Newtonsoft.Json.6.0.6.nupkg",
-        "Newtonsoft.Json.6.0.6.nupkg.sha512",
+        "Newtonsoft.Json.7.0.1.nupkg",
+        "Newtonsoft.Json.7.0.1.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -2636,12 +2636,10 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
-        "lib/netcore45/Newtonsoft.Json.dll",
-        "lib/netcore45/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
         "tools/install.ps1"
       ]
     },
@@ -3727,14 +3725,15 @@
       "Bazam >= 3.0.2-*",
       "CommonMark.NET >= 0.9.1",
       "Microsoft.AspNet.Mvc.Core >= 6.0.0-beta4",
-      "Microsoft.Net.Http.Server >= 1.0.0-beta4"
+      "Microsoft.Net.Http.Server >= 1.0.0-beta4",
+      "Newtonsoft.Json >= 7.0.1"
     ],
-    "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": [
       "System.Collections >= 4.0.10",
       "System.Linq >= 4.0.0",
       "System.Threading >= 4.0.10",
       "Microsoft.CSharp >= 4.0.0"
-    ]
+    ],
+    "DNX,Version=v4.5.1": []
   }
 }
