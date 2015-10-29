@@ -1,9 +1,10 @@
 {
   "locked": false,
-  "version": -9996,
+  "version": 2,
   "targets": {
     "DNX,Version=v4.5.1": {
       "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
         "compile": {
           "lib/net45/System.Windows.Interactivity.dll": {}
         },
@@ -11,10 +12,19 @@
           "lib/net45/System.Windows.Interactivity.dll": {}
         }
       },
-      "System.Reflection.Extensions/4.0.0-beta-23019": {}
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
     },
     ".NETFramework,Version=v4.5.1": {
       "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
         "compile": {
           "lib/net45/System.Windows.Interactivity.dll": {}
         },
@@ -22,10 +32,19 @@
           "lib/net45/System.Windows.Interactivity.dll": {}
         }
       },
-      "System.Reflection.Extensions/4.0.0-beta-23019": {}
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
     },
     ".NETFramework,Version=v4.5.2": {
       "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
         "compile": {
           "lib/net45/System.Windows.Interactivity.dll": {}
         },
@@ -33,10 +52,19 @@
           "lib/net45/System.Windows.Interactivity.dll": {}
         }
       },
-      "System.Reflection.Extensions/4.0.0-beta-23019": {}
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
     },
     ".NETFramework,Version=v4.6": {
       "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
         "compile": {
           "lib/net45/System.Windows.Interactivity.dll": {}
         },
@@ -44,11 +72,180 @@
           "lib/net45/System.Windows.Interactivity.dll": {}
         }
       },
-      "System.Reflection.Extensions/4.0.0-beta-23019": {}
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x86": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win7-x86": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win7-x64": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win7-x86": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win7-x64": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win7-x86": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6/win7-x64": {
+      "Expression.Blend.Sdk/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.0-beta-23019": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
     }
   },
   "libraries": {
     "Expression.Blend.Sdk/1.0.2": {
+      "type": "package",
       "sha512": "2rOHxr7HsJ4gVc75JymaFDS80VvhT/1rpm50LHUKRmsykE1cdM4n2rmcntcTSG08/S1ZedLuSWQpb3yBY3xfUQ==",
       "files": [
         "Expression.Blend.Sdk.1.0.2.nupkg",
@@ -62,18 +259,16 @@
         "lib/netcore451/Windows.UI.Interactivity.dll",
         "lib/netcore451/Windows.UI.Interactivity.pri",
         "lib/netcore451/Windows.UI.Interactivity.xml",
-        "lib/sl4-wp71/System.Windows.Interactivity.dll",
         "lib/sl40/System.Windows.Interactivity.dll",
+        "lib/sl4-wp71/System.Windows.Interactivity.dll",
         "lib/sl50/System.Windows.Interactivity.dll",
         "lib/wp8/System.Windows.Interactivity.dll"
       ]
     },
     "System.Reflection.Extensions/4.0.0-beta-23019": {
+      "type": "package",
       "sha512": "fU02uzgKfO6lAUxR2eRHo6+JQ3/HqRi4zr38uOnieKtqV2dl8Cs2354gwYrjIxgxhkO1zLo70021P1cbpL7UIA==",
       "files": [
-        "System.Reflection.Extensions.4.0.0-beta-23019.nupkg",
-        "System.Reflection.Extensions.4.0.0-beta-23019.nupkg.sha512",
-        "System.Reflection.Extensions.nuspec",
         "lib/DNXCore50/System.Reflection.Extensions.dll",
         "lib/net45/_._",
         "lib/netcore50/System.Reflection.Extensions.dll",
@@ -82,7 +277,10 @@
         "ref/net45/_._",
         "ref/netcore50/System.Reflection.Extensions.dll",
         "ref/win8/_._",
-        "runtimes/win8-aot/lib/netcore50/System.Reflection.Extensions.dll"
+        "runtimes/win8-aot/lib/netcore50/System.Reflection.Extensions.dll",
+        "System.Reflection.Extensions.4.0.0-beta-23019.nupkg",
+        "System.Reflection.Extensions.4.0.0-beta-23019.nupkg.sha512",
+        "System.Reflection.Extensions.nuspec"
       ]
     }
   },
@@ -92,40 +290,40 @@
       "Expression.Blend.Sdk >= 1.0.2"
     ],
     "DNX,Version=v4.5.1": [
-      "fx/PresentationFramework >= 4.0.0.0",
-      "fx/PresentationCore >= 4.0.0.0",
-      "fx/WindowsBase >= 4.0.0.0",
-      "fx/UIAutomationProvider >= 4.0.0.0",
-      "fx/System.Xaml >= 4.0.0.0",
-      "fx/System.Windows.Forms >= 4.0.0.0",
-      "fx/System.Drawing >= 4.0.0.0"
+      "fx/PresentationFramework >= 4.0.0",
+      "fx/PresentationCore >= 4.0.0",
+      "fx/WindowsBase >= 4.0.0",
+      "fx/UIAutomationProvider >= 4.0.0",
+      "fx/System.Xaml >= 4.0.0",
+      "fx/System.Windows.Forms >= 4.0.0",
+      "fx/System.Drawing >= 4.0.0"
     ],
     ".NETFramework,Version=v4.5.1": [
-      "fx/PresentationFramework >= 4.0.0.0",
-      "fx/PresentationCore >= 4.0.0.0",
-      "fx/WindowsBase >= 4.0.0.0",
-      "fx/UIAutomationProvider >= 4.0.0.0",
-      "fx/System.Xaml >= 4.0.0.0",
-      "fx/System.Windows.Forms >= 4.0.0.0",
-      "fx/System.Drawing >= 4.0.0.0"
+      "fx/PresentationFramework >= 4.0.0",
+      "fx/PresentationCore >= 4.0.0",
+      "fx/WindowsBase >= 4.0.0",
+      "fx/UIAutomationProvider >= 4.0.0",
+      "fx/System.Xaml >= 4.0.0",
+      "fx/System.Windows.Forms >= 4.0.0",
+      "fx/System.Drawing >= 4.0.0"
     ],
     ".NETFramework,Version=v4.5.2": [
-      "fx/PresentationFramework >= 4.0.0.0",
-      "fx/PresentationCore >= 4.0.0.0",
-      "fx/WindowsBase >= 4.0.0.0",
-      "fx/UIAutomationProvider >= 4.0.0.0",
-      "fx/System.Xaml >= 4.0.0.0",
-      "fx/System.Windows.Forms >= 4.0.0.0",
-      "fx/System.Drawing >= 4.0.0.0"
+      "fx/PresentationFramework >= 4.0.0",
+      "fx/PresentationCore >= 4.0.0",
+      "fx/WindowsBase >= 4.0.0",
+      "fx/UIAutomationProvider >= 4.0.0",
+      "fx/System.Xaml >= 4.0.0",
+      "fx/System.Windows.Forms >= 4.0.0",
+      "fx/System.Drawing >= 4.0.0"
     ],
     ".NETFramework,Version=v4.6": [
-      "fx/PresentationFramework >= 4.0.0.0",
-      "fx/PresentationCore >= 4.0.0.0",
-      "fx/WindowsBase >= 4.0.0.0",
-      "fx/UIAutomationProvider >= 4.0.0.0",
-      "fx/System.Xaml >= 4.0.0.0",
-      "fx/System.Windows.Forms >= 4.0.0.0",
-      "fx/System.Drawing >= 4.0.0.0"
+      "fx/PresentationFramework >= 4.0.0",
+      "fx/PresentationCore >= 4.0.0",
+      "fx/WindowsBase >= 4.0.0",
+      "fx/UIAutomationProvider >= 4.0.0",
+      "fx/System.Xaml >= 4.0.0",
+      "fx/System.Windows.Forms >= 4.0.0",
+      "fx/System.Drawing >= 4.0.0"
     ]
   }
 }

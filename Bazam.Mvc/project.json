@@ -7,22 +7,14 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Bazam": "3.0.2-*",
-    "CommonMark.NET": "0.9.1",
+    "Bazam": "3.0.7-*",
     "Microsoft.AspNet.Mvc.Core": "6.0.0-beta4",
     "Microsoft.Net.Http.Server": "1.0.0-beta4",
+    "CommonMark.NET": "0.9.1",
     "Newtonsoft.Json": "7.0.1"
   },
 
   "frameworks": {
-    "dnxcore50": {
-      "dependencies": {
-        "System.Collections": "4.0.10",
-        "System.Linq": "4.0.0",
-        "System.Threading": "4.0.10",
-        "Microsoft.CSharp": "4.0.0"
-      }
-    },
     "dnx451": { }
   }
 }

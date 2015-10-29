@@ -15,7 +15,6 @@
     "dnx451": { },
     "dotnet": {
       "dependencies": {
-        "Microsoft.AspNet.Http.Abstractions": "1.0.0-beta5",
         "Microsoft.CSharp": "4.0.0",
         "System.Collections": "4.0.10",
         "System.Linq": "4.0.0",

@@ -1,32 +1,105 @@
 {
   "locked": false,
-  "version": -9996,
+  "version": 2,
   "targets": {
-    "DNX,Version=v4.5.1": {},
-    ".NETFramework,Version=v4.5.1": {},
-    ".NETFramework,Version=v4.5.2": {},
-    ".NETFramework,Version=v4.6": {}
+    "DNX,Version=v4.5.1": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1"
+      }
+    },
+    ".NETFramework,Version=v4.5.1": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
+      }
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2"
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6"
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x86": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1"
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1"
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win7-x86": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win7-x64": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.1"
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win7-x86": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2"
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win7-x64": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2"
+      }
+    },
+    ".NETFramework,Version=v4.6/win7-x86": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6"
+      }
+    },
+    ".NETFramework,Version=v4.6/win7-x64": {
+      "Bazam/3.0.7": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6"
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Bazam/3.0.7": {
+      "type": "project",
+      "path": "../Bazam/project.json"
+    }
+  },
   "projectFileDependencyGroups": {
     "": [
       "Bazam >= 3.0.5-*"
     ],
     "DNX,Version=v4.5.1": [
-      "fx/System.Transactions >= 4.0.0.0",
-      "fx/System.Data >= 4.0.0.0"
+      "fx/System.Transactions >= 4.0.0",
+      "fx/System.Data >= 4.0.0"
     ],
     ".NETFramework,Version=v4.5.1": [
-      "fx/System.Transactions >= 4.0.0.0",
-      "fx/System.Data >= 4.0.0.0"
+      "fx/System.Transactions >= 4.0.0",
+      "fx/System.Data >= 4.0.0"
     ],
     ".NETFramework,Version=v4.5.2": [
-      "fx/System.Transactions >= 4.0.0.0",
-      "fx/System.Data >= 4.0.0.0"
+      "fx/System.Transactions >= 4.0.0",
+      "fx/System.Data >= 4.0.0"
     ],
     ".NETFramework,Version=v4.6": [
-      "fx/System.Transactions >= 4.0.0.0",
-      "fx/System.Data >= 4.0.0.0"
+      "fx/System.Transactions >= 4.0.0",
+      "fx/System.Data >= 4.0.0"
     ]
   }
 }
