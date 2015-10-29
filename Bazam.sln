@@ -25,6 +25,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Http", "Bazam.Http\Ba
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Twitter", "Bazam.Twitter\Bazam.Twitter.xproj", "{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Uwp", "Bazam.Uwp\Bazam.Uwp.xproj", "{DE960217-764C-4C4F-8A97-B67F4791D095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFBDFDC5-BE10-41CD-A09B-9A93B4A999A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE960217-764C-4C4F-8A97-B67F4791D095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE960217-764C-4C4F-8A97-B67F4791D095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE960217-764C-4C4F-8A97-B67F4791D095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE960217-764C-4C4F-8A97-B67F4791D095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
