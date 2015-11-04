@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0.0-*",
+  "version": "1.0.2-*",
   "description": "A library designed to make the client-side interactions with websockets easier. Mostly just wraps inbuilt types to improve usability.",
   "authors": [ "Jammerware" ],
   "tags": [ "websockets" ],

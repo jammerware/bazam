@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Bazam.WebSockets
 {
     // adapted (and more or less copy-pasted) from Xamlmonkey at https://gist.github.com/xamlmonkey/4737291
-    public class WebSocket
+    public class BazamWebSocket
     {
         private const int CHUNK_SIZE = 1024;
 
@@ -16,11 +16,11 @@ namespace Bazam.WebSockets
         private readonly CancellationTokenSource _CancellationTokenSource = new CancellationTokenSource();
         private readonly CancellationToken _CancellationToken;
 
-        private Action<WebSocket> _OnConnected;
-        private Action<string, WebSocket> _OnMessage;
-        private Action<WebSocket> _OnDisconnected;
+        private Action<BazamWebSocket> _OnConnected;
+        private Action<string, BazamWebSocket> _OnMessage;
+        private Action<BazamWebSocket> _OnDisconnected;
 
-        protected WebSocket(string uri)
+        protected BazamWebSocket(string uri)
         {
             _CancellationToken = _CancellationTokenSource.Token;
             _Uri = new Uri(uri);
@@ -33,18 +33,24 @@ namespace Bazam.WebSockets
         /// </summary>
         /// <param name="uri">The URI of the WebSocket server.</param>
         /// <returns></returns>
-        public static WebSocket Create(string uri)
+        public static BazamWebSocket Create(string uri)
         {
-            return new WebSocket(uri);
+            return new BazamWebSocket(uri);
         }
 
         /// <summary>
         /// Connects to the WebSocket server.
         /// </summary>
         /// <returns></returns>
-        public WebSocket Connect()
+        public BazamWebSocket Connect()
         {
             ConnectAsync();
+            return this;
+        }
+
+        public async Task<BazamWebSocket> Disconnect()
+        {
+            await _WebSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, null, _CancellationToken);
             return this;
         }
 
@@ -53,7 +59,7 @@ namespace Bazam.WebSockets
         /// </summary>
         /// <param name="onConnect">The Action to call.</param>
         /// <returns></returns>
-        public WebSocket OnConnected(Action<WebSocket> onConnected)
+        public BazamWebSocket OnConnected(Action<BazamWebSocket> onConnected)
         {
             _OnConnected = onConnected;
             return this;
@@ -64,7 +70,7 @@ namespace Bazam.WebSockets
         /// </summary>
         /// <param name="onDisconnect">The Action to call</param>
         /// <returns></returns>
-        public WebSocket OnDisconnect(Action<WebSocket> onDisconnect)
+        public BazamWebSocket OnDisconnect(Action<BazamWebSocket> onDisconnect)
         {
             _OnDisconnected = onDisconnect;
             return this;
@@ -75,7 +81,7 @@ namespace Bazam.WebSockets
         /// </summary>
         /// <param name="onMessage">The Action to call.</param>
         /// <returns></returns>
-        public WebSocket OnMessage(Action<string, WebSocket> onMessage)
+        public BazamWebSocket OnMessage(Action<string, BazamWebSocket> onMessage)
         {
             _OnMessage = onMessage;
             return this;
@@ -85,12 +91,7 @@ namespace Bazam.WebSockets
         /// Send a message to the WebSocket server.
         /// </summary>
         /// <param name="message">The message to send</param>
-        public void SendMessage(string message)
-        {
-            SendMessageAsync(message);
-        }
-
-        private async void SendMessageAsync(string message)
+        public async Task SendMessage(string message)
         {
             if (_WebSocket.State != WebSocketState.Open) {
                 throw new Exception("Connection isn't open.");
@@ -159,24 +160,19 @@ namespace Bazam.WebSockets
         private void CallOnMessage(StringBuilder stringResult)
         {
             if (_OnMessage != null)
-                RunInTask(() => _OnMessage(stringResult.ToString(), this));
+                Task.Factory.StartNew(() => { _OnMessage(stringResult.ToString(), this); });
         }
 
         private void CallOnDisconnected()
         {
             if (_OnDisconnected != null)
-                RunInTask(() => _OnDisconnected(this));
+                Task.Factory.StartNew(() => { _OnDisconnected(this); });
         }
 
         private void CallOnConnected()
         {
             if (_OnConnected != null)
-                RunInTask(() => _OnConnected(this));
-        }
-
-        private static void RunInTask(Action action)
-        {
-            Task.Factory.StartNew(action);
+                Task.Factory.StartNew(() => { _OnConnected(this); });
         }
     }
 }
