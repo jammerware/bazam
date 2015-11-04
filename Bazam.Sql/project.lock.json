@@ -83,7 +83,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Bazam >= 3.0.5-*"
+      "Bazam >= 3.0.7-*"
     ],
     "DNX,Version=v4.5.1": [
       "fx/System.Transactions >= 4.0.0",

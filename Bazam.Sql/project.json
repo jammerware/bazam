@@ -7,7 +7,7 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Bazam": "3.0.5-*"
+    "Bazam": "3.0.7-*"
   },
 
   "frameworks": {

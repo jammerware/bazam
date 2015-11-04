@@ -2157,7 +2157,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Bazam >= 3.0.6-*"
+      "Bazam >= 3.0.7-*"
     ],
     ".NETPlatform,Version=v5.0": [
       "System.Collections >= 4.0.10",

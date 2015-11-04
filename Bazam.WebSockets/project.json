@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "Bazam.WebSockets Class Library",
-  "authors": [ "bstein" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
+  "description": "A library designed to make the client-side interactions with websockets easier. Mostly just wraps inbuilt types to improve usability.",
+  "authors": [ "Jammerware" ],
+  "tags": [ "websockets" ],
+  "projectUrl": "https://github.com/jammerware/bazam",
+  "licenseUrl": "https://opensource.org/licenses/MIT",
 
   "frameworks": {
     "dnx451": { },
