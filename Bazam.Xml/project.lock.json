@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETPlatform,Version=v5.0": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": ".NETPlatform,Version=v5.0",
         "dependencies": {
@@ -328,7 +328,7 @@
       }
     },
     "DNX,Version=v4.5.1": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1"
       },
@@ -435,13 +435,13 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1"
       }
     },
     ".NETPlatform,Version=v5.0/win7-x86": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": ".NETPlatform,Version=v5.0",
         "dependencies": {
@@ -772,7 +772,7 @@
       }
     },
     ".NETPlatform,Version=v5.0/win7-x64": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": ".NETPlatform,Version=v5.0",
         "dependencies": {
@@ -1103,7 +1103,7 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1"
       },
@@ -1210,7 +1210,7 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": "DNX,Version=v4.5.1"
       },
@@ -1317,20 +1317,20 @@
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x86": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1"
       }
     },
     ".NETFramework,Version=v4.5.1/win7-x64": {
-      "Bazam/3.0.7": {
+      "Bazam/3.0.8": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.5.1"
       }
     }
   },
   "libraries": {
-    "Bazam/3.0.7": {
+    "Bazam/3.0.8": {
       "type": "project",
       "path": "../Bazam/project.json"
     },
@@ -1526,7 +1526,7 @@
     },
     "System.IO/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "/wVhoi2uVXw5IZFU+JrPlyVgKrtMPtzQaYQ3DKUxH9nqiX64BChTFGNDcwZK3iNWTIWESxJhj9JR3lbqbG/PIg==",
+      "sha512": "PjyH9UMFVQHSl8g1XR+M6Q/mG2RTpPff42kG9aygXyR/Wyt/O/wOiyxZ2SaYNl8e86yecKRh9SnK2RS9thI4ig==",
       "files": [
         "lib/aspnetcore50/System.IO.dll",
         "lib/contract/System.IO.dll",
@@ -1884,7 +1884,7 @@
     },
     "System.Runtime/4.0.20-beta-22816": {
       "type": "package",
-      "sha512": "sDSJEmM6Q5O7Nn9XxHTrsEJ4bv4hsBdeTWjuvyzd9/u9ujl9AWa3q1XFLrdPZetILPOC1P0+1LOCq4kZcsKF5Q==",
+      "sha512": "BEN6F4aNjbBdDxM8Xhb/MCSDhYmtvA29c1HUBvn0aNAVXaIJECLy2w5YkcscdklIieZCrcYeG2UzIgWlr4+GeQ==",
       "files": [
         "lib/aspnetcore50/System.Runtime.dll",
         "lib/contract/System.Runtime.dll",
@@ -2034,7 +2034,7 @@
     },
     "System.Text.Encoding/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "QDKTAvat7aDGMWnVkGm6tJvvmc2zSTa/p8M4/OEBBkZKNx4SGkeGEjFUhl7b6AXZ220m4dACygkiAVoB/LqMHw==",
+      "sha512": "4Isk8Lg2mkSex8N1ufJfazDo9Z0zTvx7FRh7LYiIqUJJSmPMenMXoFYMtm3tQ+sUWz23qMlIrOvT9BuIBnmRQg==",
       "files": [
         "lib/aspnetcore50/System.Text.Encoding.dll",
         "lib/contract/System.Text.Encoding.dll",
@@ -2114,7 +2114,7 @@
     },
     "System.Threading.Tasks/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "e7TcoQuIPQ4bvkkCY2ulU8NFvj8XqYxsGpD3fAq1KajAlpx5j327Q13lKxlGPb7ouHQydKHCy5G1ZGuydb0DAA==",
+      "sha512": "KhcVrI2JzX1oHigWTbf4F/2uhPSkhjquLPYbBVCLe9HGxLDJk2WLgmTbJk7fIus6xWWnWJmhOp0rHERU9M2SQw==",
       "files": [
         "lib/aspnetcore50/System.Threading.Tasks.dll",
         "lib/contract/System.Threading.Tasks.dll",
@@ -2128,7 +2128,7 @@
     },
     "System.Xml.ReaderWriter/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "G0aLPtC/phTfiJPwe0VA3tB3x8YFQ1dHFuE1xaHNr9eQm/AfBp4Pk+fn3s7ABJDus/T89EtIHQ9C+O6VmqXIQQ==",
+      "sha512": "Mx4PY22Xvz4u6h6A3yDNi8S7yvIh7yHSE9v0QM21d4cha2HMP5pwPdaKqCNkRytCQwKrBUFdMGQAmysF6n0K7w==",
       "files": [
         "lib/aspnetcore50/System.Xml.ReaderWriter.dll",
         "lib/contract/System.Xml.ReaderWriter.dll",
@@ -2142,7 +2142,7 @@
     },
     "System.Xml.XDocument/4.0.10-beta-22816": {
       "type": "package",
-      "sha512": "FcCtcZGfIC53KE0X9afERg0lLEJnXBQBAZG0wc0cSsklju2aZrXRS6QWOMMr91LLPJAefeTEoyrDw2LoXbp/Ww==",
+      "sha512": "6NwAYXuYtZtS6LSqXsMjafbVUnNWeqClza4qkfCehd2T0OdcwseTAN23IBL6ogumrjHFRdoomTFXTau4TVQCXg==",
       "files": [
         "lib/aspnetcore50/System.Xml.XDocument.dll",
         "lib/contract/System.Xml.XDocument.dll",
