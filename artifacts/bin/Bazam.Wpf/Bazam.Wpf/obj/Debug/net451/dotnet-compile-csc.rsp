@@ -1,0 +1,43 @@
+﻿-d:DEBUG
+-d:TRACE
+-d:NET451
+-nowarn:CS1701
+-nowarn:CS1702
+-nowarn:CS1705
+-t:library
+-debug:full
+-nostdlib
+-nologo
+"C:\Devspace\bazam\artifacts\bin\Bazam.Wpf\Bazam.Wpf\obj\Debug\net451\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Devspace\bazam\artifacts\bin\Bazam.Wpf\Bazam.Wpf\bin\Debug\net451\Bazam.Wpf.dll"
+-r:"C:\Users\bstein\.nuget\packages\Expression.Blend.Sdk\1.0.2\lib\net45\System.Windows.Interactivity.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Reflection.Extensions.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\PresentationFramework.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\PresentationCore.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\WindowsBase.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\UIAutomationProvider.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xaml.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Windows.Forms.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Drawing.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll"
+-r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll"
+"C:\Devspace\bazam\Bazam.Wpf\Behaviors\ClickButtonOnEnterKeyBehavior.cs"
+"C:\Devspace\bazam\Bazam.Wpf\Behaviors\FadeInBehavior.cs"
+"C:\Devspace\bazam\Bazam.Wpf\Behaviors\KeepCenteredBehavior.cs"
+"C:\Devspace\bazam\Bazam.Wpf\Behaviors\SmoothSizeChangedBehavior.cs"
+"C:\Devspace\bazam\Bazam.Wpf\Behaviors\SnapNearEdgesBehavior.cs"
+"C:\Devspace\bazam\Bazam.Wpf\Modules\AnimationBuddy.cs"
+"C:\Devspace\bazam\Bazam.Wpf\Modules\Kontroller.cs"
+"C:\Devspace\bazam\Bazam.Wpf\UIHelpers\DataContextSpy.cs"
+"C:\Devspace\bazam\Bazam.Wpf\UIHelpers\ImageFactory.cs"
+"C:\Devspace\bazam\Bazam.Wpf\UIHelpers\RelayCommand.cs"
+"C:\Devspace\bazam\Bazam.Wpf\UIHelpers\WindowHelper.cs"
+"C:\Devspace\bazam\Bazam.Wpf\ValueConverters\BooleanVisibilityConverter.cs"
+"C:\Devspace\bazam\Bazam.Wpf\ValueConverters\CapitalizationConverter.cs"
+"C:\Devspace\bazam\Bazam.Wpf\ValueConverters\IntegerVisibilityConverter.cs"
+"C:\Devspace\bazam\Bazam.Wpf\ValueConverters\ObjectVisibilityConverter.cs"
+"C:\Devspace\bazam\Bazam.Wpf\ValueConverters\StringVisibilityConverter.cs"
+"C:\Devspace\bazam\Bazam.Wpf\ViewModels\RelatedPropertyAttribute.cs"
+"C:\Devspace\bazam\Bazam.Wpf\ViewModels\ViewModelBase.cs"

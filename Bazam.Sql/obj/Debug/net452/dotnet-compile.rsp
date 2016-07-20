@@ -1,0 +1,29 @@
+--temp-output:C:\Devspace\bazam\Bazam.Sql\obj\Debug\net452\
+--out:C:\Devspace\bazam\Bazam.Sql\bin\Debug\net452\Bazam.Sql.dll
+--define:DEBUG
+--define:TRACE
+--define:NET452
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:Bazam.Sql
+--description:A library that simplifies ADO.NET database queries to SQL.
+--file-version:1.0.1.0
+--version:1.0.1.0
+--informational-version:1.0.1
+--target-framework:.NETFramework,Version=v4.5.2
+--reference:C:\Devspace\bazam\Bazam\bin\Debug\net452\Bazam.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Transactions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll
+C:\Devspace\bazam\Bazam.Sql\DataNinja\DataFormatting.cs
+C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaAsyncState.cs
+C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaClient.cs
+C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaQuery.cs
+C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaTransactionEventHandler.cs
+C:\Devspace\bazam\Bazam.Sql\DataNinja\Exceptions\DataNinjaException.cs
+C:\Devspace\bazam\Bazam.Sql\DataNinja\Exceptions\DataNinjaTransactionException.cs

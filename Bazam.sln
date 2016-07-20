@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Sql", "Bazam.Sql\Bazam.Sql.xproj", "{EF7C5353-0C6C-400E-AF3C-6F2A283C9AC5}"
 EndProject
@@ -17,8 +17,6 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.BadEncryption", "Baza
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Mvc", "Bazam.Mvc\Bazam.Mvc.xproj", "{80718141-5C0C-4DC1-8162-68F9EAE695C8}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.SharpZipLibHelpers", "Bazam.SharpZipLibHelpers\Bazam.SharpZipLibHelpers.xproj", "{31233F24-25F9-4C4A-95FE-1AA2F04FA616}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Wpf", "Bazam.Wpf\Bazam.Wpf.xproj", "{35DAD66A-F2BA-49C0-BAFD-F099860AAFC3}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Http", "Bazam.Http\Bazam.Http.xproj", "{AB9053AF-2590-4F17-9A8C-B368E4C7E5C0}"
@@ -27,7 +25,9 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Twitter", "Bazam.Twit
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Uwp", "Bazam.Uwp\Bazam.Uwp.xproj", "{DE960217-764C-4C4F-8A97-B67F4791D095}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.WebSockets", "Bazam.WebSockets\Bazam.WebSockets.xproj", "{F36E4AB0-AC10-4DB8-91E2-F4486D268DE0}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.Zipster", "Bazam.Zipster\Bazam.Zipster.xproj", "{C86180B6-1768-4F50-987A-EF78A2AE781E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bazam.DebugConsole", "Bazam.DebugConsole\Bazam.DebugConsole.xproj", "{7436BCF3-D888-4466-978A-DB81268E89F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +63,6 @@ Global
 		{80718141-5C0C-4DC1-8162-68F9EAE695C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80718141-5C0C-4DC1-8162-68F9EAE695C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80718141-5C0C-4DC1-8162-68F9EAE695C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31233F24-25F9-4C4A-95FE-1AA2F04FA616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31233F24-25F9-4C4A-95FE-1AA2F04FA616}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31233F24-25F9-4C4A-95FE-1AA2F04FA616}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31233F24-25F9-4C4A-95FE-1AA2F04FA616}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35DAD66A-F2BA-49C0-BAFD-F099860AAFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35DAD66A-F2BA-49C0-BAFD-F099860AAFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35DAD66A-F2BA-49C0-BAFD-F099860AAFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -83,10 +79,14 @@ Global
 		{DE960217-764C-4C4F-8A97-B67F4791D095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE960217-764C-4C4F-8A97-B67F4791D095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE960217-764C-4C4F-8A97-B67F4791D095}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F36E4AB0-AC10-4DB8-91E2-F4486D268DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F36E4AB0-AC10-4DB8-91E2-F4486D268DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F36E4AB0-AC10-4DB8-91E2-F4486D268DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F36E4AB0-AC10-4DB8-91E2-F4486D268DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86180B6-1768-4F50-987A-EF78A2AE781E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86180B6-1768-4F50-987A-EF78A2AE781E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86180B6-1768-4F50-987A-EF78A2AE781E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86180B6-1768-4F50-987A-EF78A2AE781E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7436BCF3-D888-4466-978A-DB81268E89F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7436BCF3-D888-4466-978A-DB81268E89F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7436BCF3-D888-4466-978A-DB81268E89F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7436BCF3-D888-4466-978A-DB81268E89F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

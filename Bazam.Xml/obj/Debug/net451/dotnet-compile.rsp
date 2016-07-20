@@ -1,0 +1,22 @@
+--temp-output:C:\Devspace\bazam\Bazam.Xml\obj\Debug\net451\
+--out:C:\Devspace\bazam\Bazam.Xml\bin\Debug\net451\Bazam.Xml.dll
+--define:DEBUG
+--define:TRACE
+--define:NET451
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:Bazam.Xml
+--description:A little library designed to making working with XML a little easier.
+--file-version:1.0.3.0
+--version:1.0.3.0
+--informational-version:1.0.3
+--target-framework:.NETFramework,Version=v4.5.1
+--reference:C:\Devspace\bazam\Bazam\bin\Debug\net451\Bazam.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.Linq.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll
+C:\Devspace\bazam\Bazam.Xml\src\XmlPal.cs

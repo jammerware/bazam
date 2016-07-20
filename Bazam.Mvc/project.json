@@ -2,19 +2,24 @@
   "version": "1.1.2-*",
   "description": "A toolbox library for making web apps with .NET MVC.",
   "authors": [ "Jammerware LLC" ],
-  "tags": [ ".NET", "MVC" ],
-  "projectUrl": "https://github.com/jammerware/bazam/tree/master/Bazam.Mvc",
-  "licenseUrl": "",
+
+  "packOptions": {
+    "tags": [ "MVC" ],
+    "projectUrl": "https://github.com/jammerware/bazam/tree/master/Bazam.Mvc",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
 
   "dependencies": {
-    "Bazam": "3.0.7-*",
-    "Microsoft.AspNet.Mvc.Core": "6.0.0-beta4",
-    "Microsoft.Net.Http.Server": "1.0.0-beta4",
-    "CommonMark.NET": "0.9.1",
-    "Newtonsoft.Json": "7.0.1"
+    "NETStandard.Library": "1.6.0",
+    "Newtonsoft.Json": "9.0.1",
+    "CommonMark.NET": "0.13.4",
+    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.0",
+    "Bazam": "3.2.0"
   },
 
   "frameworks": {
-    "dnx451": { }
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
   }
 }

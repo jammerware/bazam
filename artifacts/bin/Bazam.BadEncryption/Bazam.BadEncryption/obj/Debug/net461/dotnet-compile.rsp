@@ -1,0 +1,20 @@
+--temp-output:C:\Devspace\bazam\artifacts\bin\Bazam.BadEncryption\Bazam.BadEncryption\obj\Debug\net461\
+--out:C:\Devspace\bazam\artifacts\bin\Bazam.BadEncryption\Bazam.BadEncryption\bin\Debug\net461\Bazam.BadEncryption.dll
+--define:DEBUG
+--define:TRACE
+--define:NET461
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:Bazam.BadEncryption
+--description:A great library for encrypting things weakly. Good for when you don't want something to be human-readable. Bad when you want it to be secure in any real way. Caveat nerd!\n\nNo .NET Core support yet because RijndaelManaged isn't ported yet.
+--file-version:1.0.2.0
+--version:1.0.2.0
+--informational-version:1.0.2
+--target-framework:.NETFramework,Version=v4.6.1
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll
+C:\Devspace\bazam\Bazam.BadEncryption\src\Cryptonite.cs

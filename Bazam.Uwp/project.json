@@ -2,20 +2,18 @@
   "version": "1.0.1-*",
   "description": "A library designed to wrap common functionality for use in UWP applications.",
   "authors": [ "Jammerware" ],
-  "tags": [ "uwp" ],
-  "projectUrl": "https://github.com/jammerware/bazam",
-  "licenseUrl": "https://github.com/jammerware/bazam/blob/master/LICENSE.txt",
+
+  "packOptions": {
+    "tags": [ "uwp" ],
+    "projectUrl": "https://github.com/jammerware/bazam",
+    "licenseUrl": "https://github.com/jammerware/bazam/blob/master/LICENSE.txt"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0"
+  },
 
   "frameworks": {
-    "dnx451": { },
-    "dotnet": {
-      "dependencies": {
-        "Microsoft.CSharp": "4.0.0",
-        "System.Collections": "4.0.10",
-        "System.Linq": "4.0.0",
-        "System.Runtime": "4.0.20",
-        "System.Threading": "4.0.10"
-      }
-    }
+    "netstandard1.5": { }
   }
 }

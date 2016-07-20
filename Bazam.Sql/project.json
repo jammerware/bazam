@@ -1,35 +1,20 @@
 {
-  "version": "1.0.1-*",
+  "version": "1.0.2-*",
   "description": "A library that simplifies ADO.NET database queries to SQL.",
   "authors": [ "Jammerware LLC" ],
-  "tags": [ "sql", "ado.net" ],
-  "projectUrl": "https://github.com/jammerware/bazam",
-  "licenseUrl": "",
+
+  "packOptions": {
+    "tags": [ "sql", "ado.net" ],
+    "projectUrl": "https://github.com/jammerware/bazam",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
 
   "dependencies": {
-    "Bazam": "3.0.7-*"
+    "Bazam": "3.2.1-*"
   },
 
   "frameworks": {
-    "dnx451": {
-      "frameworkAssemblies": {
-        "System.Transactions": "4.0.0.0",
-        "System.Data": "4.0.0.0"
-      }
-    },
-    "net451": {
-      "frameworkAssemblies": {
-        "System.Transactions": "4.0.0.0",
-        "System.Data": "4.0.0.0"
-      }
-    },
-    "net452": {
-      "frameworkAssemblies": {
-        "System.Transactions": "4.0.0.0",
-        "System.Data": "4.0.0.0"
-      }
-    },
-    "net46": {
+    "net462": {
       "frameworkAssemblies": {
         "System.Transactions": "4.0.0.0",
         "System.Data": "4.0.0.0"

@@ -1,0 +1,47 @@
+--temp-output:C:\Devspace\bazam\artifacts\bin\Bazam.Wpf\Bazam.Wpf\obj\Debug\net452\
+--out:C:\Devspace\bazam\artifacts\bin\Bazam.Wpf\Bazam.Wpf\bin\Debug\net452\Bazam.Wpf.dll
+--define:DEBUG
+--define:TRACE
+--define:NET452
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:Bazam.Wpf
+--title:Bazam.Wpf
+--description:A toolbox library for building applications in WPF.
+--file-version:2.6.0.0
+--version:2.6.0.0
+--informational-version:2.6.0
+--target-framework:.NETFramework,Version=v4.5.2
+--reference:C:\Users\bstein\.nuget\packages\Expression.Blend.Sdk\1.0.2\lib\net45\System.Windows.Interactivity.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\System.Reflection.Extensions.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\PresentationFramework.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\PresentationCore.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\WindowsBase.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\UIAutomationProvider.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xaml.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Windows.Forms.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Drawing.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll
+C:\Devspace\bazam\Bazam.Wpf\Behaviors\ClickButtonOnEnterKeyBehavior.cs
+C:\Devspace\bazam\Bazam.Wpf\Behaviors\FadeInBehavior.cs
+C:\Devspace\bazam\Bazam.Wpf\Behaviors\KeepCenteredBehavior.cs
+C:\Devspace\bazam\Bazam.Wpf\Behaviors\SmoothSizeChangedBehavior.cs
+C:\Devspace\bazam\Bazam.Wpf\Behaviors\SnapNearEdgesBehavior.cs
+C:\Devspace\bazam\Bazam.Wpf\Modules\AnimationBuddy.cs
+C:\Devspace\bazam\Bazam.Wpf\Modules\Kontroller.cs
+C:\Devspace\bazam\Bazam.Wpf\UIHelpers\DataContextSpy.cs
+C:\Devspace\bazam\Bazam.Wpf\UIHelpers\ImageFactory.cs
+C:\Devspace\bazam\Bazam.Wpf\UIHelpers\RelayCommand.cs
+C:\Devspace\bazam\Bazam.Wpf\UIHelpers\WindowHelper.cs
+C:\Devspace\bazam\Bazam.Wpf\ValueConverters\BooleanVisibilityConverter.cs
+C:\Devspace\bazam\Bazam.Wpf\ValueConverters\CapitalizationConverter.cs
+C:\Devspace\bazam\Bazam.Wpf\ValueConverters\IntegerVisibilityConverter.cs
+C:\Devspace\bazam\Bazam.Wpf\ValueConverters\ObjectVisibilityConverter.cs
+C:\Devspace\bazam\Bazam.Wpf\ValueConverters\StringVisibilityConverter.cs
+C:\Devspace\bazam\Bazam.Wpf\ViewModels\RelatedPropertyAttribute.cs
+C:\Devspace\bazam\Bazam.Wpf\ViewModels\ViewModelBase.cs

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bazam.KeyAdept</name>
+    </assembly>
+    <members>
+        <member name="T:Bazam.KeyAdept.Infrastructure.ListenerWindow">
+            <summary>
+            Represents the window that is used internally to get the messages.
+            </summary>
+        </member>
+        <member name="M:Bazam.KeyAdept.Infrastructure.ListenerWindow.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Overridden to get the notifications.
+            </summary>
+            <param name="m"></param>
+        </member>
+    </members>
+</doc>

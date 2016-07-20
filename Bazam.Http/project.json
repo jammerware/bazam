@@ -1,31 +1,21 @@
 {
-  "version": "1.1.4-*",
+  "version": "2.0.1-*",
   "description": "A tiny little library designed to make simple web requests easier in .NET.",
-  "authors": [ "Jammerware LLC" ],
-  "tags": [ "Web", "Http" ],
-  "projectUrl": "https://github.com/jammerware/bazam",
-  "licenseUrl": "",
+
+  "packOptions": {
+    "authors": [ "Jammerware LLC" ],
+    "tags": [ "Web", "Http" ],
+    "projectUrl": "https://github.com/jammerware/bazam",
+    "licenseUrl": ""
+  },
 
   "dependencies": {
-    "Microsoft.Net.Http": "2.2.22"
+    "NETStandard.Library": "1.6.0"
   },
 
   "frameworks": {
-    "dotnet": {
-      "dependencies": {
-        "System.Collections": "4.0.10",
-        "System.Linq": "4.0.0",
-        "System.Threading": "4.0.10",
-        "Microsoft.CSharp": "4.0.0",
-        "System.IO.FileSystem": "4.0.0",
-        "System.Net.Http": "4.0.0",
-        "System.Runtime": "4.0.20"
-      }
-    },
-    "dnx451": {
-    },
-    "net451": { },
-    "net452": { },
-    "net46": { }
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
   }
 }

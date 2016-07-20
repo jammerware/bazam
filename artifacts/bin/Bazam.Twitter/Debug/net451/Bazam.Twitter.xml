@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bazam.Twitter</name>
+    </assembly>
+    <members>
+        <member name="M:Bazam.Twitter.TwitterGitter.GetUserTimeline(System.String,System.Boolean)">
+            <summary>
+            Returns a string of Json containing tweets made by the specified user.
+            </summary>
+            <param name="twitterHandle">The Twitter handle of the user whose timeline you want to retrieve (without the leading "@" for best performance).</param>
+            <param name="includeRetweets">Whether or not you want the result to include retweets by the user. Defaults to false.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bazam.Twitter.TwitterGitter.Search(System.String)">
+            <summary>
+            Returns a string of Json corresponding to the results of your search on Twitter.
+            </summary>
+            <param name="query">Your Twitter Search API query. Check out https://dev.twitter.com/rest/public/search for details.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

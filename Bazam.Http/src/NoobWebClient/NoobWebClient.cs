@@ -25,18 +25,18 @@ namespace Bazam.Http
             return await DownloadString(url, RequestMethod.Get);
         }
 
-        public async Task<string> DownloadString(string address, RequestMethod requestType, params string[] values)
+        public async Task<string> DownloadString(string address, RequestMethod requestType, params string[] bodyValues)
         {
             Dictionary<string, string> dictValues = new Dictionary<string, string>();
 
-            if (values != null && values.Length > 1) {
+            if (bodyValues != null && bodyValues.Length > 1) {
                 string key = string.Empty;
-                for (int i = 0; i < values.Length; i++) {
+                for (int i = 0; i < bodyValues.Length; i++) {
                     if (i % 2 == 0) {
-                        key = values[i];
+                        key = bodyValues[i];
                     }
                     else {
-                        dictValues.Add(key, values[i]);
+                        dictValues.Add(key, bodyValues[i]);
                     }
                 }
             }

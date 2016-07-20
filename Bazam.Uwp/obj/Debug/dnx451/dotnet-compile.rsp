@@ -1,0 +1,21 @@
+--temp-output:C:\Devspace\bazam\Bazam.Uwp\obj\Debug\dnx451\
+--out:C:\Devspace\bazam\Bazam.Uwp\bin\Debug\dnx451\Bazam.Uwp.dll
+--define:DEBUG
+--define:TRACE
+--define:DNX451
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:Bazam.Uwp
+--description:A library designed to wrap common functionality for use in UWP applications.
+--file-version:1.0.1.0
+--version:1.0.1.0
+--informational-version:1.0.1
+--target-framework:.NETFramework,Version=v4.5.1
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll
+C:\Devspace\bazam\Bazam.Uwp\Properties\AssemblyInfo.cs
+C:\Devspace\bazam\Bazam.Uwp\src\ViewModelBase.cs

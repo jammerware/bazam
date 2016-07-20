@@ -1,0 +1,24 @@
+--temp-output:C:\Devspace\bazam\Bazam.Twitter\obj\Debug\netstandard1.5\
+--out:C:\Devspace\bazam\Bazam.Twitter\bin\Debug\netstandard1.5\Bazam.Twitter.dll
+--define:DEBUG
+--define:TRACE
+--define:NETSTANDARD1_5
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--optimize:False
+--output-name:Bazam.Twitter
+--description:A library designed to make basic Twitter search API access simple in .NET vNext.
+--file-version:1.0.6.0
+--version:1.0.6.0
+--informational-version:1.0.6
+--target-framework:.NETStandard,Version=v1.5
+--reference:C:\Users\bstein\.nuget\packages\Newtonsoft.Json\8.0.3\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll
+--reference:C:\Users\bstein\.nuget\packages\System.IO\4.1.0-rc2-24027\ref\netstandard1.5\System.IO.dll
+--reference:C:\Users\bstein\.nuget\packages\System.Net.Http\4.0.1-rc2-24027\ref\netstandard1.1\System.Net.Http.dll
+--reference:C:\Users\bstein\.nuget\packages\System.Net.Primitives\4.0.11-rc2-24027\ref\netstandard1.3\System.Net.Primitives.dll
+--reference:C:\Users\bstein\.nuget\packages\System.Runtime\4.1.0-rc2-24027\ref\netstandard1.5\System.Runtime.dll
+--reference:C:\Users\bstein\.nuget\packages\System.Runtime.Handles\4.0.1-rc2-24027\ref\netstandard1.3\System.Runtime.Handles.dll
+--reference:C:\Users\bstein\.nuget\packages\System.Text.Encoding\4.0.11-rc2-24027\ref\netstandard1.3\System.Text.Encoding.dll
+--reference:C:\Users\bstein\.nuget\packages\System.Threading.Tasks\4.0.11-rc2-24027\ref\netstandard1.3\System.Threading.Tasks.dll
+C:\Devspace\bazam\Bazam.Twitter\src\TwitterGitter.cs

@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.2-*",
+  "description": "A wrapper around System.IO.Compression for memory's sake. Listen, these can't all be winners.",
+
+  "packOptions": {
+    "authors": [ "Jammerware, LLC." ],
+    "tags": [ "zip", "compression", "archive" ],
+    "projectUrl": "https://github.com/jammerware/bazam",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

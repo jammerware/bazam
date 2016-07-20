@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bazam.Mvc</name>
+    </assembly>
+    <members>
+        <member name="M:Bazam.Mvc.BazamHtmlHelpers.ViewScript(Microsoft.AspNet.Mvc.Rendering.IHtmlHelper,System.String)">
+            <summary>
+            I'm not sure if this'll help anyone but me, and maybe I'm going about this the wrong way, but I often find it necessary (?) to have a javascript
+            file for a particular view.
+            </summary>
+            <param name="scriptRoot">The path to your view scripts - I put mine in "~/Scripts/ViewScripts", but your mileage may vary. Use ~ to have the path mapped for you.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

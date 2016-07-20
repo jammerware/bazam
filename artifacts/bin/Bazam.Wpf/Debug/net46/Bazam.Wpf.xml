@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bazam.Wpf</name>
+    </assembly>
+    <members>
+        <member name="T:Bazam.Wpf.UIHelpers.DataContextSpy">
+            <summary>
+            DataContextSpy by Josh Smith
+            Found here :http://www.codeproject.com/Articles/27432/Artificial-Inheritance-Contexts-in-WPF
+            Allows us to do things like use a variable set in a view's data context in a listbox itemtemplate in the same view
+            </summary>
+        </member>
+        <member name="P:Bazam.Wpf.UIHelpers.DataContextSpy.IsSynchronizedWithCurrentItem">
+            <summary>
+            Gets/sets whether the spy will return the CurrentItem of the 
+            ICollectionView that wraps the data context, assuming it is
+            a collection of some sort. If the data context is not a 
+            collection, this property has no effect. 
+            The default value is true.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,46 +1,24 @@
 ﻿{
-  "version": "3.0.9-*",
+  "version": "3.2.1-*",
   "description": "A helpful (if not exactly laser-focused) toolbox library for .NET.",
-  "authors": [ "Jammerware, LLC." ],
-  "tags": [ "Toolbox" ],
-  "projectUrl": "https://github.com/jammerware/bazam",
-  "licenseUrl": "",
 
-  "dependencies": { },
-
-  "frameworks": {
-    "dotnet": {
-      "dependencies": {
-        "System.Collections": "4.0.10",
-        "System.Linq": "4.0.0",
-        "System.Threading": "4.0.10",
-        "Microsoft.CSharp": "4.0.0",
-        "System.IO.Compression": "4.0.0",
-        "System.Runtime": "4.0.20",
-        "System.Runtime.Extensions": "4.0.10",
-        "System.Text.RegularExpressions": "4.0.10"
-      }
-    },
-    "dnx451": {
-      "System.Reflection.TypeExtensions": "4.0.0",
-      "System.IO.Compression": "4.0.0"
-    },
-    "net451": { },
-    "net452": { },
-    "net46": { },
-    "uap10.0": {
-      "dependencies": {
-        "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
-      }
-    }
+  "packOptions": {
+    "authors": [ "Jammerware, LLC" ],
+    "tags": [ "Toolbox" ],
+    "projectUrl": "https://github.com/jammerware/bazam",
+    "licenseUrl": ""
   },
 
-  "runtimes": {
-    "win10-arm": { },
-    "win10-arm-aot": { },
-    "win10-x86": { },
-    "win10-x86-aot": { },
-    "win10-x64": { },
-    "win10-x64-aot": { }
+  "dependencies": {
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50"
+    },
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
   }
 }

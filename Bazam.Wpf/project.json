@@ -1,51 +1,22 @@
 {
-  "version": "2.5.5-*",
+  "title": "Bazam.Wpf",
+  "version": "2.6.1-*",
   "description": "A toolbox library for building applications in WPF.",
-  "authors": [ "Jammerware LLC" ],
-  "tags": [ "wpf" ],
-  "projectUrl": "https://github.com/jammerware/bazam",
-  "licenseUrl": "",
+
+  "packOptions": {
+    "authors": [ "Jammerware LLC" ],
+    "tags": [ "wpf" ],
+    "projectUrl": "https://github.com/jammerware/bazam",
+    "licenseUrl": ""
+  },
 
   "dependencies": {
-    "System.Reflection.Extensions": "4.0.0-beta-23019",
+    "System.Reflection.Extensions": "4.0.0",
     "Expression.Blend.Sdk": "1.0.2"
   },
 
   "frameworks": {
-    "dnx451": {
-      "frameworkAssemblies": {
-        "PresentationFramework": "4.0.0.0",
-        "PresentationCore": "4.0.0.0",
-        "WindowsBase": "4.0.0.0",
-        "UIAutomationProvider": "4.0.0.0",
-        "System.Xaml": "4.0.0.0",
-        "System.Windows.Forms": "4.0.0.0",
-        "System.Drawing": "4.0.0.0"
-      }
-    },
-    "net451": {
-      "frameworkAssemblies": {
-        "PresentationFramework": "4.0.0.0",
-        "PresentationCore": "4.0.0.0",
-        "WindowsBase": "4.0.0.0",
-        "UIAutomationProvider": "4.0.0.0",
-        "System.Xaml": "4.0.0.0",
-        "System.Windows.Forms": "4.0.0.0",
-        "System.Drawing": "4.0.0.0"
-      }
-    },
-    "net452": {
-      "frameworkAssemblies": {
-        "PresentationFramework": "4.0.0.0",
-        "PresentationCore": "4.0.0.0",
-        "WindowsBase": "4.0.0.0",
-        "UIAutomationProvider": "4.0.0.0",
-        "System.Xaml": "4.0.0.0",
-        "System.Windows.Forms": "4.0.0.0",
-        "System.Drawing": "4.0.0.0"
-      }
-    },
-    "net46": {
+    "net462": {
       "frameworkAssemblies": {
         "PresentationFramework": "4.0.0.0",
         "PresentationCore": "4.0.0.0",
