@@ -1,12 +1,16 @@
 ﻿{
-  "version": "3.2.1-*",
+  "version": "3.2.2-*",
   "description": "A helpful (if not exactly laser-focused) toolbox library for .NET.",
 
   "packOptions": {
     "authors": [ "Jammerware, LLC" ],
     "tags": [ "Toolbox" ],
     "projectUrl": "https://github.com/jammerware/bazam",
-    "licenseUrl": ""
+    "licenseUrl": "https://opensource.org/licenses/MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jammerware/bazam.git"
+    }
   },
 
   "dependencies": {
@@ -14,10 +18,7 @@
   },
 
   "frameworks": {
-    "netstandard1.5": {
-      "imports": "dnxcore50"
-    },
-    "netstandard1.6": {
+    "netstandard1.4": {
       "imports": "dnxcore50"
     }
   }
