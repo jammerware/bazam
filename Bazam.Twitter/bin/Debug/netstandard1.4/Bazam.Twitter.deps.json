@@ -668,7 +668,7 @@
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gAeoqoRov9O6EHs+PnmfCRoJGwyMhzh4A60mNPPNTQZKyGi1ssRD1jeXCtUkyL3bkbtvckSqSHw5zHIWwMjN9A=="
+      "sha512": "sha512-17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A=="
     },
     "Microsoft.NETCore.Platforms/1.0.1": {
       "type": "package",
@@ -758,7 +758,7 @@
     "System.Dynamic.Runtime/4.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6GUpjqTwoMogwqEmQlL5+claGvGpv3yUSgZ/vToJLUNM5Jv02fiJEQKo1v7ra6urUMKVXvQfdFTas9Xb+KfQJA=="
+      "sha512": "sha512-db34f6LHYM0U0JpE+sOmjar27BnqTVkbLJhgfwMpTdgTigG/Hna3m2MYVwnFzGGKnEJk2UXFuoVTr8WUbU91/A=="
     },
     "System.Globalization/4.0.11": {
       "type": "package",

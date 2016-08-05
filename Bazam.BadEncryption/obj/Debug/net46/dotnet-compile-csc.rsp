@@ -8,10 +8,10 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\Ben\Documents\Devspace\Bazam\Bazam.BadEncryption\obj\Debug\net46\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\Ben\Documents\Devspace\Bazam\Bazam.BadEncryption\bin\Debug\net46\Bazam.BadEncryption.dll"
+"E:\Dev\Bazam\Bazam.BadEncryption\obj\Debug\net46\dotnet-compile.assemblyinfo.cs"
+-out:"E:\Dev\Bazam\Bazam.BadEncryption\bin\Debug\net46\Bazam.BadEncryption.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\mscorlib.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Core.dll"
 -r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll"
-"C:\Users\Ben\Documents\Devspace\Bazam\Bazam.BadEncryption\src\Cryptonite.cs"
+"E:\Dev\Bazam\Bazam.BadEncryption\src\Cryptonite.cs"

@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0.2-*",
+  "version": "1.0.3-*",
   "description": "A wrapper around System.IO.Compression for memory's sake. Listen, these can't all be winners.",
 
   "packOptions": {
@@ -14,7 +14,7 @@
   },
 
   "frameworks": {
-    "netstandard1.6": {
+    "netstandard1.4": {
       "imports": "dnxcore50"
     }
   }

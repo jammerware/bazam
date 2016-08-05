@@ -1,5 +1,5 @@
---temp-output:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\obj\Debug\net46\
---out:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\bin\Debug\net46\Bazam.KeyAdept.dll
+--temp-output:E:\Dev\Bazam\Bazam.KeyAdept\obj\Debug\net46\
+--out:E:\Dev\Bazam\Bazam.KeyAdept\bin\Debug\net46\Bazam.KeyAdept.dll
 --define:DEBUG
 --define:TRACE
 --define:NET46
@@ -18,13 +18,13 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.Core.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\Microsoft.CSharp.dll
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\HotkeyRegistrar.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\Hotkey.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\HotkeyEventArgs.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\HotkeyPressedEventArgs.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\HotkeyPressedEventHandler.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\Key.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\KeyAdeptException.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\ListenerWindow.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\Modifier.cs
-C:\Users\Ben\Documents\Devspace\Bazam\Bazam.KeyAdept\Infrastructure\UnavailableHotkeyRegisteredEventHandler.cs
+E:\Dev\Bazam\Bazam.KeyAdept\HotkeyRegistrar.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\Hotkey.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\HotkeyEventArgs.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\HotkeyPressedEventArgs.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\HotkeyPressedEventHandler.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\Key.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\KeyAdeptException.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\ListenerWindow.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\Modifier.cs
+E:\Dev\Bazam\Bazam.KeyAdept\Infrastructure\UnavailableHotkeyRegisteredEventHandler.cs
