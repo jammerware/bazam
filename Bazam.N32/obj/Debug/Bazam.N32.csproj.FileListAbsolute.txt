@@ -1,4 +1,0 @@
-C:\Devspace\bazam\Bazam.N32\bin\Debug\Bazam.N32.dll
-C:\Devspace\bazam\Bazam.N32\bin\Debug\Bazam.N32.pdb
-C:\Devspace\bazam\Bazam.N32\obj\Debug\Bazam.N32.dll
-C:\Devspace\bazam\Bazam.N32\obj\Debug\Bazam.N32.pdb
