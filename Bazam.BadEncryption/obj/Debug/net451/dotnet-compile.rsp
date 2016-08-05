@@ -1,5 +1,5 @@
---temp-output:C:\Devspace\bazam\Bazam.BadEncryption\obj\Debug\net451\
---out:C:\Devspace\bazam\Bazam.BadEncryption\bin\Debug\net451\Bazam.BadEncryption.dll
+--temp-output:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.BadEncryption\obj\Debug\net451\
+--out:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.BadEncryption\bin\Debug\net451\Bazam.BadEncryption.dll
 --define:DEBUG
 --define:TRACE
 --define:NET451
@@ -17,4 +17,4 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll
-C:\Devspace\bazam\Bazam.BadEncryption\src\Cryptonite.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.BadEncryption\src\Cryptonite.cs

@@ -1,5 +1,5 @@
---temp-output:C:\Devspace\bazam\Bazam.WindowsForms\obj\Debug\net452\
---out:C:\Devspace\bazam\Bazam.WindowsForms\bin\Debug\net452\Bazam.WindowsForms.dll
+--temp-output:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.WindowsForms\obj\Debug\net452\
+--out:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.WindowsForms\bin\Debug\net452\Bazam.WindowsForms.dll
 --define:DEBUG
 --define:TRACE
 --define:NET452
@@ -19,4 +19,4 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll
-C:\Devspace\bazam\Bazam.WindowsForms\MonitorLizard.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.WindowsForms\MonitorLizard.cs

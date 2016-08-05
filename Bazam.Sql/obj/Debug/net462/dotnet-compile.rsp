@@ -1,5 +1,5 @@
---temp-output:C:\Devspace\bazam\Bazam.Sql\obj\Debug\net462\
---out:C:\Devspace\bazam\Bazam.Sql\bin\Debug\net462\Bazam.Sql.dll
+--temp-output:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\obj\Debug\net462\
+--out:C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\bin\Debug\net462\Bazam.Sql.dll
 --define:DEBUG
 --define:TRACE
 --define:NET462
@@ -13,40 +13,40 @@
 --version:1.0.2.0
 --informational-version:1.0.2
 --target-framework:.NETFramework,Version=v4.6.2
---reference:C:\Users\bstein\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\net46\Microsoft.Win32.Primitives.dll
---reference:C:\Users\bstein\.nuget\packages\System.AppContext\4.1.0\ref\net46\System.AppContext.dll
+--reference:C:\Users\Ben\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\net46\Microsoft.Win32.Primitives.dll
+--reference:C:\Users\Ben\.nuget\packages\System.AppContext\4.1.0\ref\net46\System.AppContext.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Collections.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Collections.Concurrent.dll
---reference:C:\Users\bstein\.nuget\packages\System.Console\4.0.0\ref\net46\System.Console.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Console\4.0.0\ref\net46\System.Console.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Diagnostics.Debug.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Diagnostics.Tools.dll
---reference:C:\Users\bstein\.nuget\packages\System.Diagnostics.Tracing\4.1.0\ref\net462\System.Diagnostics.Tracing.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Diagnostics.Tracing\4.1.0\ref\net462\System.Diagnostics.Tracing.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Globalization.dll
---reference:C:\Users\bstein\.nuget\packages\System.Globalization.Calendars\4.0.1\ref\net46\System.Globalization.Calendars.dll
---reference:C:\Users\bstein\.nuget\packages\System.IO\4.1.0\ref\net462\System.IO.dll
---reference:C:\Users\bstein\.nuget\packages\System.IO.Compression\4.1.0\ref\net46\System.IO.Compression.dll
---reference:C:\Users\bstein\.nuget\packages\System.IO.Compression.ZipFile\4.0.1\ref\net46\System.IO.Compression.ZipFile.dll
---reference:C:\Users\bstein\.nuget\packages\System.IO.FileSystem\4.0.1\ref\net46\System.IO.FileSystem.dll
---reference:C:\Users\bstein\.nuget\packages\System.IO.FileSystem.Primitives\4.0.1\ref\net46\System.IO.FileSystem.Primitives.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Globalization.Calendars\4.0.1\ref\net46\System.Globalization.Calendars.dll
+--reference:C:\Users\Ben\.nuget\packages\System.IO\4.1.0\ref\net462\System.IO.dll
+--reference:C:\Users\Ben\.nuget\packages\System.IO.Compression\4.1.0\ref\net46\System.IO.Compression.dll
+--reference:C:\Users\Ben\.nuget\packages\System.IO.Compression.ZipFile\4.0.1\ref\net46\System.IO.Compression.ZipFile.dll
+--reference:C:\Users\Ben\.nuget\packages\System.IO.FileSystem\4.0.1\ref\net46\System.IO.FileSystem.dll
+--reference:C:\Users\Ben\.nuget\packages\System.IO.FileSystem.Primitives\4.0.1\ref\net46\System.IO.FileSystem.Primitives.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Linq.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Linq.Expressions.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Net.Primitives.dll
---reference:C:\Users\bstein\.nuget\packages\System.Net.Sockets\4.1.0\ref\net46\System.Net.Sockets.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Net.Sockets\4.1.0\ref\net46\System.Net.Sockets.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.ObjectModel.dll
---reference:C:\Users\bstein\.nuget\packages\System.Reflection\4.1.0\ref\net462\System.Reflection.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Reflection\4.1.0\ref\net462\System.Reflection.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Reflection.Extensions.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Reflection.Primitives.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Resources.ResourceManager.dll
---reference:C:\Users\bstein\.nuget\packages\System.Runtime\4.1.0\ref\net462\System.Runtime.dll
---reference:C:\Users\bstein\.nuget\packages\System.Runtime.Extensions\4.1.0\ref\net462\System.Runtime.Extensions.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Runtime\4.1.0\ref\net462\System.Runtime.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Runtime.Extensions\4.1.0\ref\net462\System.Runtime.Extensions.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Runtime.Handles.dll
---reference:C:\Users\bstein\.nuget\packages\System.Runtime.InteropServices\4.1.0\ref\net462\System.Runtime.InteropServices.dll
---reference:C:\Users\bstein\.nuget\packages\System.Runtime.InteropServices.RuntimeInformation\4.0.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Runtime.InteropServices\4.1.0\ref\net462\System.Runtime.InteropServices.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Runtime.InteropServices.RuntimeInformation\4.0.0\ref\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Runtime.Numerics.dll
---reference:C:\Users\bstein\.nuget\packages\System.Security.Cryptography.Algorithms\4.2.0\ref\net461\System.Security.Cryptography.Algorithms.dll
---reference:C:\Users\bstein\.nuget\packages\System.Security.Cryptography.Encoding\4.0.0\ref\net46\System.Security.Cryptography.Encoding.dll
---reference:C:\Users\bstein\.nuget\packages\System.Security.Cryptography.Primitives\4.0.0\ref\net46\System.Security.Cryptography.Primitives.dll
---reference:C:\Users\bstein\.nuget\packages\System.Security.Cryptography.X509Certificates\4.1.0\ref\net461\System.Security.Cryptography.X509Certificates.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Security.Cryptography.Algorithms\4.2.0\ref\net461\System.Security.Cryptography.Algorithms.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Security.Cryptography.Encoding\4.0.0\ref\net46\System.Security.Cryptography.Encoding.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Security.Cryptography.Primitives\4.0.0\ref\net46\System.Security.Cryptography.Primitives.dll
+--reference:C:\Users\Ben\.nuget\packages\System.Security.Cryptography.X509Certificates\4.1.0\ref\net461\System.Security.Cryptography.X509Certificates.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Text.Encoding.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Text.Encoding.Extensions.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Text.RegularExpressions.dll
@@ -55,7 +55,7 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Threading.Timer.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Xml.ReaderWriter.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\Facades\System.Xml.XDocument.dll
---reference:C:\Devspace\bazam\Bazam\bin\Debug\netstandard1.5\Bazam.dll
+--reference:C:\Users\Ben\Documents\Devspace\Bazam\Bazam\bin\Debug\netstandard1.5\Bazam.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Transactions.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Data.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\mscorlib.dll
@@ -65,10 +65,10 @@
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.IO.Compression.FileSystem.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.Net.Http.dll
 --reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.ComponentModel.Composition.dll
-C:\Devspace\bazam\Bazam.Sql\DataNinja\DataFormatting.cs
-C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaAsyncState.cs
-C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaClient.cs
-C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaQuery.cs
-C:\Devspace\bazam\Bazam.Sql\DataNinja\DataNinjaTransactionEventHandler.cs
-C:\Devspace\bazam\Bazam.Sql\DataNinja\Exceptions\DataNinjaException.cs
-C:\Devspace\bazam\Bazam.Sql\DataNinja\Exceptions\DataNinjaTransactionException.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\DataNinja\DataFormatting.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\DataNinja\DataNinjaAsyncState.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\DataNinja\DataNinjaClient.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\DataNinja\DataNinjaQuery.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\DataNinja\DataNinjaTransactionEventHandler.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\DataNinja\Exceptions\DataNinjaException.cs
+C:\Users\Ben\Documents\Devspace\Bazam\Bazam.Sql\DataNinja\Exceptions\DataNinjaTransactionException.cs
